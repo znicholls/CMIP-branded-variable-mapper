@@ -1,0 +1,13 @@
+variable_names,cell_methods,dimensions,branded_label-spreadsheet,branded_label-following_appendixF-from_last_year,matching
+tas,area: time: mean,longitude latitude time height2m,tas_tavg-h02-hxy-x,tas_tavg-h2m-hxy-x,False
+tas,area: mean time: point,longitude latitude time1 height2m,tas_tpt-h02-hxy-x,tas_tpt-h2m-hxy-x,False
+tas,area: time: mean,longitude latitude time height2m,tas_tavg-h02-hxy-x,tas_tavg-h2m-hxy-x,False
+tas,area: mean time: point,longitude latitude time1 height2m,tas_tpt-h02-hxy-x,tas_tpt-h2m-hxy-x,False
+tas,area: time: mean,longitude latitude time height2m,tas_tavg-h02-hxy-x,tas_tavg-h2m-hxy-x,False
+tas,area: time: mean,longitude latitude time height2m,tas_tavg-h02-hxy-x,tas_tavg-h2m-hxy-x,False
+tas,area: time: mean where ice_sheet, time height2m,tas_tavg-h02-hm-is,tas_tavg-h2m-hm-is,False
+tas,area: time: mean where ice_sheet, time height2m,tas_tavg-h02-hm-is,tas_tavg-h2m-hm-is,False
+tas,area: mean time: point,longitude latitude time1 height2m,tas_tpt-h02-hxy-x,tas_tpt-h2m-hxy-x,False
+tas,area: point time: point,site time1 height2m,tas_tpt-h02-hxys-x,tas_tpt-h2m-hxys-x,False
+tas,area: time: mean where ice_sheet,longitude latitude time height2m,tas_tavg-h02-hxy-is,tas_tavg-h2m-hxy-is,False
+tas,area: time: mean where sector,longitude latitude landUse time height2m,tas_tavg-h02-hxy-lus,tas_tavg-h2m-hxy-lus,False

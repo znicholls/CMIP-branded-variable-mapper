@@ -1,83 +1,17 @@
-# %%
-from pathlib import Path
-import pandas as pd
-import numpy as np
-
-from cmip_branded_variable_mapper.constants import (
-    DATA_ROOT
-)
-
-# %%
-data_folder = DATA_ROOT
-
-# %%
-data_file = DATA_ROOT / Path("CMIP6_branded_variables.xlsx")
-
-# %%
-df = pd.read_excel(data_file)
-
-# %%
-# variable name: column BY "variable registry root names"
-# cell methods: column T "new cell_methods"
-# dimensions: column AZ "corrected CMIP6 dimensions"
-
-# branded variable name: column BK "proposed branded variable label"
-
-# %%
-# filter only variables we need and drop NAs
-# we can probably delete this step later on, but for now it just makes it a bit easier to follow what is happening
-
-df_filtered = df.loc[:, ["variable registry root names", "new cell_methods", 
-                         "corrected CMIP6 dimensions", "proposed branded variable label"]].iloc[:2062]
-
-# %%
-df_filtered
-
-# %%
-for row in df_filtered.T:
-    #print(df_filtered.iloc[row]["proposed branded variable label"].split("_")[0])
-    try:
-        if df_filtered.iloc[row]["variable registry root names"] != df_filtered.iloc[row]["proposed branded variable label"].split("_")[0]:
-            print(df_filtered.iloc[row]["variable registry root names"], df_filtered.iloc[row]["proposed branded variable label"])
-    except:
-        print(row)
-
-# %% [markdown]
-# construction methods:
-# rootname_time-vertical_label-horizontal_label-masking
-#
-#
-# for time either
-# in cell_methods:
-# time: mean --> tavg
-# time : point --> tpt
-# time: max --> tstat
-# time: min --> tstat
-# time: sum --> tsum
-#
-# or in dimensions:
-# time --> tavg
-# time1 --> tpt
-# time2 --> tclm
-# time3 --> tclmdc
-#
-
-# %%
 time_labels_dimensions = {
     "time": "tavg",
     "time1": "tpt",
     "time2": "tclm",
-    "time3": "tclmdc"
+    "time3": "tcld"
 }
 
-# %%
+
 time_labels_cell_methods = {
     "time: max": "tstat",
     "time: min": "tstat",
-    "time: sum": "tsum"
+    "time: sum": "tsum",
 }
 
-# %%
 vertical_labels = {
     "sdepth": "l",
     "olevel": "l",
@@ -92,7 +26,9 @@ vertical_labels = {
     "sdepth10": "d1m",
     "depth0m": "d0m",
     "depth100m": "d100m",
+    "depth100m": "z0100",
     "olayer100m": "d100m",
+    "olayer100m": "z0100",
     "olayer300m": "d300m",
     "olayer700m": "d700m",
     "olayer2000m": "d2000m",
@@ -118,8 +54,6 @@ vertical_labels = {
     "plev39": "p39"
 }
 
-
-# %%
 horizontal_labels = {
     "latitude": "hy",
     "longitude latitude": "hxy",
@@ -132,7 +66,6 @@ horizontal_labels = {
     "siline": "ht"
 }
 
-# %%
 area_labels = {
     "where air": "air",
     "where cloud": "cl",
@@ -160,23 +93,20 @@ area_labels = {
     "where wetland": "wl"
 }
 
-# %%
-data_file = DATA_ROOT / Path("CMIP6_branded_variables.xlsx")
-df = pd.read_excel(data_file)
 
-
-def _get_label(label_options: dict, label_in: str, suffix: str, default: str) -> str:
+def _get_label(label_options: dict, label_in: str, default: str) -> str:
     
     out_label = default
     
     for label,translation in label_options.items():
             if label in label_in:
-                out_label = f"{suffix}{translation}"
+                out_label = f"{translation}"
     
     return out_label
-    
 
-def cmip_branded_variable_mapper(variable_name: str, cell_methods:str, dimensions:str) -> str:
+
+
+def cmip_branded_variable_mapper(variable_name: str, cell_methods: str, dimensions:str) -> str:
     
     """
     Constructs a CMIP7 branded variable name based on variable metadata from CMIP6.
@@ -189,20 +119,24 @@ def cmip_branded_variable_mapper(variable_name: str, cell_methods:str, dimension
     Returns: CMIP7 branded variable name 
         
     """
-    
-    if "time" in dimensions: 
+
+    # rename nan entries to empty string
+    if cell_methods != cell_methods:
+        cell_methods = ""
+
+    if "time: max" not in cell_methods and "time: min" not in cell_methods and "time: sum" not in cell_methods: 
         
-        temporalLabelDD = _get_label(time_labels_dimensions, dimensions, '_', '_ti')
+        temporalLabelDD = _get_label(time_labels_dimensions, dimensions, 'ti')
         
     else: 
         
-        temporalLabelDD = _get_label(time_labels_cell_methods, cell_methods, '_', '_ti')
+        temporalLabelDD = _get_label(time_labels_cell_methods, cell_methods, 'ti')
         
-    verticalLabelDD = _get_label(vertical_labels, dimensions, '-', '-u')
+    verticalLabelDD = _get_label(vertical_labels, dimensions, 'u')
 
-    horizontalLabelDD = _get_label(horizontal_labels, dimensions, '-', '-hm')
+    horizontalLabelDD = _get_label(horizontal_labels, dimensions, 'hm')
 
-    areaLabelDD = _get_label(area_labels, cell_methods, '-', '-u')
+    areaLabelDD = _get_label(area_labels, cell_methods, 'u')
             
-    return f"{variable_name}{temporalLabelDD}{verticalLabelDD}{horizontalLabelDD}{areaLabelDD}"
+    return f"{variable_name}_{temporalLabelDD}-{verticalLabelDD}-{horizontalLabelDD}-{areaLabelDD}"
 
