@@ -134,58 +134,75 @@ horizontal_labels = {
 
 # %%
 area_labels = {
-    "air": "air",
-    "cloud": "cl",
-    "convective_cloud": "ccl",
-    "crops": "crp",
-    "floating_ice_shelf": "fis",
-    "grounded_ice_sheet": "gis",
-    "ice_free_sea": "ifs",
-    "ice_sheet": "is",
-    "land": "lnd",
-    "land_ice": "li",
-    "natural_grasses": "ng",
-    "pastures": "pst",
-    "sea": "sea",
-    "sea_ice": "si",
-    "sea_ice_melt_pond": "simp",
-    "sea_ice_ridges": "sir",
-    "sector": "lus",
-    "shrubs": "shb",
-    "snow": "sn",
-    "stratiform_cloud": "scl",
-    "trees": "tree",
-    "unfrozen_soil": "ufs",
-    "vegetation": "veg",
-    "wetland": "wl"
+    "where air": "air",
+    "where cloud": "cl",
+    "where convective_cloud": "ccl",
+    "where crops": "crp",
+    "where floating_ice_shelf": "fis",
+    "where grounded_ice_sheet": "gis",
+    "where ice_free_sea": "ifs",
+    "where ice_sheet": "is",
+    "where land": "lnd",
+    "where land_ice": "li",
+    "where natural_grasses": "ng",
+    "where pastures": "pst",
+    "where sea": "sea",
+    "where sea_ice": "si",
+    "where sea_ice_melt_pond": "simp",
+    "where sea_ice_ridges": "sir",
+    "where sector": "lus",
+    "where shrubs": "shb",
+    "where snow": "sn",
+    "where stratiform_cloud": "scl",
+    "where trees": "tree",
+    "where unfrozen_soil": "ufs",
+    "where vegetation": "veg",
+    "where wetland": "wl"
 }
 
 # %%
 data_file = DATA_ROOT / Path("CMIP6_branded_variables.xlsx")
 df = pd.read_excel(data_file)
 
+
+def _get_label(label_options: dict, label_in: str, suffix: str, default: str) -> str:
+    
+    out_label = default
+    
+    for label,translation in label_options.items():
+            if label in label_in:
+                out_label = f"{suffix}{translation}"
+    
+    return out_label
+    
+
 def cmip_branded_variable_mapper(variable_name: str, cell_methods:str, dimensions:str) -> str:
-
-    temporalLabelDD = "-ti"
     
-
-    verticalLabelDD = "-u"
+    """
+    Constructs a CMIP7 branded variable name based on variable metadata from CMIP6.
     
-    for vertical_label,translation in vertical_labels.items():
-        if vertical_label in dimensions:
-            verticalLabelDD = f"-{translation}"
-
-    horizontalLabelDD = "-hm"
+    Args:
+        variable_name: Name of the variable in CMIP6 and CMIP7
+        cell_methods: Cell methods string containing processing information
+        dimensions: Dimensions string containing variable dimensions
+        
+    Returns: CMIP7 branded variable name 
+        
+    """
     
-    for horizontal_label,translation in horizontal_labels.items():
-        if horizontal_label in dimensions:
-            horizontalLabelDD = f"-{translation}"
+    if "time" in dimensions: 
+        
+        temporalLabelDD = _get_label(time_labels_dimensions, dimensions, '_', '_ti')
+        
+    else: 
+        
+        temporalLabelDD = _get_label(time_labels_cell_methods, cell_methods, '_', '_ti')
+        
+    verticalLabelDD = _get_label(vertical_labels, dimensions, '-', '-u')
 
-    areaLabelDD = "-u"
-    
-    for area_label,translation in area_labels.items():
-        if f"where {area_label}" in cell_methods:
-            areaLabelDD = f"-{translation}"
+    horizontalLabelDD = _get_label(horizontal_labels, dimensions, '-', '-hm')
+
+    areaLabelDD = _get_label(area_labels, cell_methods, '-', '-u')
             
-    return f"{variable_name}_{temporalLabelDD}{verticalLabelDD}{horizontalLabelDD}{areaLabelDD}"
+    return f"{variable_name}{temporalLabelDD}{verticalLabelDD}{horizontalLabelDD}{areaLabelDD}"
 
