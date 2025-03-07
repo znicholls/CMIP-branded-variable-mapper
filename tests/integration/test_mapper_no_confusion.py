@@ -4,7 +4,7 @@ import numpy as np
 from contextlib import nullcontext as does_not_raise
 import pytest
 
-from cmip_branded_variable_mapper.mapper import cmip_branded_variable_mapper
+from cmip_branded_variable_mapper.mapper_old import cmip_branded_variable_mapper
 from cmip_branded_variable_mapper.constants import (
     DATA_ROOT
 )

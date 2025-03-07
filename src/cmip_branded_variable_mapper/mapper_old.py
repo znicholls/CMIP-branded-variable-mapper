@@ -110,8 +110,6 @@ def _get_label(label_options: dict, label_in: str, default: str) -> str:
 
 
 # %%
-
-# %%
 def cmip_branded_variable_mapper(variable_name: str, cell_methods: str, dimensions:str) -> str:
     
     """
