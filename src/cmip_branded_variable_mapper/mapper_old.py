@@ -1,3 +1,5 @@
+# mapper using last year's definitions from the spreadsheet
+
 # %%
 time_labels_dimensions = {
     "time": "tavg",
@@ -5,7 +7,6 @@ time_labels_dimensions = {
     "time2": "tcla",
     "time3": "tcld"
 }
-
 
 # %%
 time_labels_cell_methods = {

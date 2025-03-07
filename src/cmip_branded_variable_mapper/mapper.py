@@ -1,3 +1,5 @@
+# mapper using final definitions from the paper
+
 time_labels_dimensions = {
     "time": "tavg",
     "time1": "tpt",

@@ -9,7 +9,7 @@ from cmip_branded_variable_mapper.constants import (
     DATA_ROOT
 )
 
-
+# test for mapper using last year's definitions from the spreadsheet
 
 def generate_expected_cases():
     
