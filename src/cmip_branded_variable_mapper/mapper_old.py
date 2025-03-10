@@ -105,7 +105,7 @@ area_labels = {
 }
 
 
-def _get_label(label_options: dict, label_in: str, default: str) -> str:
+def _get_label(label_options: dict[str, str], label_in: str, default: str) -> str:
     out_label = default
 
     for label, translation in label_options.items():
