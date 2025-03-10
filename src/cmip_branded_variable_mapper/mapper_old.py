@@ -1,21 +1,30 @@
-# mapper using last year's definitions from the spreadsheet
+"""
+Mapper from old names to branded variables
 
-# %%
+This is based on the definitions in the spreadsheet for now,
+the long-term source of truth is still being figured out
+(https://github.com/znicholls/CMIP-branded-variable-mapper/issues/4).
+"""
+
+from __future__ import annotations
+
+import pandas as pd
+
 time_labels_dimensions = {
     "time": "tavg",
     "time1": "tpt",
     "time2": "tcla",
-    "time3": "tcld"
+    "time3": "tcld",
 }
 
-# %%
+
 time_labels_cell_methods = {
     "time: max": "tstat",
     "time: min": "tstat",
     "time: sum": "tsum",
 }
 
-# %%
+
 vertical_labels = {
     "sdepth": "l",
     "olevel": "l",
@@ -53,10 +62,10 @@ vertical_labels = {
     "plev7h": "p7h",
     "plev19": "p19",
     "plev27": "p27",
-    "plev39": "p39"
+    "plev39": "p39",
 }
 
-# %%
+
 horizontal_labels = {
     "latitude": "hy",
     "longitude latitude": "hxy",
@@ -66,10 +75,10 @@ horizontal_labels = {
     "latitude basin": "hys",
     "gridlatitude basin": "ht",
     "oline": "ht",
-    "siline": "ht"
+    "siline": "ht",
 }
 
-# %%
+
 area_labels = {
     "where air": "air",
     "where cloud": "cl",
@@ -94,54 +103,63 @@ area_labels = {
     "where trees": "tree",
     "where unfrozen_soil": "ufs",
     "where vegetation": "veg",
-    "where wetland": "wl"
+    "where wetland": "wl",
 }
 
 
-# %%
 def _get_label(label_options: dict, label_in: str, default: str) -> str:
-    
     out_label = default
-    
-    for label,translation in label_options.items():
-            if label in label_in:
-                out_label = f"{translation}"
-    
+
+    for label, translation in label_options.items():
+        if label in label_in:
+            out_label = f"{translation}"
+
     return out_label
 
 
-# %%
-def cmip_branded_variable_mapper(variable_name: str, cell_methods: str, dimensions:str) -> str:
-    
+def cmip_branded_variable_mapper(
+    variable_name: str, cell_methods: str, dimensions: str
+) -> str:
     """
-    Constructs a CMIP7 branded variable name based on variable metadata from CMIP6.
-    
-    Args:
-        variable_name: Name of the variable in CMIP6 and CMIP7
-        cell_methods: Cell methods string containing processing information
-        dimensions: Dimensions string containing variable dimensions
-        
-    Returns: CMIP7 branded variable name 
-        
-    """
+    Map old CMIP variable information into branded variables
 
-    # rename nan entries to empty string
-    if cell_methods != cell_methods:
+    Parameters
+    ----------
+    variable_name
+        Variable name
+
+    cell_methods
+        Cell methods
+
+    dimensions
+        Dimensions
+
+    Returns
+    -------
+    :
+        Branded variable
+    """
+    if pd.isnull(cell_methods):
         cell_methods = ""
 
-    if "time: max" not in cell_methods and "time: min" not in cell_methods and "time: sum" not in cell_methods: 
-        
-        temporalLabelDD = _get_label(time_labels_dimensions, dimensions, 'ti')
-        
-    else: 
-        
-        temporalLabelDD = _get_label(time_labels_cell_methods, cell_methods, 'ti')
-        
-    verticalLabelDD = _get_label(vertical_labels, dimensions, 'z0')
+    if (
+        "time: max" not in cell_methods
+        and "time: min" not in cell_methods
+        and "time: sum" not in cell_methods
+    ):
+        temporalLabelDD = _get_label(time_labels_dimensions, dimensions, "ti")
 
-    horizontalLabelDD = _get_label(horizontal_labels, dimensions, 'hm')
+    else:
+        temporalLabelDD = _get_label(time_labels_cell_methods, cell_methods, "ti")
 
-    areaLabelDD = _get_label(area_labels, cell_methods, 'x')
-            
-    return f"{variable_name}_{temporalLabelDD}-{verticalLabelDD}-{horizontalLabelDD}-{areaLabelDD}"
+    verticalLabelDD = _get_label(vertical_labels, dimensions, "z0")
 
+    horizontalLabelDD = _get_label(horizontal_labels, dimensions, "hm")
+
+    areaLabelDD = _get_label(area_labels, cell_methods, "x")
+
+    suffix = "-".join(
+        [temporalLabelDD, verticalLabelDD, horizontalLabelDD, areaLabelDD]
+    )
+
+    return "_".join([variable_name, suffix])
