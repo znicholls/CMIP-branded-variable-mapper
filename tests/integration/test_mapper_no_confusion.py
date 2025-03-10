@@ -1,14 +1,19 @@
+"""
+Tests of our mapping from old names to branded variables
+"""
+
 from pathlib import Path
 
 import pandas as pd
 import pytest
 
-from cmip_branded_variable_mapper.constants import DATA_ROOT
 from cmip_branded_variable_mapper.mapper_old import cmip_branded_variable_mapper
+
+DATA_DIR = Path(__file__).parents[2] / "data"
 
 
 def generate_expected_cases():
-    df = pd.read_excel(DATA_ROOT / Path("CMIP6_branded_variables.xlsx"))
+    df = pd.read_excel(DATA_DIR / Path("CMIP6_branded_variables.xlsx"))
     df = df.loc[
         :,
         [
