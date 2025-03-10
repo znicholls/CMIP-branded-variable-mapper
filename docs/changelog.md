@@ -21,6 +21,17 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.2.0 (2025-03-10)
+
+### 🆕 Features
+
+- Added basic functionality. Mapping for almost all varaibles is now supported. The failing cases are ones with basin in their dimensions. ([#6](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/6))
+
+### 🔧 Trivial/Internal Changes
+
+- [#3](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/3)
+
+
 ## CMIP Branded Variable Mapper v0.1.1 (2025-03-03)
 
 ### 🔧 Trivial/Internal Changes
