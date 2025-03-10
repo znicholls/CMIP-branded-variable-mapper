@@ -8,8 +8,6 @@ the long-term source of truth is still being figured out
 
 from __future__ import annotations
 
-import pandas as pd
-
 time_labels_dimensions = {
     "time": "tavg",
     "time1": "tpt",
@@ -118,7 +116,7 @@ def _get_label(label_options: dict, label_in: str, default: str) -> str:
 
 
 def cmip_branded_variable_mapper(
-    variable_name: str, cell_methods: str, dimensions: str
+    variable_name: str, cell_methods: str | None, dimensions: str
 ) -> str:
     """
     Map old CMIP variable information into branded variables
@@ -139,7 +137,7 @@ def cmip_branded_variable_mapper(
     :
         Branded variable
     """
-    if pd.isnull(cell_methods):
+    if cell_methods is None:
         cell_methods = ""
 
     if (

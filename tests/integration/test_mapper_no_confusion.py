@@ -22,7 +22,16 @@ def generate_expected_cases():
             "corrected CMIP6 dimensions",
             "proposed branded variable label",
         ],
-    ].iloc[:2062]
+    ]
+    df = df[
+        ~df["proposed branded variable label"].isnull()
+        & ~df["proposed branded variable label"].str.contains(":").astype(bool)
+        & ~(
+            df["proposed branded variable label"]
+            .str.contains("proposed branded variable label")
+            .astype(bool)
+        )
+    ]
 
     exp_var_names = ["variable_name", "cell_methods", "dimensions", "exp"]
     col_names = [
@@ -33,16 +42,20 @@ def generate_expected_cases():
     ]
     test_cases = []
     for record in df.to_dict(orient="records"):
+        # Replace all NaN cell methods with None
+        param_values = [
+            record[ov] if not pd.isnull(record[ov]) else None for ov in col_names
+        ]
         if "basin" in record["corrected CMIP6 dimensions"]:
             test_cases.append(
                 pytest.param(
-                    *[record[ov] for ov in col_names],
+                    *param_values,
                     marks=[pytest.mark.xfail(reason="basin causing confusion")],
                 )
             )
 
         else:
-            test_cases.append(pytest.param(*[record[ov] for ov in col_names]))
+            test_cases.append(pytest.param(*param_values))
 
     return pytest.mark.parametrize(exp_var_names, test_cases)
 
