@@ -6,7 +6,7 @@ from contextlib import nullcontext as does_not_raise
 import pytest
 import tabulate
 
-from cmip_branded_variable_mapper.mapper import cmip_branded_variable_mapper
+from cmip_branded_variable_mapper.mapper_old import cmip_branded_variable_mapper
 from cmip_branded_variable_mapper.constants import (
     DATA_ROOT
 )
@@ -39,8 +39,11 @@ df.to_csv(DATA_ROOT / Path("compare_branded_variables-spreadsheet_definitions.cs
 #df.to_csv(DATA_ROOT / Path("compare_branded_variables.csv"), index = False)
 
 # %%
-fails = df[df["matching"] == "False"]
+fails = df[df["matching"] == False]
 fails
+
+# %%
+fails.to_csv(DATA_ROOT / Path("compare_branded_variables-spreadsheet_definitions-false.csv"), index=False)
 
 # %%
 print(fails.to_markdown(index=False))

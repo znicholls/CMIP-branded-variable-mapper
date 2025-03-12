@@ -1,0 +1,15 @@
+variable_names,cell_methods,dimensions,branded_label-spreadsheet,branded_label-following_spreadsheet,matching
+msftmz,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude rho basin time,msftmz_tavg-rhon-hys-sea,msftmz_tavg-rhon-hy-sea,False
+msftmz,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude rho basin time,msftmz_tavg-rhon-hys-sea,msftmz_tavg-rhon-hy-sea,False
+msftmz,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude olevel basin time,msftmz_tavg-l-hys-sea,msftmz_tavg-l-hy-sea,False
+msftmz,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude olevel basin time,msftmz_tavg-l-hys-sea,msftmz_tavg-l-hy-sea,False
+msftmzmpa,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude rho basin time,msftmzmpa_tavg-rhon-hys-sea,msftmzmpa_tavg-rhon-hy-sea,False
+msftmzmpa,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude olevel basin time,msftmzmpa_tavg-l-hys-sea,msftmzmpa_tavg-l-hy-sea,False
+msftmzsmpa,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude olevel basin time,msftmzsmpa_tavg-l-hys-sea,msftmzsmpa_tavg-l-hy-sea,False
+msftmsmpa,longitude: rho: sum where sea (along a zig-zag grid path spanning a basin) time: mean,latitude olevel basin time,msftmsmpa_tavg-l-hys-sea,msftmsmpa_tavg-l-hy-sea,False
+msftyz,grid_longitude: mean where sea time: mean,gridlatitude rho basin time,msftyz_tavg-rhon-ht-sea,msftyz_tavg-rhon-hy-sea,False
+msftyz,grid_longitude: mean where sea time: mean,gridlatitude rho basin time,msftyz_tavg-rhon-ht-sea,msftyz_tavg-rhon-hy-sea,False
+msftyz,grid_longitude: mean where sea time: mean,gridlatitude olevel basin time,msftyz_tavg-l-ht-sea,msftyz_tavg-l-hy-sea,False
+msftyz,grid_longitude: mean where sea time: mean,gridlatitude olevel basin time,msftyz_tavg-l-ht-sea,msftyz_tavg-l-hy-sea,False
+msftyzmpa,grid_longitude: mean where sea time: mean,gridlatitude rho basin time,msftyzmpa_tavg-rhon-ht-sea,msftyzmpa_tavg-rhon-hy-sea,False
+msftyzmpa,grid_longitude: mean where sea time: mean,gridlatitude olevel basin time,msftyzmpa_tavg-l-ht-sea,msftyzmpa_tavg-l-hy-sea,False

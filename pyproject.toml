@@ -8,6 +8,7 @@ authors = [
 license = { text = "placeholder" }
 requires-python = ">=3.9"
 dependencies = [
+    "notebook>=7.3.2",
 ]
 readme = "README.md"
 classifiers = [
