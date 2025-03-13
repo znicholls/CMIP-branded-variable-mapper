@@ -64,17 +64,16 @@ vertical_labels = {
 }
 
 
-
 horizontal_labels = {
-    "latitude": "hy",
+    ("latitude",): "hy",
     ("longitude", "latitude"): "hxy",
     ("latitude", "basin"): "hys",
     ("gridlatitude", "basin"): "ht",
     ("xant", "yant"): "hxy",
     ("xgre", "ygre"): "hxy",
-    "siline": "ht", 
-    "site": "hxys",
-    "oline": "ht"
+    ("siline",): "ht",
+    ("site",): "hxys",
+    ("oline",): "ht",
 }
 
 
@@ -106,7 +105,9 @@ area_labels = {
 }
 
 
-def _get_temporal_label(label_options: dict[str, str], label_in: str, default: str) -> str:
+def _get_temporal_label(
+    label_options: dict[str, str], label_in: str, default: str
+) -> str:
     out_label = default
 
     for label, translation in label_options.items():
@@ -116,48 +117,54 @@ def _get_temporal_label(label_options: dict[str, str], label_in: str, default: s
     return out_label
 
 
-def _get_vertical_label(label_options: dict[tuple, str], label_in: str, default: str) -> str:
-    out_label = default
-
+def _get_vertical_label(
+    label_options: dict[tuple, str], label_in: str, default: str
+) -> str:
     # sorts labels from longest to shortest
     sorted_labels = sorted(label_options.items(), key=lambda x: len(x[0]), reverse=True)
 
     for label, translation in sorted_labels:
         if label in label_in:
-            
             # stops the loop as soon as a first match is found and returns match
             return translation
-            
-    # if no match is found, returns default        
+
+    # if no match is found, returns default
     return default
 
-    
-def _get_horizontal_label(label_options: dict[tuple, str], label_in: str, default: str) -> str:
-    out_label = default
 
-    sorted_labels = sorted(label_options.items(), key=lambda x: len(x[0]), reverse=True)
+def _get_horizontal_label(
+    label_options: dict[tuple, str], label_in: str, default: str
+) -> str:
+    # TODO next week: pass in a tuple of dimensions everywhere
+    # to remove the whitespace pain.
+    dimensions_tuple = label_in.split(" ")
 
-    for label_tuple, translation in sorted_labels:
-        if all(word in label_in for word in label_tuple):
+    dimension_specs_sorted_by_n_dims = {}
+    for k in sorted(horizontal_labels.keys(), key=len, reverse=True):
+        dimension_specs_sorted_by_n_dims[k] = horizontal_labels[k]
+
+    for label_tuple, translation in dimension_specs_sorted_by_n_dims.items():
+        if all(dimension in dimensions_tuple for dimension in label_tuple):
             out_label = translation
+            break
+    else:
+        out_label = default
 
     return out_label
 
 
-
-def _get_area_label(label_options: dict[tuple, str], label_in: str, default: str) -> str:
-    out_label = default
-
+def _get_area_label(
+    label_options: dict[tuple, str], label_in: str, default: str
+) -> str:
     # sorts labels from longest to shortest
     sorted_labels = sorted(label_options.items(), key=lambda x: len(x[0]), reverse=True)
 
     for label, translation in sorted_labels:
         if label in label_in:
-            
             # stops the loop as soon as a first match is found and returns match
             return translation
-            
-    # if no match is found, returns default        
+
+    # if no match is found, returns default
     return default
 
 
@@ -194,7 +201,9 @@ def cmip_branded_variable_mapper(
         temporalLabelDD = _get_temporal_label(time_labels_dimensions, dimensions, "ti")
 
     else:
-        temporalLabelDD = _get_temporal_label(time_labels_cell_methods, cell_methods, "ti")
+        temporalLabelDD = _get_temporal_label(
+            time_labels_cell_methods, cell_methods, "ti"
+        )
 
     verticalLabelDD = _get_vertical_label(vertical_labels, dimensions, "z0")
 
