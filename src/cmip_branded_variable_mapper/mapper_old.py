@@ -111,27 +111,9 @@ def _get_temporal_label(label_options: dict[str, str], label_in: str, default: s
 
     for label, translation in label_options.items():
         if label in label_in:
-            out_label = f"{translation}"
+            out_label = translation
 
     return out_label
-
-
-
-"""
-def _get_label(label_options: dict[str, str], label_in: str, default: str) -> str:
-    out_label = None
-
-    for label, translation in label_options.items():
-        if label in label_in:
-            if out_label is None:
-                out_label = translation
-            else:
-                msg = f"Duplicate matches found for {label_in=} and {label_options=}"
-                raise ValueError(msg)
-
-    return out_label
-"""
-
 
 
 def _get_vertical_label(label_options: dict[tuple, str], label_in: str, default: str) -> str:
