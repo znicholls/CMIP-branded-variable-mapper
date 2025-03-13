@@ -66,15 +66,15 @@ vertical_labels = {
 
 
 horizontal_labels = {
-    "latitude": "hy",
     ("longitude", "latitude"): "hxy",
-    ("latitude", "basin"): "hys",
     ("gridlatitude", "basin"): "ht",
+    ("latitude", "basin"): "hys",
+    ("latitude",): "hy",
     ("xant", "yant"): "hxy",
     ("xgre", "ygre"): "hxy",
-    "siline": "ht", 
-    "site": "hxys",
-    "oline": "ht"
+    ("oline",): "ht",
+    ("siline",): "ht",
+    ("site",): "hxys",
 }
 
 
@@ -133,15 +133,12 @@ def _get_vertical_label(label_options: dict[tuple, str], label_in: str, default:
 
     
 def _get_horizontal_label(label_options: dict[tuple, str], label_in: str, default: str) -> str:
-    out_label = default
 
-    sorted_labels = sorted(label_options.items(), key=lambda x: len(x[0]), reverse=True)
-
-    for label_tuple, translation in sorted_labels:
+    for label_tuple, translation in label_options.items():
         if all(word in label_in for word in label_tuple):
-            out_label = translation
+            return translation
 
-    return out_label
+    return default
 
 
 
