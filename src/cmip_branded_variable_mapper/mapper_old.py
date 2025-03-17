@@ -118,7 +118,7 @@ def _get_temporal_label(
 
 
 def _get_vertical_label(
-    label_options: dict[str, str], label_in: str, default: str
+    label_options: dict[str, str], label_in: tuple[str, ...], default: str
 ) -> str:
     # sorts labels from longest to shortest
     sorted_labels = sorted(label_options.items(), key=lambda x: len(x[0]), reverse=True)
@@ -133,7 +133,7 @@ def _get_vertical_label(
 
 
 def _get_horizontal_label(
-    label_options: dict[tuple[str, ...], str], label_in: str, default: str
+    label_options: dict[tuple[str, ...], str], label_in: tuple[str, ...], default: str
 ) -> str:
     for label_tuple, translation in label_options.items():
         if all(word in label_in for word in label_tuple):
@@ -156,7 +156,7 @@ def _get_area_label(label_options: dict[str, str], label_in: str, default: str) 
 
 
 def cmip_branded_variable_mapper(
-    variable_name: str, cell_methods: str | None, dimensions: str
+    variable_name: str, cell_methods: str | None, dimensions: tuple[str, ...]
 ) -> str:
     """
     Map old CMIP variable information into branded variables
@@ -185,7 +185,9 @@ def cmip_branded_variable_mapper(
         and "time: min" not in cell_methods
         and "time: sum" not in cell_methods
     ):
-        temporalLabelDD = _get_temporal_label(time_labels_dimensions, dimensions, "ti")
+        temporalLabelDD = _get_temporal_label(
+            time_labels_dimensions, " ".join(dimensions), "ti"
+        )
 
     else:
         temporalLabelDD = _get_temporal_label(

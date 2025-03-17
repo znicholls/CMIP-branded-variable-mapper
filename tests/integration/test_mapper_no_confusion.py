@@ -46,6 +46,8 @@ def generate_expected_cases():
         param_values = [
             record[ov] if not pd.isnull(record[ov]) else None for ov in col_names
         ]
+        dimensions_idx = exp_var_names.index("dimensions")
+        param_values[dimensions_idx] = tuple(param_values[dimensions_idx].split(" "))
 
         test_cases.append(pytest.param(*param_values))
 
