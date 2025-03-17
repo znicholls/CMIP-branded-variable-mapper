@@ -5,7 +5,7 @@
 groups = ["default", "all-dev", "dev", "docs", "tests", "tests-full", "tests-min"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:c26553cfe68fd6969988787f9dde37b2d90bc4d255029d936348b339cff65728"
+content_hash = "sha256:121757be877125c67973df6c5363d6a407a446623780e4f7d5bf4b48f4393010"
 
 [[metadata.targets]]
 requires_python = ">=3.9"
@@ -594,7 +594,7 @@ name = "et-xmlfile"
 version = "2.0.0"
 requires_python = ">=3.8"
 summary = "An implementation of lxml.xmlfile for the standard library"
-groups = ["all-dev", "tests"]
+groups = ["default", "all-dev", "tests"]
 files = [
     {file = "et_xmlfile-2.0.0-py3-none-any.whl", hash = "sha256:7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa"},
     {file = "et_xmlfile-2.0.0.tar.gz", hash = "sha256:dab3f4764309081ce75662649be815c4c9081e88f0837825f90fd28317d4da54"},
@@ -1703,7 +1703,7 @@ name = "numpy"
 version = "2.0.2"
 requires_python = ">=3.9"
 summary = "Fundamental package for array computing in Python"
-groups = ["all-dev", "tests"]
+groups = ["default", "all-dev", "tests"]
 marker = "python_version <= \"3.11\" or python_version >= \"3.12\""
 files = [
     {file = "numpy-2.0.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:51129a29dbe56f9ca83438b706e2e69a39892b5eda6cedcb6b0c9fdc9b0d3ece"},
@@ -1758,7 +1758,7 @@ name = "openpyxl"
 version = "3.1.5"
 requires_python = ">=3.8"
 summary = "A Python library to read/write Excel 2010 xlsx/xlsm files"
-groups = ["all-dev", "tests"]
+groups = ["default", "all-dev", "tests"]
 dependencies = [
     "et-xmlfile",
 ]
@@ -1807,7 +1807,7 @@ name = "pandas"
 version = "2.2.3"
 requires_python = ">=3.9"
 summary = "Powerful data structures for data analysis, time series, and statistics"
-groups = ["all-dev", "tests"]
+groups = ["default", "all-dev", "tests"]
 dependencies = [
     "numpy>=1.22.4; python_version < \"3.11\"",
     "numpy>=1.23.2; python_version == \"3.11\"",
@@ -2098,7 +2098,7 @@ name = "python-dateutil"
 version = "2.9.0.post0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 summary = "Extensions to the standard Python datetime module"
-groups = ["all-dev", "docs", "tests"]
+groups = ["default", "all-dev", "docs", "tests"]
 dependencies = [
     "six>=1.5",
 ]
@@ -2125,7 +2125,7 @@ files = [
 name = "pytz"
 version = "2025.1"
 summary = "World timezone definitions, modern and historical"
-groups = ["all-dev", "tests"]
+groups = ["default", "all-dev", "tests"]
 files = [
     {file = "pytz-2025.1-py2.py3-none-any.whl", hash = "sha256:89dd22dca55b46eac6eda23b2d72721bf1bdfef212645d81513ef5d03038de57"},
     {file = "pytz-2025.1.tar.gz", hash = "sha256:c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e"},
@@ -2652,7 +2652,7 @@ name = "six"
 version = "1.17.0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 summary = "Python 2 and 3 compatibility utilities"
-groups = ["all-dev", "docs", "tests"]
+groups = ["default", "all-dev", "docs", "tests"]
 files = [
     {file = "six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"},
     {file = "six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"},
@@ -2700,7 +2700,7 @@ name = "tabulate"
 version = "0.9.0"
 requires_python = ">=3.7"
 summary = "Pretty-print tabular data"
-groups = ["all-dev", "tests"]
+groups = ["default", "all-dev", "tests"]
 files = [
     {file = "tabulate-0.9.0-py3-none-any.whl", hash = "sha256:024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f"},
     {file = "tabulate-0.9.0.tar.gz", hash = "sha256:0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c"},
@@ -2865,7 +2865,7 @@ name = "tzdata"
 version = "2025.1"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
-groups = ["all-dev", "tests"]
+groups = ["default", "all-dev", "tests"]
 files = [
     {file = "tzdata-2025.1-py2.py3-none-any.whl", hash = "sha256:7e127113816800496f027041c570f50bcd464a020098a3b6b199517772303639"},
     {file = "tzdata-2025.1.tar.gz", hash = "sha256:24894909e88cdb28bd1636c6887801df64cb485bd593f2fd83ef29075a81d694"},

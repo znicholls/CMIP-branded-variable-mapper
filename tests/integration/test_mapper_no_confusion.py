@@ -46,7 +46,7 @@ def generate_expected_cases():
         param_values = [
             record[ov] if not pd.isnull(record[ov]) else None for ov in col_names
         ]
-        
+
         test_cases.append(pytest.param(*param_values))
 
     return pytest.mark.parametrize(exp_var_names, test_cases)
