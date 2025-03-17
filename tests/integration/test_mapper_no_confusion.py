@@ -46,16 +46,8 @@ def generate_expected_cases():
         param_values = [
             record[ov] if not pd.isnull(record[ov]) else None for ov in col_names
         ]
-        if "basin" in record["corrected CMIP6 dimensions"]:
-            test_cases.append(
-                pytest.param(
-                    *param_values,
-                    marks=[pytest.mark.xfail(reason="basin causing confusion")],
-                )
-            )
 
-        else:
-            test_cases.append(pytest.param(*param_values))
+        test_cases.append(pytest.param(*param_values))
 
     return pytest.mark.parametrize(exp_var_names, test_cases)
 
