@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from cmip_branded_variable_mapper.mapper_old import cmip_branded_variable_mapper
+from cmip_branded_variable_mapper.mapper_old import map_to_cmip_branded_variable
 
 DATA_DIR = Path(__file__).parents[2] / "data"
 
@@ -57,5 +57,5 @@ def generate_expected_cases():
 @generate_expected_cases()
 def test_against_excel_sheet(variable_name, cell_methods, dimensions, exp):
     assert (
-        cmip_branded_variable_mapper(variable_name, cell_methods, dimensions) == exp
-    ), f"Got {cmip_branded_variable_mapper(variable_name, cell_methods, dimensions)} expected {exp}"  # noqa: E501
+        map_to_cmip_branded_variable(variable_name, cell_methods, dimensions) == exp
+    ), f"Got {map_to_cmip_branded_variable(variable_name, cell_methods, dimensions)} expected {exp}"  # noqa: E501

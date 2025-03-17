@@ -155,16 +155,16 @@ def _get_area_label(label_options: dict[str, str], label_in: str, default: str) 
     return default
 
 
-def cmip_branded_variable_mapper(
+def map_to_cmip_branded_variable(
     variable_name: str, cell_methods: str | None, dimensions: tuple[str, ...]
 ) -> str:
     """
-    Map old CMIP variable information into branded variables
+    Map old CMIP variable information into a branded variable
 
     Parameters
     ----------
     variable_name
-        Variable name
+        (Old) variable name
 
     cell_methods
         Cell methods
