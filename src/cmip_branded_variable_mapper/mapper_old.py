@@ -117,8 +117,6 @@ def _get_temporal_label(label_options: dict[str, str], label_in: str, default: s
 
 
 def _get_vertical_label(label_options: dict[tuple, str], label_in: str, default: str) -> str:
-    out_label = default
-
     # sorts labels from longest to shortest
     sorted_labels = sorted(label_options.items(), key=lambda x: len(x[0]), reverse=True)
 
