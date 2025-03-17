@@ -332,6 +332,7 @@ ignore = [
     "E402",
     "S101",
 ]
+"docs/how-to-guides/how-to-derive-a-branded-variable-name.py" = ["E501"]
 "scripts/*" = [
     "S101",
 ]

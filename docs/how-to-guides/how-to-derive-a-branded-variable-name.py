@@ -13,7 +13,7 @@
 # ---
 
 # %% [markdown] editable=true slideshow={"slide_type": ""}
-# # How to create a branded variable
+# # How to derive a branded variable name
 #
 # Here we show how to translate "old" CMIP variable names
 # plus information about dimensions
@@ -29,7 +29,8 @@ from cmip_branded_variable_mapper import map_to_cmip_branded_variable
 # %% [markdown]
 # ## Creating branded variables
 #
-# The basic API is very simple.
+# The basic API is very simple:
+# [map_to_cmip_branded_variable](../../api/cmip_branded_variable_mapper/#cmip_branded_variable_mapper.map_to_cmip_branded_variable)
 # In the simplest case, all we need is the old variable name
 # and the dimensions (as a tuple, not a whitespace-separated string).
 
