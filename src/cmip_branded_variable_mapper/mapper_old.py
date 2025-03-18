@@ -167,15 +167,30 @@ def map_to_cmip_branded_variable(
         (Old) variable name
 
     cell_methods
-        Cell methods
+        Cell methods associated with the variable
 
     dimensions
-        Dimensions
+        Dimensions of the variable
 
     Returns
     -------
     :
         Branded variable
+
+    Examples
+    --------
+    >>> map_to_cmip_branded_variable(
+    ...     variable_name="tas",
+    ...     cell_methods="area: time: mean",
+    ...     dimensions=("longitude", "latitude", "time", "height2m"),
+    ... )
+    'tas_tavg-h02-hxy-x'
+    >>> map_to_cmip_branded_variable(
+    ...     variable_name="hfds",
+    ...     cell_methods="area: mean where sea time: mean",
+    ...     dimensions=("longitude", "latitude", "time"),
+    ... )
+    'hfds_tavg-z0-hxy-sea'
     """
     if cell_methods is None:
         cell_methods = ""

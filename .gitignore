@@ -1,6 +1,9 @@
 # Notebooks
 *.ipynb
 
+# Excel temporary files
+*~$*
+
 # Auto-generated docs and helper files
 docs/api/*
 !docs/api/.gitkeep
