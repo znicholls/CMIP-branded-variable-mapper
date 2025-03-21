@@ -31,18 +31,9 @@ from cmip_branded_variable_mapper import map_to_cmip_branded_variable
 #
 # The basic API is very simple:
 # [map_to_cmip_branded_variable](../../api/cmip_branded_variable_mapper/#cmip_branded_variable_mapper.map_to_cmip_branded_variable)
-# In the simplest case, all we need is the old variable name
-# and the dimensions (as a tuple, not a whitespace-separated string).
-
-# %%
-ugrido_branded_variable = map_to_cmip_branded_variable(
-    variable_name="ugrido", cell_methods=None, dimensions=("longitude", "latitude")
-)
-ugrido_branded_variable
-
-# %% [markdown]
-# This use case is rare.
-# In most cases, you also need the cell methods.
+# With this API, we can generate a branded variable name
+# from a variable name, its cell methods
+# and its dimensions (as a tuple, not a whitespace-separated string).
 
 # %%
 tas_branded_variable = map_to_cmip_branded_variable(
@@ -69,7 +60,14 @@ hfds_branded_variable = map_to_cmip_branded_variable(
 hfds_branded_variable
 
 # %% [markdown]
-# ## Notes
+# ## Note
+#
+# In the exceptionally rare case where a variable has no associated cell methods,
+# you can simply supply `cell_methods=None`
+# when calling [map_to_cmip_branded_variable](../../api/cmip_branded_variable_mapper/#cmip_branded_variable_mapper.map_to_cmip_branded_variable).
+
+# %% [markdown]
+# ## Scope of the package
 #
 # There are clearly many things missing here.
 # For example, the package provides no information
