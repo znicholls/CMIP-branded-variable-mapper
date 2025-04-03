@@ -1,4 +1,4 @@
-﻿Compound Name,Physical Parameter,Dimensions,Temporal Shape,Spatial Shape,Cell Methods,Cell Measures,Dimensions (from Spatial Shape),Dimensions (from Temporal Shape)
+Compound Name,Physical Parameter,Dimensions,Temporal Shape,Spatial Shape,Cell Methods,Cell Measures,Dimensions (from Spatial Shape),Dimensions (from Temporal Shape)
 3hr.clt,clt,"longitude, latitude, time",time-intv,Global field (single level),area: time: mean,area: areacella,"longitude,latitude",time
 3hr.evspsblsoi,evspsblsoi,"longitude, latitude, time",time-intv,Global field (single level),area: time: mean,area: areacella,"longitude,latitude",time
 3hr.evspsblveg,evspsblveg,"longitude, latitude, time",time-intv,Global field (single level),area: time: mean,area: areacella,"longitude,latitude",time
