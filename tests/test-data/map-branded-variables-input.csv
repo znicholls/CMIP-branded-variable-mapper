@@ -1,0 +1,1862 @@
+variable,dimensions,cell_methods
+clt,"longitude, latitude, time",area: time: mean
+evspsblsoi,"longitude, latitude, time",area: time: mean
+evspsblveg,"longitude, latitude, time",area: time: mean
+ficeberg,"longitude, latitude, olevel, time",area: mean where sea time: mean
+flandice,"longitude, latitude, time",area: mean where sea time: mean
+friver,"longitude, latitude, time",area: mean where sea time: mean
+hfds,"longitude, latitude, time",area: mean where sea time: mean
+hfdsl,"longitude, latitude, time",area: time: mean
+hfls,"longitude, latitude, time",area: time: mean
+hfrunoffds,"longitude, latitude, olevel, time",area: mean where sea time: mean
+hfss,"longitude, latitude, time",area: time: mean
+huss,"longitude, latitude, time1, height2m",area: mean time: point
+mrro,"longitude, latitude, time",area: mean where land time: mean
+mrros,"longitude, latitude, time",area: mean where land time: mean
+mrso10,"longitude, latitude, time, sdepth10",area: mean where land time: mean
+mrsos,"longitude, latitude, time1, sdepth1",area: mean where land time: point
+pr,"longitude, latitude, time",area: time: mean
+prsn,"longitude, latitude, time",area: time: mean
+ps,"longitude, latitude, time1",area: mean time: point
+rlds,"longitude, latitude, time",area: time: mean
+rlus,"longitude, latitude, time",area: time: mean
+rsds,"longitude, latitude, time",area: time: mean
+rsntds,"longitude, latitude, time",area: mean where sea time: mean
+rsus,"longitude, latitude, time",area: time: mean
+sfdsi,"longitude, latitude, time",area: mean where sea time: mean
+srfrad,"longitude, latitude, time",area: time: mean
+swh,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+tas,"longitude, latitude, time1, height2m",area: mean time: point
+tauuo,"longitude, latitude, time",area: mean where sea time: mean
+tauvo,"longitude, latitude, time",area: mean where sea time: mean
+tos,"longitude, latitude, time1",area: mean where sea time: point
+tran,"longitude, latitude, time",area: time: mean
+tslsi,"longitude, latitude, time1",area: mean (comment: over land and sea ice) time: point
+ua100m,"longitude, latitude, time, height100m",area: time: mean
+va100m,"longitude, latitude, time, height100m",area: time: mean
+wdir,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wfo,"longitude, latitude, time",area: mean where sea time: mean
+wpdir,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpp,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+bldep,"longitude, latitude, time1, depth0m",area: mean time: point
+uas,"longitude, latitude, time1, height10m",area: mean time: point
+vas,"longitude, latitude, time1, height10m",area: mean time: point
+mpw,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+mpwswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+mpwwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+sduo,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+sdvo,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+swh,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+swhmax,"longitude, latitude, time, depth0m",area: mean where sea time: maximum
+swhswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+swhwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wdir,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wdirswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wdirwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpdir,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpdirswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpdirwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpp,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wppswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wppwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+bs550aer,"longitude, latitude, alevel, time1, lambda550nm",area: mean time: point
+ec550aer,"longitude, latitude, time1, lambda550nm",area: mean time: point
+hus,"longitude, latitude, alevel, time1",area: mean time: point
+ps,"longitude, latitude, time1",area: mean time: point
+ta,"longitude, latitude, alevel, time1",area: mean time: point
+ua,"longitude, latitude, alevel, time1",time: point
+va,"longitude, latitude, alevel, time1",time: point
+zg,"longitude, latitude, alevel, time1",area: mean time: point
+hurs,"longitude, latitude, time, height2m",area: time: mean
+huss,"longitude, latitude, time, height2m",area: time: mean
+pr,"longitude, latitude, time",area: time: mean
+prhmax,"longitude, latitude, time",area: mean time: maximum
+prra,"longitude, latitude, time",area: time: mean
+prsn,"longitude, latitude, time",area: time: mean
+ps,"longitude, latitude, time",area: time: mean
+psl,"longitude, latitude, time",area: time: mean
+rlds,"longitude, latitude, time",area: time: mean
+rsds,"longitude, latitude, time",area: time: mean
+rv850,"longitude, latitude, time, p850",area: time: mean where air
+sfcWind,"longitude, latitude, time, height10m",area: time: mean
+tas,"longitude, latitude, time, height2m",area: time: mean
+ts,"longitude, latitude, time",area: time: mean
+uas,"longitude, latitude, time, height10m",area: time: mean
+vas,"longitude, latitude, time, height10m",area: time: mean
+zg1000,"longitude, latitude, time, p1000",area: time: mean where air
+hur100,"longitude, latitude, time1, p100",area: mean time: point
+hur500,"longitude, latitude, time1, p500",area: mean time: point
+hur850,"longitude, latitude, time1, p850",area: mean time: point
+hus,"longitude, latitude, plev7h, time1",area: mean where air time: point
+intuaw,"longitude, latitude, time1",area: mean time: point
+intvaw,"longitude, latitude, time1",area: point time: point
+pr,"longitude, latitude, time1",area: mean time: point
+prw,"longitude, latitude, time1",time: point
+psl,"longitude, latitude, time1",area: mean time: point
+rv850,"longitude, latitude, time1, p850",area: mean where air time: point
+ta,"longitude, latitude, plev3, time1",area: mean where air time: point
+ta,"longitude, latitude, plev7h, time1",area: mean where air time: point
+taUTLS,"longitude, latitude, plev5u, time1",time: point
+taUTLSadd,"longitude, latitude, plev5u, time1",time: point
+ts,"longitude, latitude, time1",area: mean time: point
+ua,"longitude, latitude, plev3, time1",area: mean where air time: point
+ua,"longitude, latitude, plev7h, time1",area: mean where air time: point
+ua200,"longitude, latitude, time1, p200",area: mean time: point
+uas,"longitude, latitude, time1, height10m",area: mean time: point
+uaUTLS,"longitude, latitude, plev5u, time1",area: mean where air time: point
+uaUTLSadd,"longitude, latitude, plev5u, time1",area: mean where air time: point
+va,"longitude, latitude, plev3, time1",area: mean where air time: point
+va,"longitude, latitude, plev7h, time1",area: mean where air time: point
+va200,"longitude, latitude, time1, p200",area: mean time: point
+vas,"longitude, latitude, time1, height10m",area: mean time: point
+vaUTLS,"longitude, latitude, plev5u, time1",area: mean where air time: point
+vaUTLSadd,"longitude, latitude, plev5u, time1",area: mean where air time: point
+zg,"longitude, latitude, plev3, time1",area: mean where air time: point
+zg,"longitude, latitude, plev7h, time1",area: mean where air time: point
+zg500,"longitude, latitude, time1, p500",area: mean where air time: point
+zg700,"longitude, latitude, time1, p700",area: mean time: point
+zg925,"longitude, latitude, time1, p925",area: mean time: point
+co,"longitude, latitude, time",area: time: mean
+cod,"longitude, latitude, time",area: time: mean
+drynh3,"longitude, latitude, time",area: time: mean
+drynh4,"longitude, latitude, time",area: time: mean
+drynoy,"longitude, latitude, time",area: time: mean
+maxpblz,"longitude, latitude, time",area: mean time: maximum
+minpblz,"longitude, latitude, time",area: mean time: minimum
+mmraerh2o,"longitude, latitude, time",area: time: mean
+mmrbc,"longitude, latitude, time",area: time: mean
+mmrdust,"longitude, latitude, time",area: time: mean
+mmrnh4,"longitude, latitude, time",area: time: mean
+mmrno3,"longitude, latitude, time",area: time: mean
+mmroa,"longitude, latitude, time",area: time: mean
+mmrso4,"longitude, latitude, time",area: time: mean
+mmrsoa,"longitude, latitude, time",area: time: mean
+mmrss,"longitude, latitude, time",area: time: mean
+od550aer,"longitude, latitude, time, lambda550nm",area: time: mean
+sfo3max,"longitude, latitude, time",area: mean time: maximum
+sfpm1,"longitude, latitude, time",area: time: mean
+sfpm10,"longitude, latitude, time",area: time: mean
+sfpm25,"longitude, latitude, time",area: time: mean
+so2,"longitude, latitude, time",area: time: mean
+toz,"longitude, latitude, time",area: time: mean
+ua10,"longitude, latitude, time, p10",area: time: mean where air
+wetnh3,"longitude, latitude, time",area: time: mean
+wetnh4,"longitude, latitude, time",area: time: mean
+wetnoy,"longitude, latitude, time",area: time: mean
+zg10,"longitude, latitude, time, p10",area: time: mean where air
+zg500,"longitude, latitude, time, p500",area: time: mean where air
+zg1000,"longitude, latitude, time, p1000",area: time: mean where air
+ch4ref,"longitude, latitude, alevel",area: mean
+o3ref,"longitude, latitude, alevel",area: mean
+o3ref,"longitude, latitude, alevel, timefxc",area: time: mean (monthly mean fixed annual cycle)
+ps,"longitude, latitude, time",area: time: mean
+sfno2,"longitude, latitude, time",area: time: mean
+sfo3,"longitude, latitude, time",area: time: mean
+sfpm1,"longitude, latitude, time",area: time: mean
+sfpm10,"longitude, latitude, time",area: time: mean
+sfpm25,"longitude, latitude, time",area: time: mean
+tas,"longitude, latitude, time, height2m",area: time: mean
+abs550aer,"longitude, latitude, time, lambda550nm",area: time: mean
+abs550bc,"longitude, latitude, time, lambda550nm",area: time: mean
+abs550dust,"longitude, latitude, time, lambda550nm",area: time: mean
+abs550no3,"longitude, latitude, time, lambda550nm",area: time: mean
+abs550oa,"longitude, latitude, time, lambda550nm",area: time: mean
+abs550so4,"longitude, latitude, time, lambda550nm",area: time: mean
+abs550ss,"longitude, latitude, time, lambda550nm",area: time: mean
+airmass,"longitude, latitude, alevel, time",area: time: mean
+aoanh,"longitude, latitude, alevel, time",area: time: mean
+bldep,"longitude, latitude, time",area: time: mean
+c2h4,"longitude, latitude, alevel, time",area: time: mean
+c2h5oh,"longitude, latitude, alevel, time",area: time: mean
+c2h6,"longitude, latitude, alevel, time",area: time: mean
+c3h6,"longitude, latitude, alevel, time",area: time: mean
+c3h8,"longitude, latitude, alevel, time",area: time: mean
+c4h10,"longitude, latitude, alevel, time",area: time: mean
+ccn,"longitude, latitude, time",area: time: mean
+ccn1,"longitude, latitude, alevel, time, rh101pct",area: time: mean
+ccn02,"longitude, latitude, alevel, time, rh100p2pct",area: time: mean
+cdnc,"longitude, latitude, alevel, time",area: time: mean
+cfc114,"longitude, latitude, alevel, time",area: time: mean
+ch3coch3,"longitude, latitude, alevel, time",area: time: mean
+ch3oh,"longitude, latitude, alevel, time",area: time: mean
+ch4,"longitude, latitude, alevel, time",area: time: mean
+ch4losssoil,"longitude, latitude, time",area: time: mean
+cheaqpso4,"longitude, latitude, alevel, time",area: time: mean
+chegph2oo1d,"longitude, latitude, alevel, time",area: time: mean
+chegpso4,"longitude, latitude, alevel, time",area: time: mean
+chepasoa,"longitude, latitude, time",area: time: mean
+chepnh4,"longitude, latitude, alevel, time",area: time: mean
+chepno3,"longitude, latitude, alevel, time",area: time: mean
+chepsoa,"longitude, latitude, time",area: time: mean
+cltc,"longitude, latitude, time",area: time: mean
+co,"longitude, latitude, alevel, time",area: time: mean
+co2,"longitude, latitude, alevel, time",area: time: mean
+cod,"longitude, latitude, time",area: time: mean
+conccn,"longitude, latitude, alevel, time",area: time: mean
+dms,"longitude, latitude, alevel, time",area: time: mean
+do3chm,"longitude, latitude, alevel, time",area: time: mean
+drybc,"longitude, latitude, time",area: time: mean
+drydust,"longitude, latitude, time",area: time: mean
+dryh2,"longitude, latitude, time",area: time: mean
+dryhno3,"longitude, latitude, time",area: time: mean
+drynh3,"longitude, latitude, time",area: time: mean
+drynh4,"longitude, latitude, time",area: time: mean
+dryno3,"longitude, latitude, time",area: time: mean
+drynoy,"longitude, latitude, time",area: time: mean
+dryo3,"longitude, latitude, time",area: time: mean
+dryoa,"longitude, latitude, time",area: time: mean
+dryso2,"longitude, latitude, time",area: time: mean
+dryso4,"longitude, latitude, time",area: time: mean
+dryss,"longitude, latitude, time",area: time: mean
+e90inst,"longitude, latitude, alevel, time1",area: mean
+emiach4,"longitude, latitude, time",area: time: mean
+emiaco,"longitude, latitude, time",area: time: mean
+emianox,"longitude, latitude, time",area: time: mean
+emiaoa,"longitude, latitude, time",area: time: mean
+emiavnox,"longitude, latitude, alevel, time",area: time: mean
+emibbbc,"longitude, latitude, time",area: time: mean
+emibbch4,"longitude, latitude, time",area: time: mean
+emibbco,"longitude, latitude, time",area: time: mean
+emibbdms,"longitude, latitude, time",area: time: mean
+emibbnh3,"longitude, latitude, time",area: time: mean
+emibbnox,"longitude, latitude, time",area: time: mean
+emibboa,"longitude, latitude, time",area: time: mean
+emibbso2,"longitude, latitude, time",area: time: mean
+emibbvoc,"longitude, latitude, time",area: time: mean
+emibc,"longitude, latitude, time",area: time: mean
+emibvoc,"longitude, latitude, time",area: time: mean
+emic2h4,"longitude, latitude, time",area: time: mean
+emic2h5oh,"longitude, latitude, time",area: time: mean
+emic2h6,"longitude, latitude, time",area: time: mean
+emic3h6,"longitude, latitude, time",area: time: mean
+emic3h8,"longitude, latitude, time",area: time: mean
+emic4h10,"longitude, latitude, time",area: time: mean
+emich3oh,"longitude, latitude, time",area: time: mean
+emich4,"longitude, latitude, time",area: time: mean
+emico,"longitude, latitude, time",area: time: mean
+emidms,"longitude, latitude, time",area: time: mean
+emidust,"longitude, latitude, time",area: time: mean
+emih2,"longitude, latitude, time",area: time: mean
+emiisop,"longitude, latitude, time",area: time: mean
+emilkch4,"longitude, latitude, time",area: time: mean
+emilnox,"longitude, latitude, alevel, time",area: time: mean
+eminh3,"longitude, latitude, time",area: time: mean
+eminox,"longitude, latitude, time",area: time: mean
+emioa,"longitude, latitude, time",area: time: mean
+emiso2,"longitude, latitude, time",area: time: mean
+emiso4,"longitude, latitude, time",area: time: mean
+emiss,"longitude, latitude, time",area: time: mean
+emivoc,"longitude, latitude, time",area: time: mean
+h2,"longitude, latitude, alevel, time",area: time: mean
+h2loss,"longitude, latitude, alevel, time",area: time: mean
+h2o,"longitude, latitude, alevel, time",area: time: mean
+h2prod,"longitude, latitude, alevel, time",area: time: mean
+hcfc22,"longitude, latitude, alevel, time",area: time: mean
+hcho,"longitude, latitude, alevel, time",area: time: mean
+hcl,"longitude, latitude, alevel, time",area: time: mean
+hfc125,"longitude, latitude, alevel, time",area: time: mean
+hfc134a,"longitude, latitude, alevel, time",area: time: mean
+hno3,"longitude, latitude, alevel, time",area: time: mean
+isop,"longitude, latitude, alevel, time",area: time: mean
+jno2,"longitude, latitude, alevel, time",area: time: mean
+lossch4,"longitude, latitude, alevel, time",area: time: mean
+lossco,"longitude, latitude, alevel, time",area: time: mean
+lossn2o,"longitude, latitude, alevel, time",area: time: mean
+lwp,"longitude, latitude, time",area: time: mean
+meanage,"longitude, latitude, alevel, time",area: time: mean
+mmraerh2o,"longitude, latitude, alevel, time",area: time: mean
+mmrbc,"longitude, latitude, alevel, time",area: time: mean
+mmrdust,"longitude, latitude, alevel, time",area: time: mean
+mmrnh4,"longitude, latitude, alevel, time",area: time: mean
+mmrno3,"longitude, latitude, alevel, time",area: time: mean
+mmroa,"longitude, latitude, alevel, time",area: time: mean
+mmrpm1,"longitude, latitude, alevel, time",area: time: mean
+mmrpm2p5,"longitude, latitude, alevel, time",area: time: mean
+mmrpm10,"longitude, latitude, alevel, time",area: time: mean
+mmrso4,"longitude, latitude, alevel, time",area: time: mean
+mmrsoa,"longitude, latitude, alevel, time",area: time: mean
+mmrss,"longitude, latitude, alevel, time",area: time: mean
+n2o,"longitude, latitude, alevel, time",area: time: mean
+nh50,"longitude, latitude, alevel, time",area: time: mean
+no,"longitude, latitude, alevel, time",area: time: mean
+no2,"longitude, latitude, alevel, time",area: time: mean
+o3,"longitude, latitude, alevel, time",area: time: mean
+o3inst,"longitude, latitude, alevel, time1",area: mean
+o3loss,"longitude, latitude, alevel, time",area: time: mean
+o3prod,"longitude, latitude, alevel, time",area: time: mean
+o3ste,"longitude, latitude, alevel, time",area: time: mean
+od443aer,"longitude, latitude, time, lambda443nm",area: time: mean
+od550aer,"longitude, latitude, time, lambda550nm",area: time: mean
+od550aerh2o,"longitude, latitude, time, lambda550nm",area: time: mean
+od550bb,"longitude, latitude, time, lambda550nm",area: time: mean
+od550bc,"longitude, latitude, time, lambda550nm",area: time: mean
+od550csaer,"longitude, latitude, time, lambda550nm",area: time: mean
+od550dust,"longitude, latitude, time, lambda550nm",area: time: mean
+od550lt1aer,"longitude, latitude, time, lambda550nm",area: time: mean
+od550no3,"longitude, latitude, time, lambda550nm",area: time: mean
+od550oa,"longitude, latitude, time, lambda550nm",area: time: mean
+od550so4,"longitude, latitude, time, lambda550nm",area: time: mean
+od550soa,"longitude, latitude, time, lambda550nm",area: time: mean
+od550ss,"longitude, latitude, time, lambda550nm",area: time: mean
+od865aer,"longitude, latitude, time, lambda865nm",area: time: mean
+oh,"longitude, latitude, alevel, time",area: time: mean
+pan,"longitude, latitude, alevel, time",area: time: mean
+pfull,"longitude, latitude, alevel, time",area: time: mean
+phalf,"longitude, latitude, alevhalf, time",area: time: mean
+photo1d,"longitude, latitude, alevel, time",area: time: mean
+pod0,"longitude, latitude, time",area: mean time: sum
+ps,"longitude, latitude, time",area: time: mean
+ptp,"longitude, latitude, time",area: time: mean
+reffclwtop,"longitude, latitude, time",area: time: mean
+rluscsaf,"longitude, latitude, time",area: time: mean
+rlutaf,"longitude, latitude, time",area: time: mean
+rlutch4ref,"longitude, latitude, time",area: time: mean
+rlutcsaf,"longitude, latitude, time",area: time: mean
+rlutcsch4ref,"longitude, latitude, time",area: time: mean
+rlutcso3ref,"longitude, latitude, time",area: time: mean
+rluto3ref,"longitude, latitude, time",area: time: mean
+rsutaf,"longitude, latitude, time",area: time: mean
+rsutch4ref,"longitude, latitude, time",area: time: mean
+rsutcsaf,"longitude, latitude, time",area: time: mean
+rsutcsch4ref,"longitude, latitude, time",area: time: mean
+rsutcso3ref,"longitude, latitude, time",area: time: mean
+rsuto3ref,"longitude, latitude, time",area: time: mean
+so2,"longitude, latitude, alevel, time",area: time: mean
+stratch4loss,"longitude, latitude, alevel, time",area: time: mean
+tatp,"longitude, latitude, time",area: time: mean
+tntrl,"longitude, latitude, alevel, time",area: time: mean
+tntrs,"longitude, latitude, alevel, time",area: time: mean
+toz,"longitude, latitude, time",area: time: mean
+tropch4loss,"longitude, latitude, alevel, time",area: time: mean
+tropch4lossoh,"longitude, latitude, alevel, time",area: time: mean
+tropdo3chm,"longitude, latitude, alevel, time",area: time: mean
+tropo3ste,"longitude, latitude, alevel, time",area: time: mean
+tropoz,"longitude, latitude, time",area: time: mean
+ttop,"longitude, latitude, time",area: time: mean
+ua,"longitude, latitude, alevel, time",area: time: mean
+va,"longitude, latitude, alevel, time",area: time: mean
+wa,"longitude, latitude, alevel, time",area: time: mean
+wetbc,"longitude, latitude, time",area: time: mean
+wetdust,"longitude, latitude, time",area: time: mean
+wethno3,"longitude, latitude, alevel, time",area: time: mean
+wetnh3,"longitude, latitude, time",area: time: mean
+wetnh4,"longitude, latitude, time",area: time: mean
+wetno3,"longitude, latitude, alevel, time",area: time: mean
+wetnoy,"longitude, latitude, time",area: time: mean
+wetoa,"longitude, latitude, time",area: time: mean
+wetso2,"longitude, latitude, time",area: time: mean
+wetso4,"longitude, latitude, time",area: time: mean
+wetss,"longitude, latitude, time",area: time: mean
+zg,"longitude, latitude, alevel, time",area: time: mean
+ztp,"longitude, latitude, time",area: time: mean
+bry,"latitude, plev39, time",longitude: time: mean where air
+ch4,"latitude, plev39, time",longitude: time: mean where air
+cly,"latitude, plev39, time",longitude: time: mean where air
+h2o,"latitude, plev39, time",longitude: time: mean where air
+hcl,"latitude, plev39, time",longitude: time: mean where air
+hno3,"latitude, plev39, time",longitude: time: mean where air
+ho2,"latitude, plev39, time",longitude: time: mean where air
+meanage,"latitude, plev39, time",longitude: time: mean where air
+n2o,"latitude, plev39, time",longitude: time: mean where air
+noy,"latitude, plev39, time",longitude: time: mean where air
+o3,"latitude, plev39, time",longitude: time: mean where air
+oh,"latitude, plev39, time",longitude: time: mean where air
+ta,"latitude, plev39, time",longitude: time: mean where air
+ua,"latitude, plev39, time",longitude: time: mean where air
+va,"latitude, plev39, time",longitude: time: mean where air
+vt100,"latitude, time, p100",longitude: time: mean where air
+zg,"latitude, plev39, time",longitude: time: mean where air
+aod550volso4,"longitude, latitude, time, lambda550nm",area: time: mean
+ccb,"longitude, latitude, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+cct,"longitude, latitude, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+cfc11global,time,height: sum (through atmospheric column) area: sum time: mean
+cfc12global,time,height: sum (through atmospheric column) area: sum time: mean
+cfc113global,time,height: sum (through atmospheric column) area: sum time: mean
+ch4,"longitude, latitude, plev19, time",time: mean
+ch4,"longitude, latitude, plev19, time2",area: mean where air time: mean within years time: mean over years
+ch4global,time,height: sum (through atmospheric column) area: sum time: mean
+ch4,time2,height: sum (through atmospheric column) area: sum time: mean within years time: mean over years
+ci,"longitude, latitude, time",area: time: mean
+cl,"longitude, latitude, alevel, time",area: time: mean
+cli,"longitude, latitude, alevel, time",area: time: mean
+clivi,"longitude, latitude, time",area: time: mean
+clt,"longitude, latitude, time",area: time: mean
+clw,"longitude, latitude, alevel, time",area: time: mean
+clwvi,"longitude, latitude, time",area: time: mean
+co2,"longitude, latitude, plev19, time",time: mean
+co2,"longitude, latitude, plev19, time2",area: mean where air time: mean within years time: mean over years
+co2mass,time,height: sum (through atmospheric column) area: sum time: mean
+co2,time2,height: sum (through atmospheric column) area: sum time: mean within years time: mean over years
+evspsbl,"longitude, latitude, time",area: time: mean
+fco2antt,"longitude, latitude, time",area: time: mean
+fco2fos,"longitude, latitude, time",area: time: mean
+fco2nat,"longitude, latitude, time",area: time: mean
+hcfc22global,time,height: sum (through atmospheric column) area: sum time: mean
+hfls,"longitude, latitude, time",area: time: mean
+hfss,"longitude, latitude, time",area: time: mean
+hur,"longitude, latitude, plev19, time",time: mean
+hurs,"longitude, latitude, time, height2m",area: time: mean
+hus,"longitude, latitude, plev19, time",time: mean
+huss,"longitude, latitude, time, height2m",area: time: mean
+mc,"longitude, latitude, alevhalf, time",area: time: mean
+n2o,"longitude, latitude, plev19, time",time: mean
+n2o,"longitude, latitude, plev19, time2",area: mean where air time: mean within years time: mean over years
+n2oglobal,time,height: sum (through atmospheric column) area: sum time: mean
+n2o,time2,height: sum (through atmospheric column) area: sum time: mean within years time: mean over years
+o3,"longitude, latitude, plev19, time",time: mean
+o3,"longitude, latitude, plev19, time2",area: mean where air time: mean within years time: mean over years
+pfull,"longitude, latitude, alevel, time2",area: mean time: mean within years time: mean over years
+phalf,"longitude, latitude, alevhalf, time2",area: mean time: mean within years time: mean over years
+pr,"longitude, latitude, time",area: time: mean
+prc,"longitude, latitude, time",area: time: mean
+prra,"longitude, latitude, time",area: time: mean
+prsn,"longitude, latitude, time",area: time: mean
+prw,"longitude, latitude, time",area: time: mean
+ps,"longitude, latitude, time",area: time: mean
+psl,"longitude, latitude, time",area: time: mean
+rlds,"longitude, latitude, time",area: time: mean
+rldscs,"longitude, latitude, time",area: time: mean
+rlus,"longitude, latitude, time",area: time: mean
+rluscs,"longitude, latitude, time",area: time: mean
+rlut,"longitude, latitude, time",area: time: mean
+rlutcs,"longitude, latitude, time",area: time: mean
+rsds,"longitude, latitude, time",area: time: mean
+rsdscs,"longitude, latitude, time",area: time: mean
+rsdt,"longitude, latitude, time",area: time: mean
+rsus,"longitude, latitude, time",area: time: mean
+rsuscs,"longitude, latitude, time",area: time: mean
+rsut,"longitude, latitude, time",area: time: mean
+rsutcs,"longitude, latitude, time",area: time: mean
+rtmt,"longitude, latitude, time",area: time: mean
+sbl,"longitude, latitude, time",area: time: mean
+sci,"longitude, latitude, time",area: time: mean
+sfcWind,"longitude, latitude, time, height10m",area: time: mean
+ta,"longitude, latitude, plev19, time",time: mean
+tas,"longitude, latitude, time, height2m",area: time: mean
+tasmax,"longitude, latitude, time4, height2m",area: mean time: maximum within days time: mean over days
+tasmin,"longitude, latitude, time4, height2m",area: mean time: minimum within days time: mean over days
+tauu,"longitude, latitude, time",area: time: mean
+tauv,"longitude, latitude, time",area: time: mean
+ts,"longitude, latitude, time",area: time: mean
+ua,"longitude, latitude, plev19, time",time: mean
+uas,"longitude, latitude, time, height10m",area: time: mean
+va,"longitude, latitude, plev19, time",time: mean
+vas,"longitude, latitude, time, height10m",area: time: mean
+wap,"longitude, latitude, plev19, time",time: mean
+zg,"longitude, latitude, plev19, time",time: mean
+clic,"longitude, latitude, alevel, time1",area: mean time: point
+clis,"longitude, latitude, alevel, time1",area: mean time: point
+clivi,"longitude, latitude, time1",area: mean time: point
+clt,"longitude, latitude, time1",area: mean time: point
+clwc,"longitude, latitude, alevel, time1",area: mean time: point
+clws,"longitude, latitude, alevel, time1",area: mean time: point
+clwvi,"longitude, latitude, time1",area: mean time: point
+dtauc,"longitude, latitude, alevel, time1",area: mean time: point
+dtaus,"longitude, latitude, alevel, time1",area: mean time: point
+hurs,"longitude, latitude, time1, height2m",area: mean time: point
+pfull,"longitude, latitude, alevel, time1",area: mean time: point
+pr,"longitude, latitude, time1",area: mean time: point
+prw,"longitude, latitude, time1",area: mean time: point
+reffclic,"longitude, latitude, alevel, time1",area: mean where convective_cloud time: point
+reffclis,"longitude, latitude, alevel, time1",area: mean where stratiform_cloud time: point
+reffclwc,"longitude, latitude, alevel, time1",area: mean where convective_cloud time: point
+reffclws,"longitude, latitude, alevel, time1",area: mean where stratiform_cloud time: point
+rlds,"longitude, latitude, time1",area: mean time: point
+rldscs,"longitude, latitude, time1",area: mean time: point
+rlut,"longitude, latitude, time1",area: mean time: point
+rlutcs,"longitude, latitude, time1",area: mean time: point
+rsds,"longitude, latitude, time1",area: mean time: point
+rsdscs,"longitude, latitude, time1",area: mean time: point
+rsut,"longitude, latitude, time1",area: mean time: point
+rsutcs,"longitude, latitude, time1",area: mean time: point
+ta,"longitude, latitude, alevel, time1",area: mean time: point
+ts,"longitude, latitude, time1",area: mean time: point
+albisccp,"longitude, latitude, time",area: time: mean where cloud
+ccb,"longitude, latitude, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+cct,"longitude, latitude, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+cl,"longitude, latitude, alevel, time",area: time: mean
+clcalipso,"longitude, latitude, alt40, time",area: time: mean where air
+clhcalipso,"longitude, latitude, time, p220",area: time: mean where air
+cli,"longitude, latitude, alevel, time",area: time: mean
+clisccp,"longitude, latitude, plev7c, tau, time",area: time: mean where air
+clivi,"longitude, latitude, time",area: time: mean
+cllcalipso,"longitude, latitude, time, p840",area: time: mean where air
+clmcalipso,"longitude, latitude, time, p560",area: time: mean where air
+cltcalipso,"longitude, latitude, time",area: time: mean
+cltisccp,"longitude, latitude, time",area: time: mean
+clw,"longitude, latitude, alevel, time",area: time: mean
+clwvi,"longitude, latitude, time",area: time: mean
+hur,"longitude, latitude, alevel, time",area: time: mean
+hur700,"longitude, latitude, time, p700",area: time: mean
+hus,"longitude, latitude, alevel, time",area: time: mean
+mc,"longitude, latitude, alevhalf, time",area: time: mean
+pctisccp,"longitude, latitude, time",area: time: mean where cloud
+pfull,"longitude, latitude, alevel, time",area: time: mean
+phalf,"longitude, latitude, alevhalf, time",area: time: mean
+ps,"longitude, latitude, time",area: time: mean
+rldscs,"longitude, latitude, time",area: time: mean
+rlutcs,"longitude, latitude, time",area: time: mean
+rsdscs,"longitude, latitude, time",area: time: mean
+rsdt,"longitude, latitude, time",area: time: mean
+rsuscs,"longitude, latitude, time",area: time: mean
+rsut,"longitude, latitude, time",area: time: mean
+rsutcs,"longitude, latitude, time",area: time: mean
+ta,"longitude, latitude, alevel, time",area: time: mean
+ta700,"longitude, latitude, time, p700",area: time: mean where air
+ua,"longitude, latitude, alevel, time",area: time: mean
+va,"longitude, latitude, alevel, time",area: time: mean
+wap,"longitude, latitude, alevel, time",area: time: mean
+wap500,"longitude, latitude, time, p500",area: time: mean where air
+zg,"longitude, latitude, alevel, time",area: time: mean
+albisccp,"longitude, latitude, time",area: time: mean where cloud
+clc,"longitude, latitude, alevel, time",area: time: mean
+clcalipso,"longitude, latitude, alt40, time",area: time: mean where air
+clhcalipso,"longitude, latitude, time, p220",area: time: mean where air
+clic,"longitude, latitude, alevel, time",area: time: mean
+clis,"longitude, latitude, alevel, time",area: time: mean
+clisccp,"longitude, latitude, plev7c, tau, time",area: time: mean where air
+clivimodis,"longitude, latitude, time",area: time: mean
+cllcalipso,"longitude, latitude, time, p840",area: time: mean where air
+clmcalipso,"longitude, latitude, time, p560",area: time: mean where air
+clmodis,"longitude, latitude, plev7c, tau, time",area: time: mean where air
+clmodisice,"longitude, latitude, plev7c, tau, time",area: time: mean where air
+clmodisiceReff,"longitude, latitude, effectRadIc, tau, time",area: time: mean
+clmodisliquid,"longitude, latitude, plev7c, tau, time",area: time: mean
+clmodisliquidReff,"longitude, latitude, effectRadLi, tau, time",area: time: mean
+cls,"longitude, latitude, alevel, time",area: time: mean
+cltcalipso,"longitude, latitude, time",area: time: mean
+cltisccp,"longitude, latitude, time",area: time: mean
+cltmodis,"longitude, latitude, time",area: time: mean
+clwc,"longitude, latitude, alevel, time",area: time: mean
+clws,"longitude, latitude, alevel, time",area: time: mean
+clwvimodis,"longitude, latitude, time",area: time: mean
+dmc,"longitude, latitude, alevhalf, time",area: time: mean
+edt,"longitude, latitude, alevel, time",area: time: mean
+evu,"longitude, latitude, alevel, time",area: time: mean
+hur,"longitude, latitude, alevel, time",area: time: mean
+hus,"longitude, latitude, alevel, time",area: time: mean
+mcd,"longitude, latitude, alevhalf, time",area: time: mean
+mcu,"longitude, latitude, alevhalf, time",area: time: mean
+pctisccp,"longitude, latitude, time",area: time: mean where cloud
+ps,"longitude, latitude, time",area: time: mean
+rld,"longitude, latitude, alevhalf, time",area: time: mean
+rld4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rldcs,"longitude, latitude, alevhalf, time",area: time: mean
+rldcs4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rlu,"longitude, latitude, alevhalf, time",area: time: mean
+rlu4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rlucs,"longitude, latitude, alevhalf, time",area: time: mean
+rlucs4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rlut4co2,"longitude, latitude, time",area: time: mean
+rlutcs4co2,"longitude, latitude, time",area: time: mean
+rsd,"longitude, latitude, alevhalf, time",area: time: mean
+rsd4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rsdcs,"longitude, latitude, alevhalf, time",area: time: mean
+rsdcs4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rsu,"longitude, latitude, alevhalf, time",area: time: mean
+rsu4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rsucs,"longitude, latitude, alevhalf, time",area: time: mean
+rsucs4co2,"longitude, latitude, alevhalf, time",area: time: mean
+rsut4co2,"longitude, latitude, time",area: time: mean
+rsutcs4co2,"longitude, latitude, time",area: time: mean
+smc,"longitude, latitude, alevhalf, time",area: time: mean
+ta,"longitude, latitude, alevel, time",area: time: mean
+tnhus,"longitude, latitude, alevel, time",area: time: mean
+tnhusa,"longitude, latitude, alevel, time",area: time: mean
+tnhusc,"longitude, latitude, alevel, time",area: time: mean
+tnhusd,"longitude, latitude, alevel, time",area: time: mean
+tnhusmp,"longitude, latitude, alevel, time",area: time: mean
+tnhusscpbl,"longitude, latitude, alevel, time",area: time: mean
+tnt,"longitude, latitude, alevel, time",area: time: mean
+tnta,"longitude, latitude, alevel, time",area: time: mean
+tntc,"longitude, latitude, alevel, time",area: time: mean
+tntmp,"longitude, latitude, alevel, time",area: time: mean
+tntr,"longitude, latitude, alevel, time",area: time: mean
+tntscpbl,"longitude, latitude, alevel, time",area: time: mean
+ccb,"site, time1",area: point time: point
+cct,"site, time1",area: point time: point
+ci,"site, time1",area: point time: point
+cl,"alevel, site, time1",area: point time: point
+cli,"alevel, site, time1",area: point time: point
+clivi,"site, time1",area: point time: point
+clt,"site, time1",area: point time: point
+clw,"alevel, site, time1",area: point time: point
+clwvi,"site, time1",area: point time: point
+edt,"alevel, site, time1",area: point time: point
+evspsbl,"site, time1",area: point time: point
+evu,"alevel, site, time1",area: point time: point
+fco2antt,"site, time1",area: point time: point
+fco2fos,"site, time1",area: point time: point
+fco2nat,"site, time1",area: point time: point
+hfls,"site, time1",area: point time: point
+hfss,"site, time1",area: point time: point
+hur,"alevel, site, time1",area: point time: point
+hurs,"site, time1, height2m",area: point time: point
+hus,"alevel, site, time1",area: point time: point
+huss,"site, time1, height2m",area: point time: point
+mc,"alevhalf, site, time1",area: point time: point
+pfull,"alevel, site, time1",area: point time: point
+phalf,"alevhalf, site, time1",area: point time: point
+pr,"site, time1",area: point time: point
+prc,"site, time1",area: point time: point
+prsn,"site, time1",area: point time: point
+prw,"site, time1",area: point time: point
+ps,"site, time1",area: point time: point
+psl,"site, time1",area: point time: point
+rld,"alevhalf, site, time1",area: point time: point
+rldcs,"alevhalf, site, time1",area: point time: point
+rlds,"site, time1",area: point time: point
+rldscs,"site, time1",area: point time: point
+rlu,"alevhalf, site, time1",area: point time: point
+rlucs,"alevhalf, site, time1",area: point time: point
+rlus,"site, time1",area: point time: point
+rlut,"site, time1",area: point time: point
+rlutcs,"site, time1",area: point time: point
+rsd,"alevhalf, site, time1",area: point time: point
+rsdcs,"alevhalf, site, time1",area: point time: point
+rsds,"site, time1",area: point time: point
+rsdscs,"site, time1",area: point time: point
+rsdt,"site, time1",area: point time: point
+rsu,"alevhalf, site, time1",area: point time: point
+rsucs,"alevhalf, site, time1",area: point time: point
+rsus,"site, time1",area: point time: point
+rsuscs,"site, time1",area: point time: point
+rsut,"site, time1",area: point time: point
+rsutcs,"site, time1",area: point time: point
+rtmt,"site, time1",area: point time: point
+sbl,"site, time1",area: point time: point
+sci,"site, time1",area: point time: point
+sfcWind,"site, time1, height10m",area: point time: point
+ta,"alevel, site, time1",area: point time: point
+tas,"site, time1, height2m",area: point time: point
+tauu,"site, time1",area: point time: point
+tauv,"site, time1",area: point time: point
+tnhus,"alevel, site, time1",area: point time: point
+tnhusa,"alevel, site, time1",area: point time: point
+tnhusc,"alevel, site, time1",area: point time: point
+tnhusd,"alevel, site, time1",area: point time: point
+tnhusmp,"alevel, site, time1",area: point time: point
+tnhusscpbl,"alevel, site, time1",area: point time: point
+tnt,"alevel, site, time1",area: point time: point
+tnta,"alevel, site, time1",area: point time: point
+tntc,"alevel, site, time1",area: point time: point
+tntmp,"alevel, site, time1",area: point time: point
+tntr,"alevel, site, time1",area: point time: point
+tntscpbl,"alevel, site, time1",area: point time: point
+ts,"site, time1",area: point time: point
+ua,"alevel, site, time1",area: point time: point
+uas,"site, time1, height10m",area: point time: point
+va,"alevel, site, time1",area: point time: point
+vas,"site, time1, height10m",area: point time: point
+wap,"alevel, site, time1",area: point time: point
+zg,"alevel, site, time1",area: point time: point
+clt,"longitude, latitude, time",area: time: mean
+hfls,"longitude, latitude, time",area: time: mean
+hfss,"longitude, latitude, time",area: time: mean
+hur,"longitude, latitude, plev19, time",time: mean
+hurs,"longitude, latitude, time, height2m",area: time: mean
+hursmax,"longitude, latitude, time, height2m",area: mean time: maximum
+hursmin,"longitude, latitude, time, height2m",area: mean time: minimum
+hus,"longitude, latitude, plev19, time",time: mean
+huss,"longitude, latitude, time, height2m",area: time: mean
+irrDem,"longitude, latitude, time4",area: mean
+irrGw,"longitude, latitude, time4",area: mean
+irrLut,"longitude, latitude, time4",area: mean
+irrSurf,"longitude, latitude, time4",area: mean
+mrro,"longitude, latitude, time",area: mean where land time: mean
+mrso,"longitude, latitude, time",area: mean where land time: mean
+mrsos,"longitude, latitude, time, sdepth1",area: mean where land time: mean
+noaahi2m,"longitude, latitude, time, height2m",area: time: mean
+noaahi2mmax,"longitude, latitude, time, height2m",area: time: mean
+pr,"longitude, latitude, time",area: time: mean
+prc,"longitude, latitude, time",area: time: mean
+prsn,"longitude, latitude, time",area: time: mean
+psl,"longitude, latitude, time",area: time: mean
+rlds,"longitude, latitude, time",area: time: mean
+rls,"longitude, latitude, time",area: time: mean
+rlus,"longitude, latitude, time",area: time: mean
+rluscs,"longitude, latitude, time",area: time: mean
+rlut,"longitude, latitude, time",area: time: mean
+rsds,"longitude, latitude, time",area: time: mean
+rsdt,"longitude, latitude, time",area: time: mean
+rss,"longitude, latitude, time",area: time: mean
+rsus,"longitude, latitude, time",area: time: mean
+rsut,"longitude, latitude, time",area: time: mean
+sfcWind,"longitude, latitude, time, height10m",area: time: mean
+sfcWindmax,"longitude, latitude, time, height10m",area: mean time: maximum
+snc,"longitude, latitude, time",area: time: mean
+snw,"longitude, latitude, time",area: mean where land time: mean
+ta,"longitude, latitude, plev19, time",time: mean
+tas,"longitude, latitude, time, height2m",area: time: mean
+tasmax,"longitude, latitude, time, height2m",area: mean time: maximum
+tasmin,"longitude, latitude, time, height2m",area: mean time: minimum
+tslsi,"longitude, latitude, time",area: time: mean (comment: over land and sea ice)
+ua,"longitude, latitude, plev19, time",time: mean
+uas,"longitude, latitude, time, height10m",area: time: mean
+va,"longitude, latitude, plev19, time",time: mean
+vas,"longitude, latitude, time, height10m",area: time: mean
+wap,"longitude, latitude, plev19, time",time: mean
+wbgt2m,"longitude, latitude, time, height2m",area: time: mean
+wbgt2mmax,"longitude, latitude, time, height2m",area: time: mean
+zg,"longitude, latitude, plev19, time",time: mean
+bldep,"longitude, latitude, time",area: time: mean
+clt,"longitude, latitude, time",area: time: mean
+hfls,"longitude, latitude, time",area: time: mean
+hfss,"longitude, latitude, time",area: time: mean
+hurs,"longitude, latitude, time, height2m",area: time: mean
+huss,"longitude, latitude, time1, height2m",area: mean time: point
+pr,"longitude, latitude, time",area: time: mean
+ps,"longitude, latitude, time1",area: mean time: point
+psl,"longitude, latitude, time1",area: mean time: point
+rlds,"longitude, latitude, time",area: time: mean
+rlus,"longitude, latitude, time",area: time: mean
+rsds,"longitude, latitude, time",area: time: mean
+rsdsdiff,"longitude, latitude, time, height2m",area: time: mean
+rsus,"longitude, latitude, time",area: time: mean
+sfcWind,"longitude, latitude, time, height10m",area: time: mean
+tas,"longitude, latitude, time",area: time: mean
+ts,"longitude, latitude, time",area: time: mean
+ua100m,"longitude, latitude, time1, height100m",area: mean time: point
+uas,"longitude, latitude, time1, height10m",area: mean time: point
+va100m,"longitude, latitude, time1, height100m",area: mean time: point
+vas,"longitude, latitude, time1, height10m",area: mean time: point
+wsgmax10m,"longitude, latitude, time, height10m",area: mean time: maximum
+wsgmax100m,"longitude, latitude, time, height100m",area: mean time: maximum
+rlut,"longitude, latitude, time3",area: mean time: mean within days time: mean over days
+rlutcs,"longitude, latitude, time3",area: mean time: mean within days time: mean over days
+rsdt,"longitude, latitude, time3",area: mean time: mean within days time: mean over days
+rsut,"longitude, latitude, time3",area: mean time: mean within days time: mean over days
+rsutcs,"longitude, latitude, time3",area: mean time: mean within days time: mean over days
+clivi,"longitude, latitude, time",area: time: mean
+clwvi,"longitude, latitude, time",area: time: mean
+prw,"longitude, latitude, time",area: time: mean
+rlut,"longitude, latitude, time",area: time: mean
+rlutcs,"longitude, latitude, time",area: time: mean
+rsut,"longitude, latitude, time",area: time: mean
+rsutcs,"longitude, latitude, time",area: time: mean
+sfcWind,"longitude, latitude, time, height10m",area: time: mean
+cltcalipso,"longitude, latitude, time1",area: mean time: point
+conccn,"site, time1",area: point time: point
+hus,"longitude, latitude, alevel, time1",area: mean time: point
+hus6,"longitude, latitude, plev6, time1",area: mean where air time: point
+mmraerh2o,"site, time1",area: point time: point
+mmrbc,"site, time1",area: point time: point
+mmrdust,"site, time1",area: point time: point
+mmrnh4,"site, time1",area: point time: point
+mmrno3,"site, time1",area: point time: point
+mmroa,"site, time1",area: point time: point
+mmrso4,"site, time1",area: point time: point
+mmrss,"site, time1",area: point time: point
+so2,"site, time1",area: point time: point
+ta6,"longitude, latitude, plev6, time1",area: mean where air time: point
+ua6,"longitude, latitude, plev6, time1",area: mean where air time: point
+va6,"longitude, latitude, plev6, time1",area: mean where air time: point
+wap6,"longitude, latitude, plev6, time1",area: mean where air time: point
+ccldncl,"longitude, latitude, time",area: time: mean
+cldnci,"longitude, latitude, time",area: time: mean
+cldnvi,"longitude, latitude, time",area: time: mean
+clivic,"longitude, latitude, time",area: time: mean
+clt,"longitude, latitude, time",area: mean where land time: mean
+clwvic,"longitude, latitude, time",area: time: mean
+dcw,"longitude, latitude, time",area: mean where land time: mean
+dgw,"longitude, latitude, time",area: mean where land time: mean
+drivw,"longitude, latitude, time",area: mean where land time: mean
+dslw,"longitude, latitude, time",area: mean where land time: mean
+dsn,"longitude, latitude, time",area: mean where land time: mean
+dsw,"longitude, latitude, time",area: mean where land time: mean
+esn,"longitude, latitude, time",area: mean where land time: mean
+evspsbl,"longitude, latitude, time",area: mean where land time: mean
+evspsblpot,"longitude, latitude, time",area: mean where land time: mean
+evspsblsoi,"longitude, latitude, time",area: time: mean
+evspsblveg,"longitude, latitude, time",area: time: mean
+flashrate,"longitude, latitude, time",area: time: mean
+gppVgt,"longitude, latitude, vegtype, time",area: time: mean where sector
+hfdsn,"longitude, latitude, time",area: mean where land time: mean
+hfdsnb,"longitude, latitude, time",area: mean where land time: mean
+hursminCrop,"longitude, latitude, time1, height2m",area: mean where crops time: minimum within days time: mean over days
+hus,"longitude, latitude, plev19, time",time: mean
+intuadse,"longitude, latitude, time",area: time: mean
+intuaw,"longitude, latitude, time",area: time: mean
+intvadse,"longitude, latitude, time",area: time: mean
+intvaw,"longitude, latitude, time",area: time: mean
+jpdftaureicemodis,"longitude, latitude, effectRadIc, tau, time",area: time: mean
+jpdftaureliqmodis,"longitude, latitude, effectRadLi, tau, time",area: time: mean
+lai,"longitude, latitude, time",area: mean where land time: mean
+laiVgt,"longitude, latitude, vegtype, time",area: time: mean where sector
+loadbc,"longitude, latitude, time",area: time: mean
+loaddust,"longitude, latitude, time",area: time: mean
+loadnh4,"longitude, latitude, time",area: time: mean
+loadno3,"longitude, latitude, time",area: time: mean
+loadoa,"longitude, latitude, time",area: time: mean
+loadpoa,"longitude, latitude, time",area: time: mean
+loadso4,"longitude, latitude, time",area: time: mean
+loadsoa,"longitude, latitude, time",area: time: mean
+loadss,"longitude, latitude, time",area: time: mean
+lwsnl,"longitude, latitude, time",area: mean where land time: mean
+mlotst,"longitude, latitude, time, deltasigt",area: mean where sea time: mean
+mrro,"longitude, latitude, time",area: time: mean
+mrrob,"longitude, latitude, time",area: mean where land time: mean
+mrros,"longitude, latitude, time",area: mean where land time: mean
+mrsfl,"longitude, latitude, sdepth, time",area: mean where land time: mean
+mrsll,"longitude, latitude, sdepth, time",area: mean where land time: mean
+mrso10,"longitude, latitude, time, sdepth10",area: time: mean
+mrsol,"longitude, latitude, sdepth, time",area: mean where land time: mean
+mrsow,"longitude, latitude, time",area: mean where land time: mean
+mrtws,"longitude, latitude, time",area: mean where land time: mean
+nppVgt,"longitude, latitude, vegtype, time",area: time: mean where sector
+parasolRefl,"longitude, latitude, sza5, time",area: mean where sea time: mean
+pflw,"longitude, latitude, time",area: mean where land time: mean
+prCrop,"longitude, latitude, time",area: time: mean where crops (comment: mask=cropFrac)
+prhmax,"longitude, latitude, time",area: mean time: maximum
+prra,"longitude, latitude, time",area: mean where land time: mean
+prrsn,"longitude, latitude, time",area: mean where land time: mean
+prsnc,"longitude, latitude, time",area: mean where land time: mean
+prsnsn,"longitude, latitude, time",area: mean where land time: mean
+prw,"longitude, latitude, time",area: time: mean
+qgwr,"longitude, latitude, time",area: mean where land time: mean
+raVgt,"longitude, latitude, vegtype, time",area: time: mean where sector
+reffcclwtop,"longitude, latitude, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+reffsclwtop,"longitude, latitude, time",area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)
+rhVgt,"longitude, latitude, vegtype, time",area: time: mean where sector
+rivi,"longitude, latitude, time",area: mean where land time: mean
+rivo,"longitude, latitude, time",area: mean where land time: mean
+rsdscsdiff,"longitude, latitude, time",area: time: mean
+rsdsdiff,"longitude, latitude, time",area: time: mean
+rzwc,"longitude, latitude, time",area: mean where land time: mean
+sbl,"longitude, latitude, time",area: mean where land time: mean
+scldncl,"longitude, latitude, time",area: time: mean
+snd,"longitude, latitude, time",area: mean where land time: mean
+snm,"longitude, latitude, time",area: mean where land time: mean
+snmsl,"longitude, latitude, time",area: mean where land time: mean
+snrefr,"longitude, latitude, time",area: mean where land time: mean
+snwc,"longitude, latitude, time",area: mean where land time: mean
+sw,"longitude, latitude, time",area: mean where land time: mean
+t20d,"longitude, latitude, time",area: mean where sea time: mean
+ta,"longitude, latitude, plev19, time",time: mean
+ta850,"longitude, latitude, time, p850",area: time: mean where air
+tasmaxCrop,"longitude, latitude, time, height2m",area: mean where crops time: maximum
+tasminCrop,"longitude, latitude, time, height2m",area: mean where crops time: minimum within days time: mean over days
+tauu,"longitude, latitude, time",area: time: mean
+tauupbl,"longitude, latitude, time",area: time: mean
+tauv,"longitude, latitude, time",area: time: mean
+tauvpbl,"longitude, latitude, time",area: time: mean
+tdps,"longitude, latitude, time",area: time: mean
+tpf,"longitude, latitude, time",area: mean where land time: mean
+ts,"longitude, latitude, time",area: time: mean
+tsl,"longitude, latitude, sdepth, time",area: mean where land time: mean
+tsn,"longitude, latitude, time",area: mean where land time: mean (weighted by snow mass on land)
+tsns,"longitude, latitude, time",area: mean where land time: mean
+ua,"longitude, latitude, plev19, time",time: mean
+utendnogw,"longitude, latitude, plev19, time",area: time: mean where air
+utendogw,"longitude, latitude, plev19, time",area: time: mean where air
+va,"longitude, latitude, plev19, time",time: mean
+vtendnogw,"longitude, latitude, plev19, time",area: time: mean where air
+vtendogw,"longitude, latitude, plev19, time",area: time: mean where air
+wap,"longitude, latitude, plev19, time",time: mean
+wtd,"longitude, latitude, time",area: mean where land time: mean
+zg,"longitude, latitude, plev19, time",time: mean
+epfy,"latitude, plev39, time",longitude: time: mean where air
+epfz,"latitude, plev39, time",longitude: time: mean where air
+psitem,"latitude, plev39, time",longitude: time: mean where air
+ta,"latitude, plev39, time",longitude: time: mean where air
+tauunoegw,"latitude, plev39, time",longitude: time: mean where air
+tauunowgw,"latitude, plev39, time",longitude: time: mean where air
+tauuogw,"latitude, plev39, time",longitude: time: mean where air
+tauvnogw,"latitude, plev39, time",longitude: time: mean where air
+tauvogw,"latitude, plev39, time",longitude: time: mean where air
+tntmp,"latitude, plev39, time",longitude: time: mean where air
+tntrl,"latitude, plev39, time",longitude: time: mean where air
+tntrs,"latitude, plev39, time",longitude: time: mean where air
+ua,"latitude, plev39, time",longitude: time: mean where air
+utendepfd,"latitude, plev39, time",longitude: time: mean where air
+utendnogw,"latitude, plev39, time",longitude: time: mean where air
+utendogw,"latitude, plev39, time",longitude: time: mean where air
+utendvtem,"latitude, plev39, time",longitude: time: mean where air
+utendwtem,"latitude, plev39, time",longitude: time: mean where air
+vtem,"latitude, plev39, time",longitude: time: mean where air
+wtem,"latitude, plev39, time",longitude: time: mean where air
+zg,"latitude, plev39, time",longitude: time: mean where air
+sftflf,"longitude, latitude",area: mean
+sftgrf,"longitude, latitude",area: mean
+slthick,"longitude, latitude, sdepth",area: mean where land
+albc,"longitude, latitude, time",area: mean where land time: mean
+albsn,"longitude, latitude, time",area: time: mean where snow (comment: mask=snc)
+albsrfc,"longitude, latitude, time",area: time: mean
+c13Land,"longitude, latitude, time",area: mean where land time: mean
+c13Litter,"longitude, latitude, time",area: mean where land time: mean
+c13Soil,"longitude, latitude, time",area: mean where land time: mean
+c13Veg,"longitude, latitude, time",area: mean where land time: mean
+c14Land,"longitude, latitude, time",area: mean where land time: mean
+c14Litter,"longitude, latitude, time",area: mean where land time: mean
+c14Soil,"longitude, latitude, time",area: mean where land time: mean
+c14Veg,"longitude, latitude, time",area: mean where land time: mean
+ccldncl,"longitude, latitude, time",area: time: mean
+cfadDbze94,"longitude, latitude, alt40, dbze, time",area: time: mean where air
+cfadLidarsr532,"longitude, latitude, alt40, scatratio, time",area: time: mean where air
+cLand,"longitude, latitude, time",area: mean where land time: mean
+clcalipsoice,"longitude, latitude, alt40, time",time: mean
+clcalipsoliq,"longitude, latitude, alt40, time",time: mean
+cldnci,"longitude, latitude, time",area: time: mean
+cldncl,"longitude, latitude, time",area: time: mean
+cldnvi,"longitude, latitude, time",area: time: mean
+climodis,"longitude, latitude, time",area: time: mean
+cLitterCwd,"longitude, latitude, time",area: mean where land time: mean
+cLitterSubSurf,"longitude, latitude, time",area: mean where land time: mean
+cLitterSurf,"longitude, latitude, time",area: mean where land time: mean
+clmisr,"longitude, latitude, alt16, tau, time",area: time: mean where air
+cltmodis,"longitude, latitude, time",area: time: mean
+clwmodis,"longitude, latitude, time",area: time: mean
+cnc,"longitude, latitude, time",area: mean where land time: mean
+co2s,"longitude, latitude, time",area: time: mean
+co23D,"longitude, latitude, alevel, time",area: time: mean
+cOther,"longitude, latitude, time",area: mean where land time: mean
+cropFracC3,"longitude, latitude, time, typec3crop",area: mean where land over all_area_types time: mean
+cropFracC4,"longitude, latitude, time, typec4crop",area: mean where land over all_area_types time: mean
+cSoil,"longitude, latitude, time",area: mean where land time: mean
+cSoilAbove1m,"longitude, latitude, time, sdepth10",area: mean where land time: mean
+cSoilLevels,"longitude, latitude, sdepth, time",area: mean where land time: mean
+cSoilPools,"longitude, latitude, soilpools, time",area: mean where land time: mean
+cStem,"longitude, latitude, time",area: mean where land time: mean
+cVegGrass,"longitude, latitude, time",area: time: mean where natural_grasses (comment: mask=grassFrac)
+cVegShrub,"longitude, latitude, time",area: time: mean where shrubs (comment: mask=shrubFrac)
+cVegTree,"longitude, latitude, time",area: time: mean where trees (comment: mask=treeFrac)
+cWood,"longitude, latitude, time",area: mean where land time: mean
+depdust,"longitude, latitude, time",area: time: mean
+dissi14c,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ec550aer,"longitude, latitude, alevel, time, lambda550nm",area: time: mean
+evspsblpot,"longitude, latitude, time",area: mean where land time: mean
+expcalc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+fAnthDisturb,"longitude, latitude, time",area: mean where land time: mean
+fBNF,"longitude, latitude, time",area: mean where land time: mean
+fCLandToOcean,"longitude, latitude, time",area: mean where land time: mean
+fDeforestToAtmos,"longitude, latitude, time",area: mean where land time: mean
+fDeforestToProduct,"longitude, latitude, time",area: mean where land time: mean
+fFireAll,"longitude, latitude, time",area: mean where land time: mean
+fFireNat,"longitude, latitude, time",area: mean where land time: mean
+fg14co2,"longitude, latitude, time",area: mean where sea time: mean
+fHarvestToAtmos,"longitude, latitude, time",area: mean where land time: mean
+fHarvestToProduct,"longitude, latitude, time",area: mean where land time: mean
+flandice,"longitude, latitude, time",area: mean where sea time: mean
+flashrate,"longitude, latitude, time",area: time: mean
+fLitterFire,"longitude, latitude, time",area: mean where land time: mean
+fLuc,"longitude, latitude, time",area: mean where land time: mean
+fLulccAtmLut,"longitude, latitude, landUse, time",area: time: mean where sector
+fN2O,"longitude, latitude, time",area: mean where land time: mean
+fNAnthDisturb,"longitude, latitude, time",area: mean where land time: mean
+fNdep,"longitude, latitude, time",area: mean where land time: mean
+fNfert,"longitude, latitude, time",area: mean where land time: mean
+fNgas,"longitude, latitude, time",area: mean where land time: mean
+fNgasFire,"longitude, latitude, time",area: mean where land time: mean
+fNgasNonFire,"longitude, latitude, time",area: mean where land time: mean
+fNLandToOcean,"longitude, latitude, time",area: mean where land time: mean
+fNleach,"longitude, latitude, time",area: mean where land time: mean
+fNLitterSoil,"longitude, latitude, time",area: mean where land time: mean
+fNloss,"longitude, latitude, time",area: mean where land time: mean
+fNnetmin,"longitude, latitude, time",area: mean where land time: mean
+fNOx,"longitude, latitude, time",area: mean where land time: mean
+fNProduct,"longitude, latitude, time",area: mean where land time: mean
+fNup,"longitude, latitude, time",area: mean where land time: mean
+fNVegLitter,"longitude, latitude, time",area: mean where land time: mean
+fNVegSoil,"longitude, latitude, time",area: mean where land time: mean
+fProductDecomp,"longitude, latitude, time",area: mean where land time: mean
+fracLut,"longitude, latitude, landUse, time",area: mean where land over all_area_types time: mean
+fVegFire,"longitude, latitude, time",area: mean where land time: mean
+fVegLitterMortality,"longitude, latitude, time",area: mean where land time: mean
+fVegLitterSenescence,"longitude, latitude, time",area: mean where land time: mean
+fVegSoilMortality,"longitude, latitude, time",area: mean where land time: mean
+fVegSoilSenescence,"longitude, latitude, time",area: mean where land time: mean
+gppc13,"longitude, latitude, time",area: mean where land time: mean
+gppc14,"longitude, latitude, time",area: mean where land time: mean
+gppGrass,"longitude, latitude, time",area: time: mean where natural_grasses (comment: mask=grassFrac)
+gppLut,"longitude, latitude, landUse, time",area: time: mean where sector
+gppShrub,"longitude, latitude, time",area: time: mean where shrubs (comment: mask=shrubFrac)
+gppTree,"longitude, latitude, time",area: time: mean where trees (comment: mask=treeFrac)
+grassFracC3,"longitude, latitude, time, typec3natg",area: mean where land over all_area_types time: mean
+grassFracC4,"longitude, latitude, time, typec4natg",area: mean where land over all_area_types time: mean
+hflsLut,"longitude, latitude, landUse, time",area: time: mean where sector
+hfssLut,"longitude, latitude, landUse, time",area: time: mean where sector
+intuadse,"longitude, latitude, time",area: time: mean
+intuaw,"longitude, latitude, time",area: time: mean
+intvadse,"longitude, latitude, time",area: time: mean
+intvaw,"longitude, latitude, time",area: time: mean
+irrLut,"longitude, latitude, landUse, time",area: time: mean where sector
+jpdftaureicemodis,"longitude, latitude, effectRadIc, tau, time",area: time: mean
+jpdftaureliqmodis,"longitude, latitude, effectRadLi, tau, time",area: time: mean
+laiLut,"longitude, latitude, landUse, time",area: time: mean where sector
+loadso4,"longitude, latitude, time",area: time: mean
+mrsfl,"longitude, latitude, sdepth, time",area: mean where land time: mean
+mrsll,"longitude, latitude, sdepth, time",area: mean where land time: mean
+mrsol,"longitude, latitude, sdepth, time",area: mean where land time: mean
+mrsosLut,"longitude, latitude, landUse, time, sdepth1",area: time: mean where sector
+mrtws,"longitude, latitude, time",area: mean where land time: mean
+necbLut,"longitude, latitude, landUse, time",area: time: mean where sector
+nep,"longitude, latitude, time",area: mean where land time: mean
+netAtmosLandC13Flux,"longitude, latitude, time",area: mean where land time: mean
+netAtmosLandC14Flux,"longitude, latitude, time",area: mean where land time: mean
+netAtmosLandCO2Flux,"longitude, latitude, time",area: mean where land time: mean
+nLand,"longitude, latitude, time",area: mean where land time: mean
+nLeaf,"longitude, latitude, time",area: mean where land time: mean
+nLitter,"longitude, latitude, time",area: mean where land time: mean
+nLitterCwd,"longitude, latitude, time",area: mean where land time: mean
+nLitterSubSurf,"longitude, latitude, time",area: mean where land time: mean
+nLitterSurf,"longitude, latitude, time",area: mean where land time: mean
+nMineral,"longitude, latitude, time",area: mean where land time: mean
+nMineralNH4,"longitude, latitude, time",area: mean where land time: mean
+nMineralNO3,"longitude, latitude, time",area: mean where land time: mean
+nOther,"longitude, latitude, time",area: mean where land time: mean
+nppGrass,"longitude, latitude, time",area: time: mean where natural_grasses (comment: mask=grassFrac)
+nppLut,"longitude, latitude, landUse, time",area: time: mean where sector
+nppOther,"longitude, latitude, time",area: mean where land time: mean
+nppShrub,"longitude, latitude, time",area: time: mean where shrubs (comment: mask=shrubFrac)
+nppStem,"longitude, latitude, time",area: mean where land time: mean
+nppTree,"longitude, latitude, time",area: time: mean where trees (comment: mask=treeFrac)
+nProduct,"longitude, latitude, time",area: mean where land time: mean
+nRoot,"longitude, latitude, time",area: mean where land time: mean
+nSoil,"longitude, latitude, time",area: mean where land time: mean
+nStem,"longitude, latitude, time",area: mean where land time: mean
+nVeg,"longitude, latitude, time",area: mean where land time: mean
+osaltpsmadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+parasolRefl,"longitude, latitude, sza5, time",area: mean where sea time: mean
+pastureFracC3,"longitude, latitude, time, typec3pastures",area: mean where land over all_area_types time: mean
+pastureFracC4,"longitude, latitude, time, typec4pastures",area: mean where land over all_area_types time: mean
+pr2h,"longitude, latitude, time",area: time: mean
+pr17O,"longitude, latitude, time",area: time: mean
+pr18O,"longitude, latitude, time",area: time: mean
+prhmax,"longitude, latitude, time",area: mean time: maximum
+prsn2h,"longitude, latitude, time",area: time: mean
+prsn18O,"longitude, latitude, time",area: time: mean
+rac13,"longitude, latitude, time",area: mean where land time: mean
+rac14,"longitude, latitude, time",area: mean where land time: mean
+raGrass,"longitude, latitude, time",area: time: mean where natural_grasses (comment: mask=grassFrac)
+raLeaf,"longitude, latitude, time",area: mean where land time: mean
+raLut,"longitude, latitude, landUse, time",area: time: mean where sector
+raOther,"longitude, latitude, time",area: mean where land time: mean
+raRoot,"longitude, latitude, time",area: mean where land time: mean
+raShrub,"longitude, latitude, time",area: time: mean where shrubs (comment: mask=shrubFrac)
+raStem,"longitude, latitude, time",area: mean where land time: mean
+raTree,"longitude, latitude, time",area: time: mean where trees (comment: mask=treeFrac)
+reffcclwtop,"longitude, latitude, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+reffccwctop,"longitude, latitude, time",area: time: mean
+reffclic,"longitude, latitude, alevel, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+reffclis,"longitude, latitude, alevel, time",area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)
+reffclwc,"longitude, latitude, alevel, time",area: time: mean where convective_cloud (weighted by total convective cloud area)
+reffclws,"longitude, latitude, alevel, time",area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)
+reffsclwtop,"longitude, latitude, time",area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)
+rhc13,"longitude, latitude, time",area: mean where land time: mean
+rhc14,"longitude, latitude, time",area: mean where land time: mean
+rhGrass,"longitude, latitude, time",area: time: mean where natural_grasses (comment: mask=grassFrac)
+rhLitter,"longitude, latitude, time",area: mean where land time: mean
+rhLut,"longitude, latitude, landUse, time",area: time: mean where sector
+rhShrub,"longitude, latitude, time",area: time: mean where shrubs (comment: mask=shrubFrac)
+rhSoil,"longitude, latitude, time",area: mean where land time: mean
+rhTree,"longitude, latitude, time",area: time: mean where trees (comment: mask=treeFrac)
+rls,"longitude, latitude, time",area: time: mean
+rsdsis,"longitude, latitude, time",area: time: mean where ice_sheet
+rsdslni,"longitude, latitude, time","""area: time: mean where unfrozen_soil (at the surface, but frozen below zero isotherm)"""
+rsdsoni,"longitude, latitude, time",area: depth: time: mean
+rsdss,"longitude, latitude, time",area: time: mean where snow (comment: mask=snc)
+rsdssi,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+rss,"longitude, latitude, time",area: time: mean
+rsusis,"longitude, latitude, time",area: time: mean where ice_sheet
+rsuslni,"longitude, latitude, time","""area: time: mean where unfrozen_soil (at the surface, but frozen below zero isotherm)"""
+rsusoni,"longitude, latitude, time",area: time: mean
+rsuss,"longitude, latitude, time",area: time: mean where snow (comment: mask=snc)
+rsussi,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+scldncl,"longitude, latitude, time",area: time: mean
+sfcWindmax,"longitude, latitude, time2, height10m",area: mean time: maximum within days time: mean over days
+sw2H,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sw17O,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sw18O,"longitude, latitude, olevel, time",area: time: mean
+sweLut,"longitude, latitude, landUse, time",area: time: mean where sector
+t17d,"longitude, latitude, time",area: mean where sea time: mean
+t20d,"longitude, latitude, time",area: mean where sea time: mean
+tasLut,"longitude, latitude, landUse, time, height2m",area: time: mean where sector
+tauunoegw,"longitude, latitude, plev19, time",area: time: mean where air
+tauunowgw,"longitude, latitude, plev19, time",area: time: mean where air
+tauuogw,"longitude, latitude, plev19, time",area: time: mean where air
+tauvnogw,"longitude, latitude, plev19, time",area: time: mean where air
+tauvogw,"longitude, latitude, plev19, time",area: time: mean where air
+tdps,"longitude, latitude, time",area: time: mean
+thetaot,"longitude, latitude, time",area: depth: time: mean where sea
+thetaot300,"longitude, latitude, time, depth300m",area: depth: time: mean where sea
+thetaot700,"longitude, latitude, time, depth700m",area: depth: time: mean where sea
+thetaot2000,"longitude, latitude, time, depth2000m",area: depth: time: mean where sea
+tnhuspbl,"longitude, latitude, alevel, time",area: time: mean
+tnhusscp,"longitude, latitude, alevel, time",area: time: mean
+tntd,"longitude, latitude, alevel, time",area: time: mean
+tntpbl,"longitude, latitude, alevel, time",area: time: mean
+tntrlcs,"longitude, latitude, alevel, time",area: time: mean
+tntrscs,"longitude, latitude, alevel, time",area: time: mean
+tntscp,"longitude, latitude, alevel, time",area: time: mean
+treeFracBdlDcd,"longitude, latitude, time, typetreebd",area: mean where land over all_area_types time: mean
+treeFracBdlEvg,"longitude, latitude, time, typetreebe",area: mean where land over all_area_types time: mean
+treeFracNdlDcd,"longitude, latitude, time, typetreend",area: mean where land over all_area_types time: mean
+treeFracNdlEvg,"longitude, latitude, time, typetreene",area: mean where land over all_area_types time: mean
+tslsiLut,"longitude, latitude, landUse, time",area: time: mean where sector
+ua,"longitude, latitude, plev19, time",area: time: mean where air
+utendnogw,"longitude, latitude, plev19, time",time: mean
+utendogw,"longitude, latitude, plev19, time",time: mean
+va,"longitude, latitude, plev19, time",area: time: mean where air
+vegFrac,"longitude, latitude, time, typeveg",area: mean where land over all_area_types time: mean
+vegHeight,"longitude, latitude, time",area: time: mean where vegetation (comment: mask=vegFrac)
+vegHeightGrass,"longitude, latitude, time",area: time: mean where natural_grasses (comment: mask=grassFrac)
+vegHeightShrub,"longitude, latitude, time",area: time: mean where shrubs (comment: mask=shrubFrac)
+vegHeightTree,"longitude, latitude, time",area: time: mean where trees (comment: mask=treeFrac)
+vtendnogw,"longitude, latitude, plev19, time",time: mean
+vtendogw,"longitude, latitude, plev19, time",time: mean
+wetlandCH4,"longitude, latitude, time",area: mean where land time: mean
+wetlandCH4cons,"longitude, latitude, time",area: mean where land time: mean
+wetlandCH4prod,"longitude, latitude, time",area: mean where land time: mean
+wetlandFrac,"longitude, latitude, time, typewetla",area: mean where land over all_area_types time: mean
+wsgmax10m,"longitude, latitude, time, height10m",area: mean time: maximum
+wsgmax100m,"longitude, latitude, time, height100m",area: mean time: maximum
+epfy,"latitude, plev39, time",longitude: time: mean where air
+epfz,"latitude, plev39, time",longitude: time: mean where air
+tntc,"latitude, plev39, time",longitude: time: mean where air
+tntmp,"latitude, plev39, time",longitude: time: mean where air
+tntnogw,"latitude, plev39, time",longitude: time: mean where air
+tntogw,"latitude, plev39, time",longitude: time: mean where air
+tntrl,"latitude, plev39, time",longitude: time: mean where air
+tntrlcs,"latitude, plev39, time",longitude: time: mean where air
+tntrs,"latitude, plev39, time",longitude: time: mean where air
+tntrscs,"latitude, plev39, time",longitude: time: mean where air
+tntscp,"latitude, plev39, time",longitude: time: mean where air
+utendepfd,"latitude, plev39, time",longitude: time: mean where air
+utendnogw,"latitude, plev39, time",longitude: time: mean where air
+utendogw,"latitude, plev39, time",longitude: time: mean where air
+vtem,"latitude, plev39, time",longitude: time: mean where air
+wtem,"latitude, plev39, time",longitude: time: mean where air
+reffclic,"alevel, site, time1",area: mean where convective_cloud time: point
+reffclis,"alevel, site, time1",area: mean where stratiform_cloud time: point
+reffclwc,"alevel, site, time1",area: mean where convective_cloud time: point
+reffclws,"alevel, site, time1",area: mean where stratiform_cloud time: point
+tnhuspbl,"alevel, site, time1",area: point time: point
+tnhusscp,"alevel, site, time1",area: point time: point
+tntd,"alevel, site, time1",area: point time: point
+tntpbl,"alevel, site, time1",area: point time: point
+tntrl,"alevel, site, time1",area: point time: point
+tntrlcs,"alevel, site, time1",area: point time: point
+tntrs,"alevel, site, time1",area: point time: point
+tntrscs,"alevel, site, time1",area: point time: point
+tntscp,"alevel, site, time1",area: point time: point
+baresoilFrac,"longitude, latitude, time, typebare",area: mean where land over all_area_types time: mean
+cLitterLut,"longitude, latitude, landUse, time1",area: mean where sector time: point
+cProductLut,"longitude, latitude, landUse, time1",area: mean where sector time: point
+cropFrac,"longitude, latitude, time, typecrop",area: mean where land over all_area_types time: mean
+cSoilLut,"longitude, latitude, landUse, time1",area: mean where sector time: point
+cVegLut,"longitude, latitude, landUse, time1",area: mean where sector time: point
+fracInLut,"longitude, latitude, landUse, time",area: mean where land over all_area_types time: sum
+fracLut,"longitude, latitude, landUse, time1",area: mean where land over all_area_types time: point
+fracOutLut,"longitude, latitude, landUse, time",area: mean where land over all_area_types time: sum
+grassFrac,"longitude, latitude, time, typenatgr",area: mean where land over all_area_types time: mean
+residualFrac,"longitude, latitude, time, typeresidual",area: mean where land over all_area_types time: mean
+shrubFrac,"longitude, latitude, time, typeshrub",area: mean where land over all_area_types time: mean
+treeFrac,"longitude, latitude, time, typetree",area: mean where land over all_area_types time: mean
+vegFrac,"longitude, latitude, time, typeveg",area: mean where land over all_area_types time: mean
+zfullo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+areacella,"longitude, latitude",area: sum
+areacellr,"longitude, latitude",area: sum
+depthl,"longitude, latitude",area: mean
+depthsl,"longitude, latitude",area: mean
+lat,site,area: point
+lithk,"longitude, latitude",area: mean
+lon,site,area: point
+mrsofc,"longitude, latitude",area: mean where land
+orog,"longitude, latitude",area: mean
+rootd,"longitude, latitude",area: mean
+sftgif,"longitude, latitude",area: mean
+sftlf,"longitude, latitude",area: mean
+sftlkf,"longitude, latitude, typelkins",area: mean
+zfull,"longitude, latitude, alevel",area: mean
+areacellg,"longitude, latitude",area: sum
+hfgeoubed,"xant, yant",area: mean where grounded_ice_sheet
+lithk,"xant, yant",area: mean where ice_sheet
+topg,"xant, yant",area: mean where grounded_ice_sheet
+areacellg,"longitude, latitude",area: sum
+hfgeoubed,"xgre, ygre",area: mean where grounded_ice_sheet
+lithk,"xgre, ygre",area: mean where ice_sheet
+topg,"xgre, ygre",area: mean where grounded_ice_sheet
+acabf,"xant, yant, time",area: time: mean where ice_sheet
+hfls,"xant, yant, time",area: time: mean where ice_sheet
+hfss,"xant, yant, time",area: time: mean where ice_sheet
+icem,"xant, yant, time",area: time: mean where ice_sheet
+libmassbffl,"xant, yant, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+libmassbfgr,"xant, yant, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+licalvf,"xant, yant, time",area: time: mean where ice_sheet
+lifmassbf,"xant, yant, time",area: time: mean where ice_sheet
+litempbotfl,"xant, yant, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+litempbotgr,"xant, yant, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+litemptop,"xant, yant, time",area: time: mean where ice_sheet
+mrroLi,"xant, yant, time",area: time: mean where ice_sheet
+orog,"xant, yant, time",area: time: mean where ice_sheet
+prra,"xant, yant, time",area: time: mean where ice_sheet
+prsn,"xant, yant, time",area: time: mean where ice_sheet
+rlds,"xant, yant, time",area: time: mean where ice_sheet
+rlus,"xant, yant, time",area: time: mean where ice_sheet
+rsds,"xant, yant, time",area: time: mean where ice_sheet
+rsus,"xant, yant, time",area: time: mean where ice_sheet
+sbl,"xant, yant, time",area: time: mean where ice_sheet
+snc,"xant, yant, time",area: time: mean where ice_sheet
+snicefreez,"xant, yant, time",area: time: mean where ice_sheet
+snicem,"xant, yant, time",area: time: mean where ice_sheet
+snm,"xant, yant, time",area: time: mean where ice_sheet
+tas,"time, height2m",area: time: mean where ice_sheet
+ts,"xant, yant, time",area: time: mean where ice_sheet
+tsn,"xant, yant, time",area: time: mean where ice_sheet
+acabf,"xgre, ygre, time",area: time: mean where ice_sheet
+hfls,"xgre, ygre, time",area: time: mean where ice_sheet
+hfss,"xgre, ygre, time",area: time: mean where ice_sheet
+icem,"xgre, ygre, time",area: time: mean where ice_sheet
+libmassbffl,"xgre, ygre, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+libmassbfgr,"xgre, ygre, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+licalvf,"xgre, ygre, time",area: time: mean where ice_sheet
+lifmassbf,"xgre, ygre, time",area: time: mean where ice_sheet
+litempbotfl,"xgre, ygre, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+litempbotgr,"xgre, ygre, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+litemptop,"xgre, ygre, time",area: time: mean where ice_sheet
+mrroLi,"xgre, ygre, time",area: time: mean where ice_sheet
+orog,"xgre, ygre, time",area: time: mean where ice_sheet
+prra,"xgre, ygre, time",area: time: mean where ice_sheet
+prsn,"xgre, ygre, time",area: time: mean where ice_sheet
+rlds,"xgre, ygre, time",area: time: mean where ice_sheet
+rlus,"xgre, ygre, time",area: time: mean where ice_sheet
+rsds,"xgre, ygre, time",area: time: mean where ice_sheet
+rsus,"xgre, ygre, time",area: time: mean where ice_sheet
+sbl,"xgre, ygre, time",area: time: mean where ice_sheet
+snc,"xgre, ygre, time",area: time: mean where ice_sheet
+snicefreez,"xgre, ygre, time",area: time: mean where ice_sheet
+snicem,"xgre, ygre, time",area: time: mean where ice_sheet
+snm,"xgre, ygre, time",area: time: mean where ice_sheet
+tas,"time, height2m",area: time: mean where ice_sheet
+ts,"xgre, ygre, time",area: time: mean where ice_sheet
+tsn,"xgre, ygre, time",area: time: mean where ice_sheet
+acabf,"xant, yant, time",area: time: mean where ice_sheet
+hfgeoubed,"xant, yant, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+iareafl,time,area: sum where floating_ice_shelf (comment: mask=sftflf) time: mean
+iareagr,time,area: sum where grounded_ice_sheet (comment: mask=sfgrlf) time: mean
+libmassbffl,"xant, yant, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+libmassbfgr,"xant, yant, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+licalvf,"xant, yant, time",area: time: mean where ice_sheet
+lifmassbf,"xant, yant, time",area: time: mean where ice_sheet
+lim,time,area: sum where ice_sheet time: mean
+limnsw,time,area: sum where ice_sheet time: mean
+litempbotfl,"xant, yant, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+litempbotgr,"xant, yant, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+litemptop,"xant, yant, time",area: time: mean where ice_sheet
+lithk,"xant, yant, time",area: time: mean where ice_sheet
+modelCellAreai,"xant, yant, time",area: sum time: mean
+orog,"xant, yant, time",area: time: mean where ice_sheet
+sftflf,"xant, yant, time",area: time: mean
+sftgif,"xant, yant, time",area: time: mean
+sftgrf,"xant, yant, time",area: time: mean
+snc,"xant, yant, time",area: time: mean where ice_sheet
+strbasemag,"xant, yant, time",area: time: mean where ice_sheet
+tendacabf,time,area: sum where ice_sheet time: mean
+tendlibmassbf,time,area: sum where ice_sheet time: mean
+tendlicalvf,time,area: sum where ice_sheet time: mean
+topg,"xant, yant, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+xvelbase,"xant, yant, time",area: time: mean where ice_sheet
+xvelmean,"xant, yant, time",area: time: mean where ice_sheet
+xvelsurf,"xant, yant, time",area: time: mean where ice_sheet
+yvelbase,"xant, yant, time",area: time: mean where ice_sheet
+yvelmean,"xant, yant, time",area: time: mean where ice_sheet
+yvelsurf,"xant, yant, time",area: time: mean where ice_sheet
+zvelbase,"xant, yant, time",area: time: mean where ice_sheet
+zvelsurf,"xant, yant, time",area: time: mean where ice_sheet
+acabf,"xgre, ygre, time",area: time: mean where ice_sheet
+hfgeoubed,"xgre, ygre, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+iareafl,time,area: sum where floating_ice_shelf (comment: mask=sftflf) time: mean
+iareagr,time,area: sum where grounded_ice_sheet (comment: mask=sfgrlf) time: mean
+libmassbffl,"xgre, ygre, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+libmassbfgr,"xgre, ygre, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+licalvf,"xgre, ygre, time",area: time: mean where ice_sheet
+lifmassbf,"xgre, ygre, time",area: time: mean where ice_sheet
+lim,time,area: sum where ice_sheet time: mean
+limnsw,time,area: sum where ice_sheet time: mean
+litempbotfl,"xgre, ygre, time",area: time: mean where floating_ice_shelf (comment: mask=sftflf)
+litempbotgr,"xgre, ygre, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+litemptop,"xgre, ygre, time",area: time: mean where ice_sheet
+lithk,"xgre, ygre, time",area: time: mean where ice_sheet
+modelCellAreai,"xgre, ygre, time",area: sum time: mean
+orog,"xgre, ygre, time",area: time: mean where ice_sheet
+sftflf,"xgre, ygre, time",area: time: mean
+sftgif,"xgre, ygre, time",area: time: mean
+sftgrf,"xgre, ygre, time",area: time: mean
+snc,"xgre, ygre, time",area: time: mean where ice_sheet
+strbasemag,"xgre, ygre, time",area: time: mean where ice_sheet
+tendacabf,time,area: sum where ice_sheet time: mean
+tendlibmassbf,time,area: sum where ice_sheet time: mean
+tendlicalvf,time,area: sum where ice_sheet time: mean
+topg,"xgre, ygre, time",area: time: mean where grounded_ice_sheet (comment: mask=sfgrlf)
+xvelbase,"xgre, ygre, time",area: time: mean where ice_sheet
+xvelmean,"xgre, ygre, time",area: time: mean where ice_sheet
+xvelsurf,"xgre, ygre, time",area: time: mean where ice_sheet
+yvelbase,"xgre, ygre, time",area: time: mean where ice_sheet
+yvelmean,"xgre, ygre, time",area: time: mean where ice_sheet
+yvelsurf,"xgre, ygre, time",area: time: mean where ice_sheet
+zvelbase,"xgre, ygre, time",area: time: mean where ice_sheet
+zvelsurf,"xgre, ygre, time",area: time: mean where ice_sheet
+acabfIs,"longitude, latitude, time",area: time: mean where ice_sheet
+agesno,"longitude, latitude, time",area: mean where land time: mean (weighted by snow mass on land)
+hfdsn,"longitude, latitude, time",area: mean where land time: mean
+hflsIs,"longitude, latitude, time",area: time: mean where ice_sheet
+hfssIs,"longitude, latitude, time",area: time: mean where ice_sheet
+icemIs,"longitude, latitude, time",area: time: mean where ice_sheet
+litemptopIs,"longitude, latitude, time",area: time: mean where ice_sheet
+lwsnl,"longitude, latitude, time",area: mean where land time: mean
+mrroIs,"longitude, latitude, time",area: time: mean where ice_sheet
+orogIs,"longitude, latitude, time",area: time: mean where ice_sheet
+pflw,"longitude, latitude, time",area: mean where land time: mean
+prraIs,"longitude, latitude, time",area: time: mean where ice_sheet
+prsnIs,"longitude, latitude, time",area: time: mean where ice_sheet
+rldsIs,"longitude, latitude, time",area: time: mean where ice_sheet
+rlusIs,"longitude, latitude, time",area: time: mean where ice_sheet
+rsdsIs,"longitude, latitude, time",area: time: mean where ice_sheet
+rsusIs,"longitude, latitude, time",area: time: mean where ice_sheet
+sbl,"longitude, latitude, time",area: mean where land time: mean
+sblIs,"longitude, latitude, time",area: time: mean where ice_sheet
+sftflf,"longitude, latitude, time",area: time: mean
+sftgif,"longitude, latitude, time",area: time: mean
+sftgrf,"longitude, latitude, time",area: time: mean
+snc,"longitude, latitude, time",area: time: mean
+sncIs,"longitude, latitude, time",area: time: mean where ice_sheet
+snd,"longitude, latitude, time",area: mean where land time: mean
+snicefreezIs,"longitude, latitude, time",area: time: mean where ice_sheet
+snicemIs,"longitude, latitude, time",area: time: mean where ice_sheet
+snm,"longitude, latitude, time",area: mean where land time: mean
+snmIs,"longitude, latitude, time",area: time: mean where ice_sheet
+snw,"longitude, latitude, time",area: mean where land time: mean
+sootsn,"longitude, latitude, time",area: mean where land time: mean
+tasIs,"longitude, latitude, time",area: time: mean where ice_sheet
+tpf,"longitude, latitude, time",area: mean where land time: mean
+tsIs,"longitude, latitude, time",area: time: mean where ice_sheet
+tsn,"longitude, latitude, time",area: mean where land time: mean (weighted by snow mass on land)
+tsnIs,"longitude, latitude, time",area: time: mean where ice_sheet
+baresoilFrac,"longitude, latitude, time, typebare",area: mean where land over all_area_types time: mean
+burntFractionAll,"longitude, latitude, time, typeburnt",area: mean where land over all_area_types time: mean
+c3PftFrac,"longitude, latitude, time, typec3pft",area: mean where land over all_area_types time: mean
+c4PftFrac,"longitude, latitude, time, typec4pft",area: mean where land over all_area_types time: mean
+cGeologicStorage,"longitude, latitude, time",area: mean
+cLeaf,"longitude, latitude, time",area: mean where land time: mean
+cLitter,"longitude, latitude, time",area: mean where land time: mean
+cProduct,"longitude, latitude, time",area: mean where land time: mean
+cRoot,"longitude, latitude, time",area: mean where land time: mean
+cropFrac,"longitude, latitude, time, typecrop",area: mean where land over all_area_types time: mean
+cVeg,"longitude, latitude, time",area: mean where land time: mean
+evspsblsoi,"longitude, latitude, time",area: mean where land time: mean
+evspsblveg,"longitude, latitude, time",area: mean where land time: mean
+fFire,"longitude, latitude, time",area: mean where land time: mean
+fHarvestToGeologicStorage,"longitude, latitude, time",area: mean
+fLitterSoil,"longitude, latitude, time",area: mean where land time: mean
+fVegLitter,"longitude, latitude, time",area: mean where land time: mean
+fVegSoil,"longitude, latitude, time",area: mean where land time: mean
+gpp,"longitude, latitude, time",area: mean where land time: mean
+grassFrac,"longitude, latitude, time, typenatgr",area: mean where land over all_area_types time: mean
+lai,"longitude, latitude, time",area: mean where land time: mean
+landCoverFrac,"longitude, latitude, vegtype, time",area: mean where land over all_area_types time: mean
+mrfso,"longitude, latitude, time",area: mean where land time: mean
+mrro,"longitude, latitude, time",area: mean where land time: mean
+mrros,"longitude, latitude, time",area: mean where land time: mean
+mrso,"longitude, latitude, time",area: mean where land time: mean
+mrsos,"longitude, latitude, time, sdepth1",area: mean where land time: mean
+nbp,"longitude, latitude, time",area: mean where land time: mean
+npp,"longitude, latitude, time",area: mean where land time: mean
+nppLeaf,"longitude, latitude, time",area: mean where land time: mean
+nppRoot,"longitude, latitude, time",area: mean where land time: mean
+pastureFrac,"longitude, latitude, time, typepasture",area: mean where land over all_area_types time: mean
+prveg,"longitude, latitude, time",area: mean where land time: mean
+ra,"longitude, latitude, time",area: mean where land time: mean
+residualFrac,"longitude, latitude, time, typeresidual",area: mean where land over all_area_types time: mean
+rh,"longitude, latitude, time",area: mean where land time: mean
+shrubFrac,"longitude, latitude, time, typeshrub",area: mean where land over all_area_types time: mean
+tran,"longitude, latitude, time",area: mean where land time: mean
+treeFrac,"longitude, latitude, time, typetree",area: mean where land over all_area_types time: mean
+tsl,"longitude, latitude, sdepth, time",area: mean where land time: mean
+bigthetao,"longitude, latitude, time, swp20bar",area: time: mean
+chl,"longitude, latitude, time, swp20bar",area: time: mean
+chlos,"longitude, latitude, time",area: mean where sea time: mean
+co3os,"longitude, latitude, time",area: mean where sea time: mean
+co3satarag,"longitude, latitude, time, swp20bar",area: time: mean
+co3sataragos,"longitude, latitude, time",area: mean where sea time: mean
+co3,"longitude, latitude, time, swp20bar",area: time: mean
+detoc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dissoc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+expcob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+hfx,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+hfy,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpoc,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpp,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+mlotst,"longitude, latitude, time, deltasigt",area: mean where sea time: mean
+o2min,"longitude, latitude, time",area: mean where sea time: mean
+o2os,"longitude, latitude, time",area: mean where sea time: mean
+o2,"longitude, latitude, time, swp20bar",area: time: mean
+ph,"longitude, latitude, time, swp20bar",area: time: mean
+phos,"longitude, latitude, time",area: mean where sea time: mean
+phyc,"longitude, latitude, time, swp20bar",area: time: mean
+phycalc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phycdiat,"longitude, latitude, time",area: mean where sea time: mean
+phycdiaz,"longitude, latitude, time",area: mean where sea time: mean
+phycmisc,"longitude, latitude, time",area: mean where sea time: mean
+phycnano,"longitude, latitude, time",area: mean where sea time: mean
+phycos,"longitude, latitude, time",area: mean where sea time: mean
+phycpico,"longitude, latitude, time",area: mean where sea time: mean
+rsdo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+so,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sos,"longitude, latitude, time",area: mean where sea time: mean
+thetao,"longitude, latitude, time, swp20bar",area: time: mean
+tos,"longitude, latitude, time",area: mean where sea time: mean
+tossq,"longitude, latitude, time",area: mean where sea time: mean
+uos,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+vos,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zmeso,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zmicro,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zooc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zos,"longitude, latitude, time",area: mean where sea time: mean
+zostoga,time,area: mean where sea time: mean
+bigthetao,"longitude, latitude, olevel, time",area: mean where sea time: mean
+masscello,"longitude, latitude, olevel, time",area: mean where sea time: mean
+masso,time,area: sum where sea time: mean
+opottemptend,"longitude, latitude, olevel, time",area: mean where sea time: mean
+so,"longitude, latitude, olevel, time",area: mean where sea time: mean
+tauuo,"longitude, latitude, time",area: mean where sea time: mean
+tauvo,"longitude, latitude, time",area: mean where sea time: mean
+thetao,"longitude, latitude, olevel, time",area: mean where sea time: mean
+thkcello,"longitude, latitude, olevel, time",area: mean where sea time: mean
+volcello,"longitude, latitude, olevel, time",area: sum where sea time: mean
+volo,time,area: sum where sea time: mean
+areacello,"longitude, latitude",area: sum
+basin,"longitude, latitude",area: mean
+deptho,"longitude, latitude, depthseafloor",area: mean where sea
+dxto,"longitude, latitude",area: point
+dxuo,"longitude, latitude",area: point
+dxvo,"longitude, latitude",area: point
+dyto,"longitude, latitude",area: point
+dyuo,"longitude, latitude",area: point
+dyvo,"longitude, latitude",area: point
+hfgeou,"longitude, latitude, depthseafloor",area: mean where sea
+masscello,"longitude, latitude, olevel",area: mean
+sftof,"longitude, latitude",area: mean
+thkcello,"longitude, latitude, olevel",area: mean where sea
+volcello,"longitude, latitude, olevel",area: sum
+absscint,"longitude, latitude, swplayers, swplayers, time, depth0m, depth300m, depth700m, depth2000m",area: mean where sea
+agessc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+arag,"longitude, latitude, olevel, time",area: mean where sea time: mean
+aragos,"longitude, latitude, time",area: mean where sea time: mean
+baccos,"longitude, latitude, time",area: mean where sea time: mean
+bigthetao,"longitude, latitude, olevel, time",area: mean where sea time: mean
+bigthetaoga,"olevel, time",area: mean where sea time: mean
+calc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+calcos,"longitude, latitude, time",area: mean where sea time: mean
+chcint,"longitude, latitude, swplayers, swplayers, time, depth0m, depth300m, depth700m, depth2000m",area: mean where sea
+chl,"longitude, latitude, olevel, time",area: mean where sea time: mean
+chlcalc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+chlcalcos,"longitude, latitude, time",area: mean where sea time: mean
+chldiat,"longitude, latitude, olevel, time",area: mean where sea time: mean
+chldiatos,"longitude, latitude, time",area: mean where sea time: mean
+chldiaz,"longitude, latitude, olevel, time",area: mean where sea time: mean
+chldiazos,"longitude, latitude, time",area: mean where sea time: mean
+chlmisc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+chlmiscos,"longitude, latitude, time",area: mean where sea time: mean
+chlos,"longitude, latitude, time",area: mean where sea time: mean
+chlpico,"longitude, latitude, olevel, time",area: mean where sea time: mean
+chlpicoos,"longitude, latitude, time",area: mean where sea time: mean
+detoc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dfe,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dfeos,"longitude, latitude, time",area: mean where sea time: mean
+dissi13c,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dissi13cos,"longitude, latitude, time",area: mean where sea time: mean
+dissi14cabio,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dissi14cabioos,"longitude, latitude, time",area: mean where sea time: mean
+dissic,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dissicos,"longitude, latitude, time",area: mean where sea time: mean
+dissoc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dmso,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dmsos,"longitude, latitude, time",area: mean where sea time: mean
+dpco2,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+dpo2,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+epc100,"longitude, latitude, time, depth100m",area: mean where sea time: mean
+epc1000,"longitude, latitude, time, depth1000m",area: mean where sea time: mean
+epcalc100,"longitude, latitude, time, depth100m",area: mean where sea time: mean
+epcalc1000,"longitude, latitude, time, depth1000m",area: mean where sea time: mean
+epn100,"longitude, latitude, time, depth100m",area: mean where sea time: mean
+epp100,"longitude, latitude, time, depth100m",area: mean where sea time: mean
+epsi100,"longitude, latitude, time, depth100m",area: mean where sea time: mean
+evs,"longitude, latitude, time",area: mean where ice_free_sea over sea time: mean
+exparagob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+expc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+expcalcob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+expcob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+expfeob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+expnob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+exppob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+expsiob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+fg13co2,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+fg14co2abio,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+fgco2,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+fgdms,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+ficeberg,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ficeberg,"longitude, latitude, time",area: mean where sea time: mean
+frfe,"longitude, latitude, time",area: mean where sea time: mean
+fric,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+friver,"longitude, latitude, time",area: mean where sea time: mean
+frn,"longitude, latitude, time",area: mean where sea time: mean
+froc,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+fsfe,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+fsitherm,"longitude, latitude, time",area: mean where sea time: mean
+fsn,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+graz,"longitude, latitude, olevel, time",area: mean where sea time: mean
+hfacrossline,"oline, time",area: mean where sea depth: sum where sea time: mean
+hfbasin,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+hfbasinpadv,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+hfbasinpmadv,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+hfbasinpmdiff,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+hfbasinpsmadv,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+hfds,"longitude, latitude, time",area: mean where sea time: mean
+hfevapds,"longitude, latitude, time",area: mean where ice_free_sea over sea time: mean
+hfgeou,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+hfibthermds,"longitude, latitude, olevel, time",area: mean where sea time: mean
+hfibthermds,"longitude, latitude, time",area: mean where sea time: mean
+hfrainds,"longitude, latitude, time",area: mean where ice_free_sea over sea time: mean
+hfrunoffds,"longitude, latitude, olevel, time",area: mean where sea time: mean
+hfrunoffds,"longitude, latitude, time",area: mean where sea time: mean
+hfsnthermds,"longitude, latitude, olevel, time",area: mean where sea time: mean
+hfsnthermds,"longitude, latitude, time",area: mean where sea time: mean
+hfx,"longitude, latitude, olevel, time",area: mean where sea time: mean
+hfx,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+hfy,"longitude, latitude, olevel, time",area: mean where sea time: mean
+hfy,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+htovgyre,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+htovovrt,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+icfriver,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+intdic,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intdoc,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intparag,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpbfe,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpbn,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpbp,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpbsi,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpcalcite,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpn2,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpoc,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpp,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intppcalc,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intppdiat,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intppdiaz,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intppmisc,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intppnano,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intppnitrate,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+intpppico,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+limfecalc,"longitude, latitude, time",area: mean where sea time: mean
+limfediat,"longitude, latitude, time",area: mean where sea time: mean
+limfediaz,"longitude, latitude, time",area: mean where sea time: mean
+limfemisc,"longitude, latitude, time",area: mean where sea time: mean
+limfepico,"longitude, latitude, time",area: mean where sea time: mean
+limirrcalc,"longitude, latitude, time",area: mean where sea time: mean
+limirrdiat,"longitude, latitude, time",area: mean where sea time: mean
+limirrdiaz,"longitude, latitude, time",area: mean where sea time: mean
+limirrmisc,"longitude, latitude, time",area: mean where sea time: mean
+limirrpico,"longitude, latitude, time",area: mean where sea time: mean
+limncalc,"longitude, latitude, time",area: mean where sea time: mean
+limndiat,"longitude, latitude, time",area: mean where sea time: mean
+limndiaz,"longitude, latitude, time",area: mean where sea time: mean
+limnmisc,"longitude, latitude, time",area: mean where sea time: mean
+limnpico,"longitude, latitude, time",area: mean where sea time: mean
+masscello,"longitude, latitude, olevel, time",area: mean where sea time: mean
+masso,time,area: sum where sea time: mean
+mfo,"oline, time",time: mean
+mlotst,"longitude, latitude, time, deltasigt",area: mean where sea time: mean
+mlotstmax,"longitude, latitude, time, deltasigt",area: mean time: maximum
+mlotstmin,"longitude, latitude, time, deltasigt",area: mean time: minimum
+mlotstsq,"longitude, latitude, time, deltasigt",area: mean where sea time: mean
+mpw,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+mpwswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+mpwwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+msftbarot,"longitude, latitude, time",area: mean where sea time: mean
+msftmrho,"latitude, rho, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+msftmrhompa,"latitude, rho, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+msftmz,"latitude, olevel, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+msftmzmpa,"latitude, olevel, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+msftmzsmpa,"latitude, olevel, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+msftyrho,"gridlatitude, rho, basin, time",time: mean grid_longitude: mean
+msftyrhompa,"gridlatitude, rho, basin, time",time: mean grid_longitude: mean
+msftyz,"gridlatitude, olevel, basin, time",time: mean grid_longitude: mean
+msftyzmpa,"gridlatitude, olevel, basin, time",time: mean grid_longitude: mean
+nh4,"longitude, latitude, olevel, time",area: mean where sea time: mean
+nh4os,"longitude, latitude, time",area: mean where sea time: mean
+no3,"longitude, latitude, olevel, time",area: mean where sea time: mean
+no3os,"longitude, latitude, time",area: mean where sea time: mean
+o2,"longitude, latitude, olevel, time",area: mean where sea time: mean
+o2os,"longitude, latitude, time",area: mean where sea time: mean
+o2sat,"longitude, latitude, olevel, time",area: mean where sea time: mean
+obvfsq,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ocfriver,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+pbo,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+pfscint,"longitude, latitude, swplayers, swplayers, time, depth0m, depth300m, depth700m, depth2000m",area: mean where sea
+ph,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phcint,"longitude, latitude, swplayers, swplayers, time, depth0m, depth300m, depth700m, depth2000m",area: mean where sea
+phos,"longitude, latitude, time",area: mean where sea time: mean
+phyc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phycalc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phycalcos,"longitude, latitude, time",area: mean where sea time: mean
+phycos,"longitude, latitude, time",area: mean where sea time: mean
+phydiat,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phydiatos,"longitude, latitude, time",area: mean where sea time: mean
+phydiaz,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phydiazos,"longitude, latitude, time",area: mean where sea time: mean
+phymisc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phymiscos,"longitude, latitude, time",area: mean where sea time: mean
+phypico,"longitude, latitude, olevel, time",area: mean where sea time: mean
+phypicoos,"longitude, latitude, time",area: mean where sea time: mean
+po4,"longitude, latitude, olevel, time",area: mean where sea time: mean
+pp,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ppos,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+pso,"longitude, latitude, time",area: mean where sea time: mean
+scint,"longitude, latitude, swplayers, time, depth0m, depth300m, depth700m, depth2000m",area: mean where sea
+sduo,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+sdvo,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+sf6,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sfdsi,"longitude, latitude, time",area: mean where sea time: mean
+sfriver,"longitude, latitude, time",area: mean where sea time: mean
+sfx,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sfx,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+sfy,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sfy,"longitude, latitude, time",area: mean where sea depth: sum where sea time: mean
+si,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sios,"longitude, latitude, time",area: mean where sea time: mean
+sltbasin,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+sltovgyre,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+sltovovrt,"latitude, basin, time",longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time: mean
+so,"longitude, latitude, olevel, time",area: mean where sea time: mean
+sob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+soga,"olevel, time",area: mean where sea time: mean
+sos,"longitude, latitude, time",area: mean where sea time: mean
+sosga,time,area: mean where sea time: mean
+sossq,"longitude, latitude, time",area: mean where sea time: mean
+spco2,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+swh,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+swhmax,"longitude, latitude, time, depth0m",area: mean where sea time: maximum
+swhswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+swhwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+talk,"longitude, latitude, olevel, time",area: mean where sea time: mean
+tauuo,"longitude, latitude, time",area: mean where sea time: mean
+tauvo,"longitude, latitude, time",area: mean where sea time: mean
+thetao,"longitude, latitude, olevel, time",area: mean where sea time: mean
+thetaoga,"olevel, time",area: mean where sea time: mean
+thkcello,"longitude, latitude, olevel, time",area: mean where sea time: mean
+thkcelluo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+thkcellvo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+tob,"longitude, latitude, depthseafloor, time",area: mean where sea time: mean
+tos,"longitude, latitude, time",area: mean where sea time: mean
+tosga,time,area: mean where sea time: mean
+tossq,"longitude, latitude, time",area: mean where sea time: mean
+umo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+uo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+vmo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+vo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+volcello,"longitude, latitude, olevel, time",area: sum where sea time: mean
+volo,time,area: sum where sea time: mean
+vsf,"longitude, latitude, time",area: mean where sea time: mean
+vsfcorr,"longitude, latitude, time",area: mean where sea time: mean
+vsfevap,"longitude, latitude, time",area: mean where sea time: mean
+vsfpr,"longitude, latitude, time",area: mean where sea time: mean
+vsfriver,"longitude, latitude, time",area: mean where sea time: mean
+vsfsit,"longitude, latitude, time",area: mean where sea time: mean
+wdir,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wdirswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wdirwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wfcorr,"longitude, latitude, time",area: mean where sea time: mean
+wfo,"longitude, latitude, time",area: mean where sea time: mean
+wmo,"longitude, latitude, olevel, time",area: sum where sea time: mean
+wo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+wpdir,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpdirswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpdirwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wpp,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wppswell,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+wppwindsea,"longitude, latitude, time, depth0m",area: mean where sea time: mean
+zmeso,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zmesoos,"longitude, latitude, time",area: mean where sea time: mean
+zmicro,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zmicroos,"longitude, latitude, time",area: mean where sea time: mean
+zmisc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zmiscos,"longitude, latitude, time",area: mean where sea time: mean
+zooc,"longitude, latitude, olevel, time",area: mean where sea time: mean
+zoocos,"longitude, latitude, time",area: mean where sea time: mean
+zos,"longitude, latitude, time",area: mean where sea time: mean
+zossq,"longitude, latitude, time",area: mean where sea time: mean
+zostoga,time,area: mean where sea time: mean
+difmxybo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+difmxylo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+diftrblo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+diftrelo,"longitude, latitude, olevel, time",area: mean where sea time: mean
+difvho,"longitude, latitude, olevel, time",area: mean where sea time: mean
+difvso,"longitude, latitude, olevel, time",area: mean where sea time: mean
+dispkexyfo,"longitude, latitude, time",area: mean where sea time: mean
+ocontempdiff,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ocontempmint,"longitude, latitude, time",area: mean where sea time: mean
+ocontemppadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ocontemppmdiff,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ocontemppsmadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ocontemprmadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+ocontemptend,"longitude, latitude, olevel, time",area: mean where sea time: mean
+opottempdiff,"longitude, latitude, olevel, time",area: mean where sea time: mean
+opottempmint,"longitude, latitude, time",area: mean where sea time: mean
+opottemppadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+opottemppmdiff,"longitude, latitude, olevel, time",area: mean where sea time: mean
+opottemppsmadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+opottemprmadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+opottemptend,"longitude, latitude, olevel, time",area: mean where sea time: mean
+osaltdiff,"longitude, latitude, olevel, time",area: mean where sea time: mean
+osaltpadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+osaltpmdiff,"longitude, latitude, olevel, time",area: mean where sea time: mean
+osaltpsmadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+osaltrmadvect,"longitude, latitude, olevel, time",area: mean where sea time: mean
+osalttend,"longitude, latitude, olevel, time",area: mean where sea time: mean
+rsdoabsorb,"longitude, latitude, olevel, time",area: mean where sea time: mean
+somint,"longitude, latitude, time",area: mean where sea time: mean
+tnkebto,"longitude, latitude, time",area: mean where sea time: mean
+tnpeo,"longitude, latitude, time",area: mean where sea time: mean
+volcello,"longitude, latitude, olevel, time",area: sum where sea time: mean
+siage,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siarean,time,area: time: mean
+siareas,time,area: time: mean
+siconc,"longitude, latitude, time, typesi",area: time: mean
+siconca,"longitude, latitude, time, typesi",area: time: mean
+siextentn,time,area: time: mean
+siextents,time,area: time: mean
+sifb,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflcondbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflcondtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sifllattop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sifllwdtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sifllwutop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflsensbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflsenstop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflswdbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflswdtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflswutop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sihc,"longitude, latitude, time",area: mean where sea time: mean
+siitdconc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siitdsnconc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siitdsnthick,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siitdthick,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+simpconc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+simpeffconc,"longitude, latitude, time, typemp",area: time: mean where sea_ice (comment: mask=siconc)
+simprefrozen,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+simpthick,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sirdgconc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sirdgthick,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisali,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisaltmass,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisnhc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisnmassn,time,area: time: mean
+sisnmasss,time,area: time: mean
+sisnthick,"longitude, latitude, time",area: mean where snow over sea_ice area: time: mean where sea_ice
+sispeed,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitempbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitempsnic,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitemptop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sithick,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitimefrac,"longitude, latitude, time",area: mean where sea time: mean
+siu,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siv,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sivoln,time,area: time: mean
+sivols,time,area: time: mean
+siage,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sialgc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siareaacrossline,"siline, time",time: mean
+siarean,time,area: time: mean
+siareas,time,area: time: mean
+sichl,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sicompstren,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siconc,"longitude, latitude, time, typesi",area: time: mean
+siconca,"longitude, latitude, time, typesi",area: time: mean
+sidconcdyn,"longitude, latitude, time",area: mean where sea time: mean
+sidconcth,"longitude, latitude, time",area: mean where sea time: mean
+sidivvel,"longitude, latitude, time1",area: mean where sea_ice (comment: mask=siconc) time: point
+sidmassdyn,"longitude, latitude, time",area: mean where sea time: mean
+sidmassevapsubl,"longitude, latitude, time",area: mean where sea time: mean
+sidmassgrowthbot,"longitude, latitude, time",area: mean where sea time: mean
+sidmassgrowthsi,"longitude, latitude, time",area: mean where sea time: mean
+sidmassgrowthwat,"longitude, latitude, time",area: mean where sea time: mean
+sidmassmeltbot,"longitude, latitude, time",area: mean where sea time: mean
+sidmassmeltlat,"longitude, latitude, time",area: mean where sea time: mean
+sidmassmelttop,"longitude, latitude, time",area: mean where sea time: mean
+sidmassth,"longitude, latitude, time",area: mean where sea time: mean
+sidmasstranx,"longitude, latitude, time",time: mean
+sidmasstrany,"longitude, latitude, time",time: mean
+sidragbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sidragtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siextentn,time,area: time: mean
+siextents,time,area: time: mean
+sifb,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflcondbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflcondtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflfwbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflfwdrain,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sifllattop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconca)
+sifllwdtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconca)
+sifllwutop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconca)
+siflsaltbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflsensbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflsenstop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconca)
+siflswdbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siflswdtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconca)
+siflswutop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconca)
+siforcecoriolx,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siforcecorioly,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siforceintstrx,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siforceintstry,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siforcetiltx,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siforcetilty,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sigpp,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sihc,"longitude, latitude, time",area: mean where sea time: mean
+siitdconc,"longitude, latitude, iceband, time",area: time: mean where sea_ice (comment: mask=siconc)
+siitdsnconc,"longitude, latitude, iceband, time",area: time: mean where sea_ice (comment: mask=siitdconc)
+siitdsnthick,"longitude, latitude, iceband, time",area: time: mean where sea_ice (comment: mask=siitdconc)
+siitdthick,"longitude, latitude, iceband, time",area: time: mean where sea_ice (comment: mask=siitdconc)
+simass,"longitude, latitude, time",area: mean where sea time: mean
+simassacrossline,"siline, time",time: mean
+simpconc,"longitude, latitude, time, typemp",area: time: mean where sea_ice (comment: mask=siconc)
+simpeffconc,"longitude, latitude, time, typemp",area: time: mean where sea_ice (comment: mask=siconc)
+simprefrozen,"longitude, latitude, time",area: time: mean where sea_ice_melt_pond (comment: mask=simpconc)
+simpthick,"longitude, latitude, time",area: time: mean where sea_ice_melt_pond (comment: mask=simpconc)
+sino3,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sipr,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sirdgconc,"longitude, latitude, time, typesirdg",area: time: mean where sea_ice (comment: mask=siconc)
+sirdgthick,"longitude, latitude, time",area: time: mean where sea_ice_ridges (comment: mask=sirdgconc)
+sisali,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisaltmass,"longitude, latitude, time",area: mean where sea time: mean
+sishearvel,"longitude, latitude, time1",area: mean where sea_ice (comment: mask=siconc) time: point
+sisi,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisnconc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisndmassdyn,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisndmassmelt,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisndmasssi,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisndmasssnf,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisndmasssubl,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisndmasswind,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisnhc,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisnmass,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sisnmassacrossline,"siline, time",time: mean
+sisnmassn,time,area: time: mean
+sisnmasss,time,area: time: mean
+sisnthick,"longitude, latitude, time",area: mean where snow over sea_ice area: time: mean where sea_ice
+sispeed,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sistressave,"longitude, latitude, time1",area: mean where sea_ice (comment: mask=siconc) time: point
+sistressmax,"longitude, latitude, time1",area: mean where sea_ice (comment: mask=siconc) time: point
+sistrxdtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sistrxubot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sistrydtop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sistryubot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitempbot,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitempsnic,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitemptop,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sithick,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sitimefrac,"longitude, latitude, time",area: mean where sea time: mean
+siu,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+siv,"longitude, latitude, time",area: time: mean where sea_ice (comment: mask=siconc)
+sivol,"longitude, latitude, time",area: mean where sea time: mean
+sivoln,time,area: time: mean
+sivols,time,area: time: mean
