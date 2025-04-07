@@ -1,17 +1,23 @@
+# %%
 """
 Tests of our mapping from old names to branded variables
 """
 
+# %%
 from pathlib import Path
 
+# %%
 import pandas as pd
 import pytest
 
-from cmip_branded_variable_mapper.mapper_old import map_to_cmip_branded_variable
+# %%
+from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
 
+# %%
 DATA_DIR = Path(__file__).parents[2] / "data"
 
 
+# %%
 def generate_expected_cases():
     df = pd.read_excel(DATA_DIR / Path("CMIP6_branded_variables.xlsx"))
     df = df.loc[
@@ -54,6 +60,7 @@ def generate_expected_cases():
     return pytest.mark.parametrize(exp_var_names, test_cases)
 
 
+# %%
 @generate_expected_cases()
 def test_against_excel_sheet(variable_name, cell_methods, dimensions, exp):
     assert (
