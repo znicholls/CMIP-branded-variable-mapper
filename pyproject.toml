@@ -235,6 +235,7 @@ tests = [
     "pandas>=2.2.3",
     "openpyxl>=3.1.5",
     "tabulate>=0.9.0",
+    "pytest-regressions>=2.7.0",
 ]
 all-dev = [
     {include-group = "dev"},
