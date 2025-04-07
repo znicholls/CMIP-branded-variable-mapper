@@ -1,0 +1,7 @@
+branded_variable: tas_tavg-z0-hm-air
+cell_methods: mean where air
+dimensions:
+- time
+- lat
+- lon
+variable_name: tas

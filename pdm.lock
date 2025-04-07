@@ -5,7 +5,7 @@
 groups = ["default", "all-dev", "dev", "docs", "tests", "tests-full", "tests-min"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:121757be877125c67973df6c5363d6a407a446623780e4f7d5bf4b48f4393010"
+content_hash = "sha256:3edc646775b045a6abe76085740ee52c69acdf75ec2d92c6989a743b82d7068b"
 
 [[metadata.targets]]
 requires_python = ">=3.9"
@@ -1544,7 +1544,6 @@ dependencies = [
 ]
 files = [
     {file = "mkdocstrings_python_xref-1.6.2-py3-none-any.whl", hash = "sha256:1492b822bcb04a9072a9b731ceabfed4b9d3f8cd23c62211cb8b22bab0cb7fc0"},
-    {file = "mkdocstrings_python_xref-1.6.2.tar.gz", hash = "sha256:65e83fecc3a059d173aab9b06e4bcd50cc720b221b3cc3d6b35b11ffb6aa86d4"},
 ]
 
 [[package]]
@@ -2094,6 +2093,36 @@ files = [
 ]
 
 [[package]]
+name = "pytest-datadir"
+version = "1.6.1"
+requires_python = ">=3.8"
+summary = "pytest plugin for test data directories and files"
+groups = ["all-dev", "tests"]
+dependencies = [
+    "pytest>=7.0",
+]
+files = [
+    {file = "pytest_datadir-1.6.1-py3-none-any.whl", hash = "sha256:aa427f6218d3fc7481129d59c892bd7adfb8822613a2726ffc97f51968879cdb"},
+    {file = "pytest_datadir-1.6.1.tar.gz", hash = "sha256:4d204cf93cfe62ddc37b19922df6c8c0f133c2899c224bd339b24920e84e7fd3"},
+]
+
+[[package]]
+name = "pytest-regressions"
+version = "2.7.0"
+requires_python = ">=3.9"
+summary = "Easy to use fixtures to write regression tests."
+groups = ["all-dev", "tests"]
+dependencies = [
+    "pytest-datadir>=1.2.0",
+    "pytest>=6.2.0",
+    "pyyaml",
+]
+files = [
+    {file = "pytest_regressions-2.7.0-py3-none-any.whl", hash = "sha256:69f5e3f03493cf0ef84d96d23e50a546617c198b1d7746f2e2b9e441cbab4847"},
+    {file = "pytest_regressions-2.7.0.tar.gz", hash = "sha256:4c30064e0923929012c94f5d6f35205be06fd8709c7f0dba0228e05c460af05e"},
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
@@ -2123,12 +2152,12 @@ files = [
 
 [[package]]
 name = "pytz"
-version = "2025.1"
+version = "2025.2"
 summary = "World timezone definitions, modern and historical"
 groups = ["default", "all-dev", "tests"]
 files = [
-    {file = "pytz-2025.1-py2.py3-none-any.whl", hash = "sha256:89dd22dca55b46eac6eda23b2d72721bf1bdfef212645d81513ef5d03038de57"},
-    {file = "pytz-2025.1.tar.gz", hash = "sha256:c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e"},
+    {file = "pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00"},
+    {file = "pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3"},
 ]
 
 [[package]]
@@ -2175,7 +2204,7 @@ name = "pyyaml"
 version = "6.0.2"
 requires_python = ">=3.8"
 summary = "YAML parser and emitter for Python"
-groups = ["all-dev", "dev", "docs"]
+groups = ["all-dev", "dev", "docs", "tests"]
 files = [
     {file = "PyYAML-6.0.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:0a9a2848a5b7feac301353437eb7d5957887edbf81d56e903999a75a3d743086"},
     {file = "PyYAML-6.0.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:29717114e51c84ddfba879543fb232a6ed60086602313ca38cce623c1d62cfbf"},
@@ -2862,13 +2891,13 @@ files = [
 
 [[package]]
 name = "tzdata"
-version = "2025.1"
+version = "2025.2"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
 groups = ["default", "all-dev", "tests"]
 files = [
-    {file = "tzdata-2025.1-py2.py3-none-any.whl", hash = "sha256:7e127113816800496f027041c570f50bcd464a020098a3b6b199517772303639"},
-    {file = "tzdata-2025.1.tar.gz", hash = "sha256:24894909e88cdb28bd1636c6887801df64cb485bd593f2fd83ef29075a81d694"},
+    {file = "tzdata-2025.2-py2.py3-none-any.whl", hash = "sha256:1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8"},
+    {file = "tzdata-2025.2.tar.gz", hash = "sha256:b60a638fcc0daffadf82fe0f57e53d06bdec2f36c4df66280ae79bce6bd6f2b9"},
 ]
 
 [[package]]
