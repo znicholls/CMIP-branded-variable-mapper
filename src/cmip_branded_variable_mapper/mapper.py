@@ -183,13 +183,13 @@ def map_to_cmip_branded_variable(
     ...     cell_methods="area: time: mean",
     ...     dimensions=("longitude", "latitude", "time", "height2m"),
     ... )
-    'tas_tavg-h02-hxy-x'
+    'tas_tavg-h2m-hxy-u'
     >>> map_to_cmip_branded_variable(
     ...     variable_name="hfds",
     ...     cell_methods="area: mean where sea time: mean",
     ...     dimensions=("longitude", "latitude", "time"),
     ... )
-    'hfds_tavg-z0-hxy-sea'
+    'hfds_tavg-u-hxy-sea'
     """
     if cell_methods is None:
         cell_methods = ""
