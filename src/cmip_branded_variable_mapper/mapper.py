@@ -1,9 +1,8 @@
 """
-Mapper from old names to branded variables
+Mapper from CMIP information to branded variables
 
-This is based on the definitions in the spreadsheet for now,
-the long-term source of truth is still being figured out
-(https://github.com/znicholls/CMIP-branded-variable-mapper/issues/4).
+In the absence of other references,
+this is the source of truth for this mapping.
 """
 
 from __future__ import annotations
@@ -159,12 +158,12 @@ def map_to_cmip_branded_variable(
     variable_name: str, cell_methods: str | None, dimensions: tuple[str, ...]
 ) -> str:
     """
-    Map old CMIP variable information into a branded variable
+    Map CMIP variable information into a branded variable
 
     Parameters
     ----------
     variable_name
-        (Old) variable name
+        Variable name
 
     cell_methods
         Cell methods associated with the variable
