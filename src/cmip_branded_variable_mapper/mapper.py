@@ -11,8 +11,8 @@ from __future__ import annotations
 time_labels_dimensions = {
     "time": "tavg",
     "time1": "tpt",
-    "time2": "tcla",
-    "time3": "tcld",
+    "time2": "tclm",
+    "time3": "tclmdc",
 }
 
 
@@ -29,28 +29,28 @@ vertical_labels = {
     "alevel": "l",
     "alevhalf": "l",
     "olevhalf": "l",
-    "rho": "rhon",
-    "height2m": "h02",
-    "height10m": "h010",
-    "height100m": "h0100",
-    "sdepth1": "z0p1",
-    "sdepth10": "z01",
-    "depth0m": "z00",
-    "depth100m": "z0100",
-    "olayer100m": "z0100",
-    "olayer300m": "z0300",
-    "olayer700m": "z0700",
-    "olayer2000m": "z02000",
-    "p10": "p010",
-    "p100": "p0100",
-    "p220": "p0220",
-    "p500": "p0500",
-    "p560": "p0560",
-    "p700": "p0700",
-    "pl700": "p0700",
-    "p840": "p0840",
-    "p850": "p0850",
-    "p1000": "p01000",
+    "rho": "rho",
+    "height2m": "h2m",
+    "height10m": "h10m",
+    "height100m": "h100m",
+    "sdepth1": "z10cm",
+    "sdepth10": "z1m",
+    "depth0m": "z0m",
+    "depth100m": "z100m",
+    "olayer100m": "z100m",
+    "olayer300m": "z300m",
+    "olayer700m": "z700m",
+    "olayer2000m": "z2000m",
+    "p10": "10hPa",
+    "p100": "100hPa",
+    "p220": "220hPa",
+    "p500": "500hPa",
+    "p560": "560hPa",
+    "p700": "700hPa",
+    "pl700": "700hPa",
+    "p840": "840hPa",
+    "p850": "850hPa",
+    "p1000": "1000hPa",
     "alt16": "h16",
     "alt40": "h40",
     "plev3": "p3",
@@ -209,11 +209,11 @@ def map_to_cmip_branded_variable(
             time_labels_cell_methods, cell_methods, "ti"
         )
 
-    verticalLabelDD = _get_vertical_label(vertical_labels, dimensions, "z0")
+    verticalLabelDD = _get_vertical_label(vertical_labels, dimensions, "u")
 
     horizontalLabelDD = _get_horizontal_label(horizontal_labels, dimensions, "hm")
 
-    areaLabelDD = _get_area_label(area_labels, cell_methods, "x")
+    areaLabelDD = _get_area_label(area_labels, cell_methods, "u")
 
     suffix = "-".join(
         [temporalLabelDD, verticalLabelDD, horizontalLabelDD, areaLabelDD]
