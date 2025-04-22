@@ -57,17 +57,14 @@ def test_vertical_labels(dimensions, exp_vertical_label):
             id=f"{'-'.join(dimensions)}_{exp_horizontal_label}",
         )
         for dimensions, exp_horizontal_label in (
-            # Some that are correct as demos
             (("longitude", "latitude"), "hxy"),
-            # All wrong, over to you to fix :)
-            (("gridlatitude", "basin"), "ht"),
+            (("gridlatitude", "basin"), "Ht"),
             (("latitude", "basin"), "hys"),
             (("latitude",), "hy"),
             (("xant", "yant"), "hxy"),
             (("xgre", "ygre"), "hxy"),
-            # All wrong, over to you to fix :)
-            (("oline",), "ht"),
-            (("siline",), "ht"),
+            (("oline",), "Ht"),
+            (("siline",), "Ht"),
             (("site",), "hxys"),
         )
     ),
@@ -79,9 +76,7 @@ def test_horizontal_labels(dimensions, exp_horizontal_label):
         dimensions=dimensions,
     )
 
-    # This fails because I am assuming the old logic,
-    # over to you to fix
-    exp = f"vname_ti-u-{exp_horizontal_label}-lus"
+    exp = f"vname_ti-u-{exp_horizontal_label}-air"
 
     assert res == exp
 
@@ -93,8 +88,6 @@ def test_where_sector():
         dimensions=("latitude", "longitude"),
     )
 
-    # This fails because I am assuming the old logic,
-    # over to you to fix
-    exp = "vname_ti-u-hxy-lus"
+    exp = "vname_ti-u-hxy-multi"
 
     assert res == exp
