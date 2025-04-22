@@ -21,6 +21,13 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.5.0 (2025-04-22)
+
+### :bug: Bug Fixes
+
+- Fixed the functionality so that it returns the latest CMIP-7 branded variable names according to the newest updated table (See this table: https://docs.google.com/document/d/149Tkz37whSQMFVbEYZMYbdqIctHbufpbJ_VMlzHyKuY/edit?tab=t.0). ([#18](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/18))
+
+
 ## CMIP Branded Variable Mapper v0.4.0 (2025-04-16)
 
 ### :warning: Breaking Changes
