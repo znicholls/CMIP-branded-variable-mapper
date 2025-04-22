@@ -3,7 +3,7 @@ Mapper from CMIP information to branded variables
 
 In the absence of other references,
 this is currently our source of truth for this mapping.
-(https://github.com/znicholls/CMIP-branded-variable-mapper/issues/4).
+(https://docs.google.com/document/d/149Tkz37whSQMFVbEYZMYbdqIctHbufpbJ_VMlzHyKuY/edit?tab=t.0).
 """
 
 from __future__ import annotations
