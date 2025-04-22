@@ -8,11 +8,7 @@ import pytest
 
 from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
 
-# You obviously wouldn't write test cases for every single bit of logic,
-# but when there's only a few changes, it's worth writing a few by hand.
 
-
-# I've just tested the ones that changed here
 @pytest.mark.parametrize(
     "dimensions, exp_vertical_label",
     (
@@ -38,8 +34,6 @@ def test_vertical_labels(dimensions, exp_vertical_label):
         dimensions=dimensions,
     )
 
-    # This fails because I am assuming the old logic,
-    # over to you to fix
     exp = f"vname_ti-{exp_vertical_label}-hxy-air"
 
     assert res == exp
@@ -48,9 +42,6 @@ def test_vertical_labels(dimensions, exp_vertical_label):
 @pytest.mark.parametrize(
     "dimensions, exp_horizontal_label",
     (
-        # Wrapping this in param is completely unnecessary,
-        # but this shows you how to get a slightly nicer ID
-        # when running the tests without lots of typing.
         pytest.param(
             dimensions,
             exp_horizontal_label,
