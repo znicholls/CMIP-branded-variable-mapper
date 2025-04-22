@@ -320,7 +320,7 @@ wheels = [
 
 [[package]]
 name = "cmip-branded-variable-mapper"
-version = "0.3.1a1"
+version = "0.5.1a1"
 source = { editable = "." }
 dependencies = [
     { name = "openpyxl" },
