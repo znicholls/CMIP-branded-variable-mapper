@@ -21,6 +21,18 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.4.0 (2025-04-16)
+
+### :warning: Breaking Changes
+
+- renamed 'cmip_branded_variable_mapper/mapper_old.py' to 'cmip_branded_variable_mapper/mapper.py'
+  and updated dictionary to match naming conventions in Appendix F of [this paper draft](https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0) as of April 14 2025 ([#16](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/16))
+
+### :books: Improved Documentation
+
+- Updated the docs based on feedback (specifically, https://github.com/znicholls/CMIP-branded-variable-mapper/issues/4#issuecomment-2734688163). ([#12](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/12))
+
+
 ## CMIP Branded Variable Mapper v0.3.0 (2025-03-18)
 
 ### :warning: Breaking Changes
