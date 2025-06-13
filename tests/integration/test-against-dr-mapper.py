@@ -18,6 +18,7 @@ from cmip_branded_variable_mapper import map_to_cmip_branded_variable
 
 
 # # Old DR API, modified to make it easier to use without needing the variable class
+# Source: https://github.com/CMIP-Data-Request/CMIP7_DReq_Software/blob/a466f0d4dddef9a3234134b1fc463f901135f37b/scripts/sandbox/create_brand_name.py#L40
 # def compute_brand(variable, extended_brand_name=False):
 #     var_name = str(variable.name)
 #     param_name = str(variable.physical_parameter.name)
