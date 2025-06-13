@@ -1,23 +1,30 @@
 """
-Data requests' create brand name
+Test against the data request team's algorithm
 
-The way the data request team have implemented this,
-you can't install it.
-You also can't import it because the code runs on import.
-Hence I've just copied it here, good enough.
+The way the data request team have implemented this, you can't install it
+(because it's in scripts not src).
+You also can't import the script because the code runs on import
+(hence will probably explode if it's not being run as a script).
+As a result, I've just copied the relevant API here, good enough.
 """
 
+import json
 import re
+import urllib.request
+
+import pytest
+
+from cmip_branded_variable_mapper import map_to_cmip_branded_variable
 
 
-# # Old API, modified to make it easier to use without needing the variable class
+# # Old DR API, modified to make it easier to use without needing the variable class
 # def compute_brand(variable, extended_brand_name=False):
 #     var_name = str(variable.name)
 #     param_name = str(variable.physical_parameter.name)
 #     freq_name = str(variable.cmip7_frequency.name)
 #     cell_methods = str(variable.cell_methods.cell_methods)
 #     dimensions = str(variable.dimensions).split(", ")
-def compute_brand(
+def compute_brand_dr(  # noqa: PLR0912, PLR0913, PLR0915
     var_name: str,
     param_name: str,
     freq_name: str,
@@ -213,3 +220,55 @@ def compute_brand(
         return ".".join([rep, freq_name, rlabel])
     else:
         return rep
+
+
+# A slightly stupid way to do this as you need an internet connection,
+# but fine for now.
+VARIABLE_URL = "https://raw.githubusercontent.com/CMIP-Data-Request/CMIP7_DReq_Software/a466f0d4dddef9a3234134b1fc463f901135f37b/scripts/examples/variables_v1.2.1.json"
+with urllib.request.urlopen(VARIABLE_URL) as url:  # noqa: S310
+    dr_variables = json.load(url)
+
+
+dr_variable_info = pytest.mark.parametrize(
+    "cn, info",
+    [
+        pytest.param(
+            cn,
+            info,
+            id=cn,
+        )
+        for cn, info in dr_variables["Compound Name"].items()
+    ],
+)
+
+
+@dr_variable_info
+def test_compared_to_dr(cn, info):
+    variable_name = info["physical_parameter_name"]
+    cell_methods = info["cell_methods"]
+    dimensions = info["dimensions"].split(" ")
+
+    branded_variable_dr = compute_brand_dr(
+        # Only used for region,
+        # hence we don't care about the value for this comparison.
+        var_name="junk",
+        param_name=variable_name,
+        freq_name=info["frequency"],
+        cell_methods=cell_methods,
+        dimensions=dimensions,
+    )
+    branded_variable_dr_components = branded_variable_dr.split("-")
+    branded_variable_dr_corrected = "_".join(
+        [
+            branded_variable_dr_components[0],
+            "-".join(branded_variable_dr_components[1:]),
+        ]
+    )
+
+    branded_variable_here = map_to_cmip_branded_variable(
+        variable_name=variable_name,
+        cell_methods=cell_methods,
+        dimensions=dimensions,
+    )
+
+    assert branded_variable_dr_corrected == branded_variable_here
