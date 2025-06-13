@@ -34,9 +34,13 @@ vertical_labels = {
     "height10m": "h10m",
     "height100m": "h100m",
     "sdepth1": "d10cm",
-    "sdepth10": "d1m",
+    "sdepth10": "d100cm",
     "depth0m": "d0m",
     "depth100m": "d100m",
+    "depth300m": "d300m",
+    "depth700m": "d700m",
+    "depth1000m": "d1000m",
+    "depth2000m": "d2000m",
     "olayer100m": "d100m",
     "olayer300m": "d300m",
     "olayer700m": "d700m",
@@ -72,13 +76,13 @@ vertical_labels = {
 
 horizontal_labels = {
     ("longitude", "latitude"): "hxy",
-    ("gridlatitude", "basin"): "Ht",
+    ("gridlatitude", "basin"): "ht",
     ("latitude", "basin"): "hys",
     ("latitude",): "hy",
     ("xant", "yant"): "hxy",
     ("xgre", "ygre"): "hxy",
-    ("oline",): "Ht",
-    ("siline",): "Ht",
+    ("oline",): "ht",
+    ("siline",): "ht",
     ("site",): "hxys",
 }
 
