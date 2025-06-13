@@ -13,9 +13,13 @@ from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
     "dimensions, exp_vertical_label",
     (
         (("latitude", "longitude", "sdepth1"), "d10cm"),
-        (("latitude", "longitude", "sdepth10"), "d1m"),
+        (("latitude", "longitude", "sdepth10"), "d100cm"),
         (("latitude", "longitude", "depth0m"), "d0m"),
         (("latitude", "longitude", "depth100m"), "d100m"),
+        (("latitude", "longitude", "depth300m"), "d300m"),
+        (("latitude", "longitude", "depth700m"), "d700m"),
+        (("latitude", "longitude", "depth1000m"), "d1000m"),
+        (("latitude", "longitude", "depth2000m"), "d2000m"),
         (("latitude", "longitude", "olayer100m"), "d100m"),
         (("latitude", "longitude", "olayer300m"), "d300m"),
         (("latitude", "longitude", "olayer700m"), "d700m"),
@@ -49,13 +53,13 @@ def test_vertical_labels(dimensions, exp_vertical_label):
         )
         for dimensions, exp_horizontal_label in (
             (("longitude", "latitude"), "hxy"),
-            (("gridlatitude", "basin"), "Ht"),
+            (("gridlatitude", "basin"), "ht"),
             (("latitude", "basin"), "hys"),
             (("latitude",), "hy"),
             (("xant", "yant"), "hxy"),
             (("xgre", "ygre"), "hxy"),
-            (("oline",), "Ht"),
-            (("siline",), "Ht"),
+            (("oline",), "ht"),
+            (("siline",), "ht"),
             (("site",), "hxys"),
         )
     ),
