@@ -23,7 +23,7 @@ TEMPORAL_LABEL_CELL_METHODS_MAPPER = CellMethodsSubStringMapper(
 Mapper from sub-strings of cell methods to the temporal label
 """
 
-TEMPORAL_LABEL_CELL_DIMENSIONS_MAPPER = DimensionMapper(
+TEMPORAL_LABEL_DIMENSIONS_MAPPER = DimensionMapper(
     dimension_map={
         "time": "tavg",
         "time1": "tpt",
@@ -42,7 +42,7 @@ def get_temporal_label(
     cell_methods_mapper: CellMethodsSubStringMapper = (
         TEMPORAL_LABEL_CELL_METHODS_MAPPER
     ),
-    dimensions_mapper: DimensionMapper = TEMPORAL_LABEL_CELL_DIMENSIONS_MAPPER,
+    dimensions_mapper: DimensionMapper = TEMPORAL_LABEL_DIMENSIONS_MAPPER,
     fallback: str = "ti",
 ) -> str:
     """

@@ -9,6 +9,7 @@ this is currently our source of truth for this mapping.
 from __future__ import annotations
 
 from cmip_branded_variable_mapper.temporal_label import get_temporal_label
+from cmip_branded_variable_mapper.vertical_label import get_vertical_label
 
 vertical_labels = {
     "sdepth": "l",
@@ -182,15 +183,15 @@ def map_to_cmip_branded_variable(
         cell_methods=cell_methods, dimensions=dimensions
     )
 
+    vertical_label = get_vertical_label(dimensions=dimensions)
+
     if cell_methods is None:
         cell_methods = ""
-
-    verticalLabelDD = _get_vertical_label(vertical_labels, dimensions, "u")
 
     horizontalLabelDD = _get_horizontal_label(horizontal_labels, dimensions, "hm")
 
     areaLabelDD = _get_area_label(area_labels, cell_methods, "u")
 
-    suffix = "-".join([temporal_label, verticalLabelDD, horizontalLabelDD, areaLabelDD])
+    suffix = "-".join([temporal_label, vertical_label, horizontalLabelDD, areaLabelDD])
 
     return "_".join([variable_name, suffix])
