@@ -4,9 +4,7 @@ Determination of the vertical label
 
 from __future__ import annotations
 
-from cmip_branded_variable_mapper.mappers import (
-    DimensionMapper,
-)
+from cmip_branded_variable_mapper.mappers import DimensionMapper
 
 VERTICAL_LABEL_DIMENSIONS_MAPPER = DimensionMapper(
     dimension_map={

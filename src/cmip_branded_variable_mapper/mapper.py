@@ -8,72 +8,9 @@ this is currently our source of truth for this mapping.
 
 from __future__ import annotations
 
+from cmip_branded_variable_mapper.horizontal_label import get_horizontal_label
 from cmip_branded_variable_mapper.temporal_label import get_temporal_label
 from cmip_branded_variable_mapper.vertical_label import get_vertical_label
-
-vertical_labels = {
-    "sdepth": "l",
-    "olevel": "l",
-    "alevel": "l",
-    "alevhalf": "l",
-    "olevhalf": "l",
-    "rho": "rho",
-    "height2m": "h2m",
-    "height10m": "h10m",
-    "height100m": "h100m",
-    "sdepth1": "d10cm",
-    "sdepth10": "d100cm",
-    "depth0m": "d0m",
-    "depth100m": "d100m",
-    "depth300m": "d300m",
-    "depth700m": "d700m",
-    "depth1000m": "d1000m",
-    "depth2000m": "d2000m",
-    "olayer100m": "d100m",
-    "olayer300m": "d300m",
-    "olayer700m": "d700m",
-    "olayer2000m": "d2000m",
-    "op20bar": "op20bar",
-    "p10": "10hPa",
-    "p100": "100hPa",
-    "p200": "200hPa",
-    "p220": "220hPa",
-    "p500": "500hPa",
-    "p560": "560hPa",
-    "p700": "700hPa",
-    "pl700": "700hPa",
-    "p840": "840hPa",
-    "p850": "850hPa",
-    "p925": "925hPa",
-    "p1000": "1000hPa",
-    "alt16": "h16",
-    "alt40": "h40",
-    "plev3": "p3",
-    "plev4": "p4",
-    "plev5u": "p5u",
-    "plev6": "p6",
-    "plev8": "p8",
-    "plev7c": "p7c",
-    "plev7h": "p7h",
-    "plev19": "p19",
-    "plev27": "p27",
-    "plev39": "p39",
-    "oplev4": "op4",
-}
-
-
-horizontal_labels = {
-    ("longitude", "latitude"): "hxy",
-    ("gridlatitude", "basin"): "ht",
-    ("latitude", "basin"): "hys",
-    ("latitude",): "hy",
-    ("xant", "yant"): "hxy",
-    ("xgre", "ygre"): "hxy",
-    ("oline",): "ht",
-    ("siline",): "ht",
-    ("site",): "hxys",
-}
-
 
 area_labels = {
     "where air": "air",
@@ -182,16 +119,14 @@ def map_to_cmip_branded_variable(
     temporal_label = get_temporal_label(
         cell_methods=cell_methods, dimensions=dimensions
     )
-
     vertical_label = get_vertical_label(dimensions=dimensions)
+    horizontal_label = get_horizontal_label(dimensions=dimensions)
 
     if cell_methods is None:
         cell_methods = ""
 
-    horizontalLabelDD = _get_horizontal_label(horizontal_labels, dimensions, "hm")
-
     areaLabelDD = _get_area_label(area_labels, cell_methods, "u")
 
-    suffix = "-".join([temporal_label, vertical_label, horizontalLabelDD, areaLabelDD])
+    suffix = "-".join([temporal_label, vertical_label, horizontal_label, areaLabelDD])
 
     return "_".join([variable_name, suffix])
