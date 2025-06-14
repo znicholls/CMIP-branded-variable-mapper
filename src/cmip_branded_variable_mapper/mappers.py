@@ -68,6 +68,97 @@ class CellMethodsSubStringMapper:
 
 
 @define
+class CellMethodsSubStringMapperOrdered:
+    """
+    Mapper that returns values based on matches of ordered sub-strings in cell methods
+
+    The ordering matters because it ensures
+    that we don't get accidental clashes
+    by checking for the longest possible match first.
+    """
+
+    sub_string_map: tuple[tuple[str, str], ...] = field()
+    """
+    Map from sub-strings of cell methods to the metadata value to use
+
+    The first element of each tuple is the sub-string to check for matches,
+    the second element is the metadata value to use if this sub-string is a match.
+
+    These must be provide as a tuple of tuples to ensure that the ordering is preserved.
+    """
+
+    @sub_string_map.validator
+    def sub_string_map_validator(
+        self,
+        attribute: attr.Attribute[Any],
+        value: tuple[tuple[str, str], ...],
+    ) -> None:
+        """
+        Validate the received map
+
+        The key here is that the keys can't lead to accidental clashes
+        """
+        for i, v in enumerate(value[::-1]):
+            # Keys always checked in order,
+            # so we only need to check keys that come before this one.
+            check_until = len(value) - i - 1
+            for v_potential_clash in value[:check_until]:
+                if v_potential_clash[0] in v[0]:
+                    msg = (
+                        f"{v_potential_clash[0]!r} is a subset of {v[0]!r}. "
+                        "You will need to re-order your mapper "
+                        "to avoid incorrect results."
+                    )
+                    raise AssertionError(msg)
+
+    @classmethod
+    def from_unordered(
+        cls, unordered_map: dict[str, str]
+    ) -> CellMethodsSubStringMapperOrdered:
+        """
+        Initialise from an unordered map
+
+        Parameters
+        ----------
+        unordered_map
+            Unordered map
+
+        Returns
+        -------
+        :
+            Initialised instance
+        """
+        sub_string_map = tuple(
+            (key, unordered_map[key])
+            for key in sorted(unordered_map.keys(), key=len, reverse=True)
+        )
+
+        return cls(sub_string_map=sub_string_map)
+
+    def get_value(self, cell_methods: str) -> str | None:
+        """
+        Get the metadata value for a given value of cell_methods
+
+        Parameters
+        ----------
+        cell_methods
+            Cell methods
+
+        Returns
+        -------
+        :
+            Metadata value.
+
+            If no matches are found, `None` is returned.
+        """
+        for sub_string, value in self.sub_string_map:
+            if sub_string in cell_methods:
+                return value
+
+        return None
+
+
+@define
 class DimensionMapper:
     """
     Mapper that returns values based on whether dimensions are present or not
