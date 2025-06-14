@@ -8,20 +8,7 @@ this is currently our source of truth for this mapping.
 
 from __future__ import annotations
 
-time_labels_dimensions = {
-    "time": "tavg",
-    "time1": "tpt",
-    "time2": "tclm",
-    "time3": "tclmdc",
-}
-
-
-time_labels_cell_methods = {
-    "time: max": "tstat",
-    "time: min": "tstat",
-    "time: sum": "tsum",
-}
-
+from cmip_branded_variable_mapper.temporal_label import get_temporal_label
 
 vertical_labels = {
     "sdepth": "l",
@@ -115,18 +102,6 @@ area_labels = {
 }
 
 
-def _get_temporal_label(
-    label_options: dict[str, str], label_in: str, default: str
-) -> str:
-    out_label = default
-
-    for label, translation in label_options.items():
-        if label in label_in:
-            out_label = translation
-
-    return out_label
-
-
 def _get_vertical_label(
     label_options: dict[str, str], label_in: tuple[str, ...], default: str
 ) -> str:
@@ -202,22 +177,11 @@ def map_to_cmip_branded_variable(
     ... )
     'hfds_tavg-u-hxy-sea'
     """
+    temporal_label = get_temporal_label(
+        cell_methods=cell_methods, dimensions=dimensions
+    )
     if cell_methods is None:
         cell_methods = ""
-
-    if (
-        "time: max" not in cell_methods
-        and "time: min" not in cell_methods
-        and "time: sum" not in cell_methods
-    ):
-        temporalLabelDD = _get_temporal_label(
-            time_labels_dimensions, " ".join(dimensions), "ti"
-        )
-
-    else:
-        temporalLabelDD = _get_temporal_label(
-            time_labels_cell_methods, cell_methods, "ti"
-        )
 
     verticalLabelDD = _get_vertical_label(vertical_labels, dimensions, "u")
 
@@ -225,8 +189,6 @@ def map_to_cmip_branded_variable(
 
     areaLabelDD = _get_area_label(area_labels, cell_methods, "u")
 
-    suffix = "-".join(
-        [temporalLabelDD, verticalLabelDD, horizontalLabelDD, areaLabelDD]
-    )
+    suffix = "-".join([temporal_label, verticalLabelDD, horizontalLabelDD, areaLabelDD])
 
     return "_".join([variable_name, suffix])
