@@ -1,24 +1,7 @@
-# ---
-# jupyter:
-#   jupytext:
-#     formats: py:percent
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.3'
-#       jupytext_version: 1.16.6
-#   kernelspec:
-#     display_name: Python 3 (ipykernel)
-#     language: python
-#     name: python3
-# ---
-
-# %%
 """
 Regression tests of our branded variable mapper
 """
 
-# %%
 from pathlib import Path
 
 import pandas as pd
@@ -28,7 +11,6 @@ from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
 HERE = Path(__file__).parent
 
 
-# %%
 def test_map_to_cmip_branded_variable_mapper(data_regression):
     TEST_CASES_FILE = HERE.parent / "test-data" / "CMIP7-variables-for-branding.csv"
 
@@ -56,6 +38,3 @@ def test_map_to_cmip_branded_variable_mapper(data_regression):
         res_l.append(reg_check)
     res_l.sort(key=lambda x: x["branded_variable"])
     data_regression.check(res_l)
-
-
-# %%
