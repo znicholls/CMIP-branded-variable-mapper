@@ -4,10 +4,26 @@ Determination of the temporal label
 
 from __future__ import annotations
 
+from cmip_branded_variable_mapper.mappers import CellMethodsSubStringMapper
+
+TEMPORAL_LABEL_CELL_METHODS_MAPPER = CellMethodsSubStringMapper(
+    sub_string_map={
+        # TODO: switch to the below based on updates to the paper
+        # "time: max": "tmax",
+        # "time: min": "tmin",
+        "time: max": "tstat",
+        "time: min": "tstat",
+        "time: sum": "tsum",
+    }
+)
+
 
 def get_temporal_label(
     cell_methods: str | None,
     dimensions: tuple[str, ...],
+    cell_methods_mapper: CellMethodsSubStringMapper = (
+        TEMPORAL_LABEL_CELL_METHODS_MAPPER
+    ),
     fallback: str = "ti",
 ) -> str:
     """
@@ -27,6 +43,9 @@ def get_temporal_label(
     dimensions
         Dimensions of the variable
 
+    cell_methods_mapper
+        Mapper to use to get values based on cell methods
+
     fallback
         Value to return if no other conditions are matched
 
@@ -36,29 +55,7 @@ def get_temporal_label(
         Temporal label to use for constructing the branded variable name
     """
     # Check cell methods first
-    cell_methods_ids = (
-        # TODO: switch to the below based on updates to the paper
-        # ("time: max", "tmax"),
-        # ("time: min", "tmin"),
-        ("time: max", "tstat"),
-        ("time: min", "tstat"),
-        ("time: sum", "tsum"),
-    )
-    match: str | None = None
-    for key_string, temporal_label in cell_methods_ids:
-        if key_string in cell_methods:
-            if match is None:
-                match = temporal_label
-            else:
-                # Raise an error if we get multiple matches,
-                # this should be impossible.
-                msg = (
-                    f"For {cell_methods=}, there are multiple matches. "
-                    f"We already have {match=}, but {key_string} also matches "
-                    f"(which would give a match of {temporal_label})"
-                )
-                raise AssertionError(msg)
-
+    match = cell_methods_mapper.get_value(cell_methods)
     if match is not None:
         return match
 
