@@ -65,3 +65,37 @@ class CellMethodsSubStringMapper:
                 return value
 
         return None
+
+
+@define
+class DimensionMapper:
+    """
+    Mapper that returns values based on whether dimensions are present or not
+    """
+
+    dimension_map: dict[str, str]
+    """
+    Map from dimensions to the metadata value to use
+    """
+
+    def get_value(self, dimensions: tuple[str, ...]) -> str | None:
+        """
+        Get the metadata value for a given value of dimensions
+
+        Parameters
+        ----------
+        dimensions
+            Dimensions to check
+
+        Returns
+        -------
+        :
+            Metadata value.
+
+            If no matches are found, `None` is returned.
+        """
+        for dimension, value in self.dimension_map.items():
+            if dimension in dimensions:
+                return value
+
+        return None

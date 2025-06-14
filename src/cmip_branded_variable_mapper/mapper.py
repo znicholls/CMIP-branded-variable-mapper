@@ -178,13 +178,12 @@ def map_to_cmip_branded_variable(
     ... )
     'hfds_tavg-u-hxy-sea'
     """
+    temporal_label = get_temporal_label(
+        cell_methods=cell_methods, dimensions=dimensions
+    )
+
     if cell_methods is None:
         cell_methods = ""
-
-    temporal_label = get_temporal_label(
-        cell_methods=cell_methods,
-        dimensions=dimensions,
-    )
 
     verticalLabelDD = _get_vertical_label(vertical_labels, dimensions, "u")
 

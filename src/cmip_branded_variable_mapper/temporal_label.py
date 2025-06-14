@@ -4,7 +4,10 @@ Determination of the temporal label
 
 from __future__ import annotations
 
-from cmip_branded_variable_mapper.mappers import CellMethodsSubStringMapper
+from cmip_branded_variable_mapper.mappers import (
+    CellMethodsSubStringMapper,
+    DimensionMapper,
+)
 
 TEMPORAL_LABEL_CELL_METHODS_MAPPER = CellMethodsSubStringMapper(
     sub_string_map={
@@ -16,6 +19,21 @@ TEMPORAL_LABEL_CELL_METHODS_MAPPER = CellMethodsSubStringMapper(
         "time: sum": "tsum",
     }
 )
+"""
+Mapper from sub-strings of cell methods to the temporal label
+"""
+
+TEMPORAL_LABEL_CELL_DIMENSIONS_MAPPER = DimensionMapper(
+    dimension_map={
+        "time": "tavg",
+        "time1": "tpt",
+        "time2": "tclm",
+        "time3": "tclmdc",
+    }
+)
+"""
+Mapper from dimensions to the temporal label
+"""
 
 
 def get_temporal_label(
@@ -24,6 +42,7 @@ def get_temporal_label(
     cell_methods_mapper: CellMethodsSubStringMapper = (
         TEMPORAL_LABEL_CELL_METHODS_MAPPER
     ),
+    dimensions_mapper: DimensionMapper = TEMPORAL_LABEL_CELL_DIMENSIONS_MAPPER,
     fallback: str = "ti",
 ) -> str:
     """
@@ -46,6 +65,9 @@ def get_temporal_label(
     cell_methods_mapper
         Mapper to use to get values based on cell methods
 
+    dimensions_mapper
+        Mapper to use to get values based on dimensions
+
     fallback
         Value to return if no other conditions are matched
 
@@ -54,20 +76,13 @@ def get_temporal_label(
     :
         Temporal label to use for constructing the branded variable name
     """
-    # Check cell methods first
-    match = cell_methods_mapper.get_value(cell_methods)
-    if match is not None:
-        return match
+    if cell_methods is not None:
+        # Check cell methods first
+        if (match := cell_methods_mapper.get_value(cell_methods)) is not None:
+            return match
 
-    dimensions_labels = (
-        ("time", "tavg"),
-        ("time1", "tpt"),
-        ("time2", "tclm"),
-        ("time3", "tclmdc"),
-    )
-    for dimension, temporal_label in dimensions_labels:
-        if dimension in dimensions:
-            return temporal_label
+    if (match := dimensions_mapper.get_value(dimensions)) is not None:
+        return match
 
     # Reproduce bug in existing implementation
     if "time" in " ".join(dimensions):
