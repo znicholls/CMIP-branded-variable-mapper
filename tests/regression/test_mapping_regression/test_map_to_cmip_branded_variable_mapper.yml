@@ -4986,7 +4986,7 @@
   - latitude
   - time1
   variable_name: intvaw
-- branded_variable: irrDem_tavg-u-hxy-u
+- branded_variable: irrDem_ti-u-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -4994,7 +4994,7 @@
   - latitude
   - time4
   variable_name: irrDem
-- branded_variable: irrGw_tavg-u-hxy-u
+- branded_variable: irrGw_ti-u-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -5004,14 +5004,6 @@
   variable_name: irrGw
 - branded_variable: irrLut_tavg-u-hxy-u
   cell_methods:
-  - 'area: mean'
-  dimensions:
-  - longitude
-  - latitude
-  - time4
-  variable_name: irrLut
-- branded_variable: irrLut_tavg-u-hxy-u
-  cell_methods:
   - 'area: time: mean where sector'
   dimensions:
   - longitude
@@ -5019,7 +5011,15 @@
   - landUse
   - time
   variable_name: irrLut
-- branded_variable: irrSurf_tavg-u-hxy-u
+- branded_variable: irrLut_ti-u-hxy-u
+  cell_methods:
+  - 'area: mean'
+  dimensions:
+  - longitude
+  - latitude
+  - time4
+  variable_name: irrLut
+- branded_variable: irrSurf_ti-u-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -7011,15 +7011,6 @@
   - alevel
   - time
   variable_name: o3prod
-- branded_variable: o3ref_tavg-l-hxy-u
-  cell_methods:
-  - 'area: time: mean (monthly mean fixed annual cycle)'
-  dimensions:
-  - longitude
-  - latitude
-  - alevel
-  - timefxc
-  variable_name: o3ref
 - branded_variable: o3ref_ti-l-hxy-u
   cell_methods:
   - 'area: mean'
@@ -7027,6 +7018,15 @@
   - longitude
   - latitude
   - alevel
+  variable_name: o3ref
+- branded_variable: o3ref_ti-l-hxy-u
+  cell_methods:
+  - 'area: time: mean (monthly mean fixed annual cycle)'
+  dimensions:
+  - longitude
+  - latitude
+  - alevel
+  - timefxc
   variable_name: o3ref
 - branded_variable: o3ste_tavg-l-hxy-u
   cell_methods:
@@ -12366,20 +12366,20 @@
   variable_name: tasmaxCrop
 - branded_variable: tasmax_tavg-h2m-hxy-u
   cell_methods:
-  - 'area: mean time: maximum within days time: mean over days'
-  dimensions:
-  - longitude
-  - latitude
-  - time4
-  - height2m
-  variable_name: tasmax
-- branded_variable: tasmax_tavg-h2m-hxy-u
-  cell_methods:
   - 'area: mean time: maximum'
   dimensions:
   - longitude
   - latitude
   - time
+  - height2m
+  variable_name: tasmax
+- branded_variable: tasmax_ti-h2m-hxy-u
+  cell_methods:
+  - 'area: mean time: maximum within days time: mean over days'
+  dimensions:
+  - longitude
+  - latitude
+  - time4
   - height2m
   variable_name: tasmax
 - branded_variable: tasminCrop_tavg-h2m-hxy-u
@@ -12393,20 +12393,20 @@
   variable_name: tasminCrop
 - branded_variable: tasmin_tavg-h2m-hxy-u
   cell_methods:
-  - 'area: mean time: minimum within days time: mean over days'
-  dimensions:
-  - longitude
-  - latitude
-  - time4
-  - height2m
-  variable_name: tasmin
-- branded_variable: tasmin_tavg-h2m-hxy-u
-  cell_methods:
   - 'area: mean time: minimum'
   dimensions:
   - longitude
   - latitude
   - time
+  - height2m
+  variable_name: tasmin
+- branded_variable: tasmin_ti-h2m-hxy-u
+  cell_methods:
+  - 'area: mean time: minimum within days time: mean over days'
+  dimensions:
+  - longitude
+  - latitude
+  - time4
   - height2m
   variable_name: tasmin
 - branded_variable: tatp_tavg-u-hxy-u

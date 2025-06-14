@@ -322,6 +322,7 @@ name = "cmip-branded-variable-mapper"
 version = "0.6.1a1"
 source = { editable = "." }
 dependencies = [
+    { name = "attrs" },
     { name = "openpyxl" },
     { name = "pandas" },
     { name = "tabulate" },
@@ -641,6 +642,7 @@ tests-min = [
 
 [package.metadata]
 requires-dist = [
+    { name = "attrs", specifier = ">=24.3.0" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "tabulate", specifier = ">=0.9.0" },
