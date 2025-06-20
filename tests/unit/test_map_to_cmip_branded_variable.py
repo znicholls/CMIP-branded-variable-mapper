@@ -1,5 +1,5 @@
 """
-Tests of  cmip_branded_variable_mapper.mapper
+Tests of cmip_branded_variable_mapper.mapper
 """
 
 from __future__ import annotations
@@ -10,12 +10,94 @@ from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
 
 
 @pytest.mark.parametrize(
+    "cell_methods, dimensions, exp_temporal_label",
+    (
+        pytest.param(
+            "area: mean where land time: max",
+            ("time", "lat", "lon"),
+            # cell methods wins out over dimension
+            "tstat",
+            # # TODO: update as paper has been updated
+            # "tmax",
+            id="tmax",
+        ),
+        pytest.param(
+            "area: mean where land time: min",
+            ("time", "lat", "lon"),
+            # cell methods wins out over dimension
+            "tstat",
+            # # TODO: update as paper has been updated
+            # "tmin",
+            id="tmin",
+        ),
+        pytest.param(
+            "area: mean where land time: sum",
+            ("time", "lat", "lon"),
+            # cell methods wins out over dimension
+            "tsum",
+            id="tsum",
+        ),
+        pytest.param(
+            "area: mean where land",
+            ("time", "lat", "lon"),
+            "tavg",
+            id="tavg",
+        ),
+        pytest.param(
+            "area: mean where land",
+            ("time1", "lat", "lon"),
+            "tpt",
+            id="tpt",
+        ),
+        pytest.param(
+            "area: mean where land",
+            ("time2", "lat", "lon"),
+            "tclm",
+            id="tclm",
+        ),
+        pytest.param(
+            "area: mean where land",
+            ("time3", "lat", "lon"),
+            "tclmdc",
+            id="tclmdc",
+        ),
+        pytest.param(
+            "area: mean where land",
+            ("lat", "lon"),
+            "ti",
+            id="ti",
+        ),
+        pytest.param(
+            "area: mean where land",
+            ("time4", "lat", "lon"),
+            "ti",
+            id="ti-time4",
+        ),
+    ),
+)
+def test_temporal_labels(cell_methods, dimensions, exp_temporal_label):
+    res = map_to_cmip_branded_variable(
+        variable_name="vname",
+        cell_methods=cell_methods,
+        dimensions=dimensions,
+    )
+
+    exp = f"vname_{exp_temporal_label}-u-hm-lnd"
+
+    assert res == exp
+
+
+@pytest.mark.parametrize(
     "dimensions, exp_vertical_label",
     (
         (("latitude", "longitude", "sdepth1"), "d10cm"),
-        (("latitude", "longitude", "sdepth10"), "d1m"),
+        (("latitude", "longitude", "sdepth10"), "d100cm"),
         (("latitude", "longitude", "depth0m"), "d0m"),
         (("latitude", "longitude", "depth100m"), "d100m"),
+        (("latitude", "longitude", "depth300m"), "d300m"),
+        (("latitude", "longitude", "depth700m"), "d700m"),
+        (("latitude", "longitude", "depth1000m"), "d1000m"),
+        (("latitude", "longitude", "depth2000m"), "d2000m"),
         (("latitude", "longitude", "olayer100m"), "d100m"),
         (("latitude", "longitude", "olayer300m"), "d300m"),
         (("latitude", "longitude", "olayer700m"), "d700m"),
@@ -49,13 +131,13 @@ def test_vertical_labels(dimensions, exp_vertical_label):
         )
         for dimensions, exp_horizontal_label in (
             (("longitude", "latitude"), "hxy"),
-            (("gridlatitude", "basin"), "Ht"),
+            (("gridlatitude", "basin"), "ht"),
             (("latitude", "basin"), "hys"),
             (("latitude",), "hy"),
             (("xant", "yant"), "hxy"),
             (("xgre", "ygre"), "hxy"),
-            (("oline",), "Ht"),
-            (("siline",), "Ht"),
+            (("oline",), "ht"),
+            (("siline",), "ht"),
             (("site",), "hxys"),
         )
     ),
