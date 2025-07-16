@@ -412,11 +412,9 @@ all-dev = [
     { name = "nest-asyncio" },
     { name = "nodeenv" },
     { name = "notebook-shim" },
-    { name = "openpyxl" },
     { name = "overrides" },
     { name = "packaging" },
     { name = "paginate" },
-    { name = "pandas" },
     { name = "pandocfilters" },
     { name = "parso" },
     { name = "pathspec" },
@@ -455,7 +453,6 @@ all-dev = [
     { name = "sniffio" },
     { name = "soupsieve" },
     { name = "stack-data" },
-    { name = "tabulate" },
     { name = "terminado" },
     { name = "tinycss2" },
     { name = "toml" },
@@ -621,14 +618,11 @@ tests = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
     { name = "coverage" },
     { name = "iniconfig" },
-    { name = "openpyxl" },
     { name = "packaging" },
-    { name = "pandas" },
     { name = "pluggy" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "pytest-regressions" },
-    { name = "tabulate" },
 ]
 tests-min = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
@@ -638,6 +632,7 @@ tests-min = [
     { name = "pluggy" },
     { name = "pytest" },
     { name = "pytest-cov" },
+    { name = "pytest-regressions" },
 ]
 
 [package.metadata]
@@ -733,11 +728,9 @@ all-dev = [
     { name = "nest-asyncio", specifier = "==1.6.0" },
     { name = "nodeenv", specifier = "==1.9.1" },
     { name = "notebook-shim", specifier = "==0.2.4" },
-    { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "overrides", specifier = "==7.7.0" },
     { name = "packaging", specifier = "==24.2" },
     { name = "paginate", specifier = "==0.5.7" },
-    { name = "pandas", specifier = ">=2.2.3" },
     { name = "pandocfilters", specifier = "==1.5.1" },
     { name = "parso", specifier = "==0.8.4" },
     { name = "pathspec", specifier = "==0.12.1" },
@@ -776,7 +769,6 @@ all-dev = [
     { name = "sniffio", specifier = "==1.3.1" },
     { name = "soupsieve", specifier = "==2.6" },
     { name = "stack-data", specifier = "==0.6.3" },
-    { name = "tabulate", specifier = ">=0.9.0" },
     { name = "terminado", specifier = "==0.18.1" },
     { name = "tinycss2", specifier = "==1.4.0" },
     { name = "toml", specifier = "==0.10.2" },
@@ -942,14 +934,11 @@ tests = [
     { name = "colorama", marker = "sys_platform == 'win32'", specifier = "==0.4.6" },
     { name = "coverage", specifier = "==7.6.10" },
     { name = "iniconfig", specifier = "==2.0.0" },
-    { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "packaging", specifier = "==24.2" },
-    { name = "pandas", specifier = ">=2.2.3" },
     { name = "pluggy", specifier = "==1.5.0" },
     { name = "pytest", specifier = "==8.3.4" },
     { name = "pytest-cov", specifier = "==6.0.0" },
     { name = "pytest-regressions", specifier = ">=2.7.0" },
-    { name = "tabulate", specifier = ">=0.9.0" },
 ]
 tests-full = []
 tests-min = [
@@ -960,6 +949,7 @@ tests-min = [
     { name = "pluggy", specifier = "==1.5.0" },
     { name = "pytest", specifier = "==8.3.4" },
     { name = "pytest-cov", specifier = "==6.0.0" },
+    { name = "pytest-regressions", specifier = ">=2.7.0" },
 ]
 
 [[package]]
