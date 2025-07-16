@@ -74,6 +74,7 @@ The steps required are the following:
    else
 
 1. Enjoy the newly available version
+[TODO: add in conda release instructions]
 
 #### Further details
 
@@ -82,8 +83,8 @@ while [uv figures out how it wants to support building](https://github.com/astra
 This gives us the added benefit that we can use
 [pdm-build-locked](https://pdm-build-locked.readthedocs.io/en/stable/)
 to build locked versions of our package.
-It is for these reasons that we have a pdm pre-commit hook
-and a `pdm.lock` file in our repository.
+It is for these reasons that we create a `pdm.lock` file
+before any step related to building the package in the CI.
 
 ## Read the Docs
 

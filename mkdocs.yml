@@ -85,6 +85,9 @@ plugins:
             - https://docs.scipy.org/doc/scipy/objects.inv
             - https://scitools-iris.readthedocs.io/en/stable/objects.inv
             - https://scmdata.readthedocs.io/en/stable/objects.inv
+            # # Not available for tqdm
+            # # https://github.com/tqdm/tqdm/issues/705
+            # - https://tqdm.github.io/objects.inv
             - https://validators.readthedocs.io/en/stable/objects.inv
             - http://xarray.pydata.org/en/stable/objects.inv
           options:
@@ -109,6 +112,7 @@ plugins:
 markdown_extensions:
   # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists
   - attr_list
+  - footnotes
   # https://squidfunk.github.io/mkdocs-material/reference/math/#katex-mkdocsyml
   - pymdownx.arithmatex:
       generic: true

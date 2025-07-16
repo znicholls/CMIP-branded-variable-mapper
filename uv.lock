@@ -624,9 +624,17 @@ tests = [
     { name = "pytest-cov" },
     { name = "pytest-regressions" },
 ]
-tests-min = [
+tests-full = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
     { name = "coverage" },
+    { name = "iniconfig" },
+    { name = "packaging" },
+    { name = "pluggy" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+]
+tests-min = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
     { name = "iniconfig" },
     { name = "packaging" },
     { name = "pluggy" },
@@ -940,10 +948,17 @@ tests = [
     { name = "pytest-cov", specifier = "==6.0.0" },
     { name = "pytest-regressions", specifier = ">=2.7.0" },
 ]
-tests-full = []
-tests-min = [
+tests-full = [
     { name = "colorama", marker = "sys_platform == 'win32'", specifier = "==0.4.6" },
     { name = "coverage", specifier = "==7.6.10" },
+    { name = "iniconfig", specifier = "==2.0.0" },
+    { name = "packaging", specifier = "==24.2" },
+    { name = "pluggy", specifier = "==1.5.0" },
+    { name = "pytest", specifier = "==8.3.4" },
+    { name = "pytest-cov", specifier = "==6.0.0" },
+]
+tests-min = [
+    { name = "colorama", marker = "sys_platform == 'win32'", specifier = "==0.4.6" },
     { name = "iniconfig", specifier = "==2.0.0" },
     { name = "packaging", specifier = "==24.2" },
     { name = "pluggy", specifier = "==1.5.0" },
