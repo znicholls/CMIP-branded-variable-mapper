@@ -21,6 +21,32 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.7.0 (2025-06-20)
+
+### :warning: Breaking Changes
+
+- Updated to the new logic which has been specified for the algorithm.
+
+  This changes the outputs in a few key cases:
+
+  - dimensions of "sdepth10" now lead to a vertical label of "d100cm" for consistency with how "sdepth1" is handled
+  - support for more dimension levels (e.g. "depth300m", "depth700m") has been added
+  - the horizontal label "Ht" is now "ht" (fixed after there was a fix to a typo in the specification document)
+
+  ([#21](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/21))
+
+### :new: Features
+
+- Extracted [cmip_branded_variable_mapper.area_label], [cmip_branded_variable_mapper.horiztonal_label], [cmip_branded_variable_mapper.temporal_label] and [cmip_branded_variable_mapper.vertical_label].
+  This does not affect the behaviour of [cmip_branded_variable_mapper.map_to_cmip_branded_variable] but it does clarify the logic and structure of the various pieces. ([#23](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/23))
+
+### :bug: Bug Fixes
+
+- Fixed a bug in the temporal label generation.
+  Previously, if a variable had "time" in its name (but was not actually equal to "time"), the temporal label would nonetheless be "tavg".
+  This has now been fixed so that "ti" is returned for unrecognised dimensions, even if they contain "time" as a substring. ([#22](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/22))
+
+
 ## CMIP Branded Variable Mapper v0.6.0 (2025-04-22)
 
 ### :wrench: Trivial/Internal Changes
