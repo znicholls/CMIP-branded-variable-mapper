@@ -42,7 +42,8 @@ jobs:
         # Required for building the locked version of the package
         # with pdm-build-locked (see pyproject.toml)
         run: |
-          pdm lock --group :all --strategy inherit_metadata
+          pdm lock --group :all --strategy inherit_metadata --python="<3.13"
+          pdm lock --group :all  --python=">=3.13" --append
       - name: Publish to PyPI
         run: |
           uv build
