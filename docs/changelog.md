@@ -21,6 +21,13 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.8.0 (2025-07-23)
+
+### :warning: Breaking Changes
+
+- Updated minimum numpy version to 1.26.0, the earliest that is not in end-of-life. Fixed the numpy pin for Python 3.13 to >=2.1.0, the first numpy version which supported Python 3.13. ([#27](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/27))
+
+
 ## CMIP Branded Variable Mapper v0.7.1 (2025-07-23)
 
 ### :wrench: Trivial/Internal Changes
