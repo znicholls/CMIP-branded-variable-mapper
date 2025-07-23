@@ -21,6 +21,13 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.7.1 (2025-07-23)
+
+### :wrench: Trivial/Internal Changes
+
+- [#24](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/24)
+
+
 ## CMIP Branded Variable Mapper v0.7.0 (2025-06-20)
 
 ### :warning: Breaking Changes
