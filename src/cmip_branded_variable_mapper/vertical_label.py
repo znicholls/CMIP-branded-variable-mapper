@@ -93,16 +93,6 @@ def get_vertical_label(
         Vertical label to use for constructing the branded variable name
     """
     if (match := dimensions_mapper.get_value(dimensions)) is not None:
-        # Reproduce bug in current implementation.
-        # In future, this shouldn't be an issue
-        # as the data request will use oplev4
-        # rather than this confusing combination of levels.
-        if all(
-            oplev4d in dimensions
-            for oplev4d in ("depth0m", "depth300m", "depth700m", "depth2000m")
-        ):
-            return "d2000m"
-
         return match
 
     return fallback
