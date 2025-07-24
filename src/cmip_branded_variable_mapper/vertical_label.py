@@ -8,17 +8,17 @@ from cmip_branded_variable_mapper.mapper_classes import DimensionMapper
 
 VERTICAL_LABEL_DIMENSIONS_MAPPER = DimensionMapper(
     dimension_map={
-        "sdepth": "l",
-        "olevel": "l",
-        "alevel": "l",
-        "alevhalf": "l",
-        "olevhalf": "l",
+        "sdepth": "sl",
+        "olevel": "ol",
+        "alevel": "al",
+        "alevhalf": "alh",
+        "olevhalf": "olh",
         "rho": "rho",
         "height2m": "h2m",
         "height10m": "h10m",
         "height100m": "h100m",
-        "sdepth1": "d10cm",
-        "sdepth10": "d100cm",
+        "sdepth10cm": "d10cm",
+        "sdepth100cm": "d100cm",
         "depth0m": "d0m",
         "depth100m": "d100m",
         "depth300m": "d300m",
@@ -54,7 +54,7 @@ VERTICAL_LABEL_DIMENSIONS_MAPPER = DimensionMapper(
         "plev19": "p19",
         "plev27": "p27",
         "plev39": "p39",
-        "oplev4": "op4",
+        "oplayer4": "op4",
     }
 )
 """
@@ -93,16 +93,6 @@ def get_vertical_label(
         Vertical label to use for constructing the branded variable name
     """
     if (match := dimensions_mapper.get_value(dimensions)) is not None:
-        # Reproduce bug in current implementation.
-        # In future, this shouldn't be an issue
-        # as the data request will use oplev4
-        # rather than this confusing combination of levels.
-        if all(
-            oplev4d in dimensions
-            for oplev4d in ("depth0m", "depth300m", "depth700m", "depth2000m")
-        ):
-            return "d2000m"
-
         return match
 
     return fallback

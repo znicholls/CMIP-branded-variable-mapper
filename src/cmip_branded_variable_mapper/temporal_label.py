@@ -11,11 +11,8 @@ from cmip_branded_variable_mapper.mapper_classes import (
 
 TEMPORAL_LABEL_CELL_METHODS_MAPPER = CellMethodsSubStringMapper(
     sub_string_map={
-        # TODO: switch to the below based on updates to the paper
-        # "time: max": "tmax",
-        # "time: min": "tmin",
-        "time: max": "tstat",
-        "time: min": "tstat",
+        "time: max": "tmax",
+        "time: min": "tmin",
         "time: sum": "tsum",
     }
 )

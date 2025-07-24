@@ -16,18 +16,14 @@ from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
             "area: mean where land time: max",
             ("time", "lat", "lon"),
             # cell methods wins out over dimension
-            "tstat",
-            # # TODO: update as paper has been updated
-            # "tmax",
+            "tmax",
             id="tmax",
         ),
         pytest.param(
             "area: mean where land time: min",
             ("time", "lat", "lon"),
             # cell methods wins out over dimension
-            "tstat",
-            # # TODO: update as paper has been updated
-            # "tmin",
+            "tmin",
             id="tmin",
         ),
         pytest.param(
@@ -90,8 +86,13 @@ def test_temporal_labels(cell_methods, dimensions, exp_temporal_label):
 @pytest.mark.parametrize(
     "dimensions, exp_vertical_label",
     (
-        (("latitude", "longitude", "sdepth1"), "d10cm"),
-        (("latitude", "longitude", "sdepth10"), "d100cm"),
+        (("latitude", "longitude", "olevel"), "ol"),
+        (("latitude", "longitude", "olevhalf"), "olh"),
+        (("latitude", "longitude", "alevel"), "al"),
+        (("latitude", "longitude", "alevhalf"), "alh"),
+        (("latitude", "longitude", "sdepth"), "sl"),
+        (("latitude", "longitude", "sdepth10cm"), "d10cm"),
+        (("latitude", "longitude", "sdepth100cm"), "d100cm"),
         (("latitude", "longitude", "depth0m"), "d0m"),
         (("latitude", "longitude", "depth100m"), "d100m"),
         (("latitude", "longitude", "depth300m"), "d300m"),
@@ -106,7 +107,7 @@ def test_temporal_labels(cell_methods, dimensions, exp_temporal_label):
         (("latitude", "longitude", "p925"), "925hPa"),
         (("latitude", "longitude", "plev5u"), "p5u"),
         (("latitude", "longitude", "plev6"), "p6"),
-        (("latitude", "longitude", "oplev4"), "op4"),
+        (("latitude", "longitude", "oplayer4"), "op4"),
     ),
 )
 def test_vertical_labels(dimensions, exp_vertical_label):

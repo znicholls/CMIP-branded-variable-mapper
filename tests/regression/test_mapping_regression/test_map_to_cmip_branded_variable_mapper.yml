@@ -61,7 +61,7 @@
   - time
   - lambda550nm
   variable_name: abs550ss
-- branded_variable: absscint_tavg-d2000m-hxy-u
+- branded_variable: absscint_tavg-d0m-hxy-u
   cell_methods:
   - 'area: mean where sea'
   dimensions:
@@ -123,7 +123,7 @@
   - latitude
   - time
   variable_name: agesno
-- branded_variable: agessc_tavg-l-hxy-u
+- branded_variable: agessc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -132,7 +132,7 @@
   - olevel
   - time
   variable_name: agessc
-- branded_variable: airmass_tavg-l-hxy-u
+- branded_variable: airmass_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -181,7 +181,7 @@
   - latitude
   - time
   variable_name: albsrfc
-- branded_variable: aoanh_tavg-l-hxy-u
+- branded_variable: aoanh_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -199,7 +199,7 @@
   - time
   - lambda550nm
   variable_name: aod550volso4
-- branded_variable: arag_tavg-l-hxy-u
+- branded_variable: arag_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -284,7 +284,7 @@
   - longitude
   - latitude
   variable_name: basin
-- branded_variable: bigthetao_tavg-l-hxy-u
+- branded_variable: bigthetao_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -293,7 +293,7 @@
   - olevel
   - time
   variable_name: bigthetao
-- branded_variable: bigthetao_tavg-l-hxy-u
+- branded_variable: bigthetao_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -311,7 +311,7 @@
   - time
   - swp20bar
   variable_name: bigthetao
-- branded_variable: bigthetaoga_tavg-l-hm-u
+- branded_variable: bigthetaoga_tavg-ol-hm-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -351,7 +351,7 @@
   - plev39
   - time
   variable_name: bry
-- branded_variable: bs550aer_tpt-l-hxy-u
+- branded_variable: bs550aer_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -434,7 +434,7 @@
   - latitude
   - time
   variable_name: c14Veg
-- branded_variable: c2h4_tavg-l-hxy-u
+- branded_variable: c2h4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -443,7 +443,7 @@
   - alevel
   - time
   variable_name: c2h4
-- branded_variable: c2h5oh_tavg-l-hxy-u
+- branded_variable: c2h5oh_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -452,7 +452,7 @@
   - alevel
   - time
   variable_name: c2h5oh
-- branded_variable: c2h6_tavg-l-hxy-u
+- branded_variable: c2h6_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -470,7 +470,7 @@
   - time
   - typec3pft
   variable_name: c3PftFrac
-- branded_variable: c3h6_tavg-l-hxy-u
+- branded_variable: c3h6_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -479,7 +479,7 @@
   - alevel
   - time
   variable_name: c3h6
-- branded_variable: c3h8_tavg-l-hxy-u
+- branded_variable: c3h8_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -497,7 +497,7 @@
   - time
   - typec4pft
   variable_name: c4PftFrac
-- branded_variable: c4h10_tavg-l-hxy-u
+- branded_variable: c4h10_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -604,7 +604,7 @@
   - latitude
   - time
   variable_name: cRoot
-- branded_variable: cSoilAbove1m_tavg-d100cm-hxy-u
+- branded_variable: cSoilAbove1m_tavg-u-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -613,7 +613,7 @@
   - time
   - sdepth10
   variable_name: cSoilAbove1m
-- branded_variable: cSoilLevels_tavg-l-hxy-u
+- branded_variable: cSoilLevels_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -705,7 +705,7 @@
   - latitude
   - time
   variable_name: cWood
-- branded_variable: calc_tavg-l-hxy-u
+- branded_variable: calc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -761,7 +761,7 @@
   - latitude
   - time
   variable_name: ccldncl
-- branded_variable: ccn02_tavg-l-hxy-u
+- branded_variable: ccn02_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -771,7 +771,7 @@
   - time
   - rh100p2pct
   variable_name: ccn02
-- branded_variable: ccn1_tavg-l-hxy-u
+- branded_variable: ccn1_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -812,7 +812,7 @@
   - site
   - time1
   variable_name: cct
-- branded_variable: cdnc_tavg-l-hxy-u
+- branded_variable: cdnc_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -847,7 +847,7 @@
   dimensions:
   - time
   variable_name: cfc113global
-- branded_variable: cfc114_tavg-l-hxy-u
+- branded_variable: cfc114_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -868,7 +868,7 @@
   dimensions:
   - time
   variable_name: cfc12global
-- branded_variable: ch3coch3_tavg-l-hxy-u
+- branded_variable: ch3coch3_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -877,7 +877,7 @@
   - alevel
   - time
   variable_name: ch3coch3
-- branded_variable: ch3oh_tavg-l-hxy-u
+- branded_variable: ch3oh_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -886,7 +886,7 @@
   - alevel
   - time
   variable_name: ch3oh
-- branded_variable: ch4_tavg-l-hxy-u
+- branded_variable: ch4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -942,7 +942,7 @@
   - latitude
   - time
   variable_name: ch4losssoil
-- branded_variable: ch4ref_ti-l-hxy-u
+- branded_variable: ch4ref_ti-al-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -950,7 +950,7 @@
   - latitude
   - alevel
   variable_name: ch4ref
-- branded_variable: chcint_tavg-d2000m-hxy-u
+- branded_variable: chcint_tavg-d0m-hxy-u
   cell_methods:
   - 'area: mean where sea'
   dimensions:
@@ -964,7 +964,7 @@
   - depth700m
   - depth2000m
   variable_name: chcint
-- branded_variable: cheaqpso4_tavg-l-hxy-u
+- branded_variable: cheaqpso4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -973,7 +973,7 @@
   - alevel
   - time
   variable_name: cheaqpso4
-- branded_variable: chegph2oo1d_tavg-l-hxy-u
+- branded_variable: chegph2oo1d_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -982,7 +982,7 @@
   - alevel
   - time
   variable_name: chegph2oo1d
-- branded_variable: chegpso4_tavg-l-hxy-u
+- branded_variable: chegpso4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -999,7 +999,7 @@
   - latitude
   - time
   variable_name: chepasoa
-- branded_variable: chepnh4_tavg-l-hxy-u
+- branded_variable: chepnh4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1008,7 +1008,7 @@
   - alevel
   - time
   variable_name: chepnh4
-- branded_variable: chepno3_tavg-l-hxy-u
+- branded_variable: chepno3_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1025,7 +1025,7 @@
   - latitude
   - time
   variable_name: chepsoa
-- branded_variable: chl_tavg-l-hxy-u
+- branded_variable: chl_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -1043,7 +1043,7 @@
   - time
   - swp20bar
   variable_name: chl
-- branded_variable: chlcalc_tavg-l-hxy-u
+- branded_variable: chlcalc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -1060,7 +1060,7 @@
   - latitude
   - time
   variable_name: chlcalcos
-- branded_variable: chldiat_tavg-l-hxy-u
+- branded_variable: chldiat_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -1077,7 +1077,7 @@
   - latitude
   - time
   variable_name: chldiatos
-- branded_variable: chldiaz_tavg-l-hxy-u
+- branded_variable: chldiaz_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -1094,7 +1094,7 @@
   - latitude
   - time
   variable_name: chldiazos
-- branded_variable: chlmisc_tavg-l-hxy-u
+- branded_variable: chlmisc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -1127,7 +1127,7 @@
   - latitude
   - time
   variable_name: chlos
-- branded_variable: chlpico_tavg-l-hxy-u
+- branded_variable: chlpico_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -1159,7 +1159,7 @@
   - site
   - time1
   variable_name: ci
-- branded_variable: cl_tavg-l-hxy-u
+- branded_variable: cl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1168,7 +1168,7 @@
   - alevel
   - time
   variable_name: cl
-- branded_variable: cl_tavg-l-hxy-u
+- branded_variable: cl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1177,7 +1177,7 @@
   - alevel
   - time
   variable_name: cl
-- branded_variable: cl_tpt-l-hxys-u
+- branded_variable: cl_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -1185,7 +1185,7 @@
   - site
   - time1
   variable_name: cl
-- branded_variable: clc_tavg-l-hxy-u
+- branded_variable: clc_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1288,7 +1288,7 @@
   - time
   - p220
   variable_name: clhcalipso
-- branded_variable: cli_tavg-l-hxy-u
+- branded_variable: cli_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1297,7 +1297,7 @@
   - alevel
   - time
   variable_name: cli
-- branded_variable: cli_tavg-l-hxy-u
+- branded_variable: cli_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1306,7 +1306,7 @@
   - alevel
   - time
   variable_name: cli
-- branded_variable: cli_tpt-l-hxys-u
+- branded_variable: cli_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -1314,7 +1314,7 @@
   - site
   - time1
   variable_name: cli
-- branded_variable: clic_tavg-l-hxy-u
+- branded_variable: clic_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1323,7 +1323,7 @@
   - alevel
   - time
   variable_name: clic
-- branded_variable: clic_tpt-l-hxy-u
+- branded_variable: clic_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -1340,7 +1340,7 @@
   - latitude
   - time
   variable_name: climodis
-- branded_variable: clis_tavg-l-hxy-u
+- branded_variable: clis_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1349,7 +1349,7 @@
   - alevel
   - time
   variable_name: clis
-- branded_variable: clis_tpt-l-hxy-u
+- branded_variable: clis_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -1529,7 +1529,7 @@
   - tau
   - time
   variable_name: clmodisliquid
-- branded_variable: cls_tavg-l-hxy-u
+- branded_variable: cls_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1657,7 +1657,7 @@
   - latitude
   - time
   variable_name: cltmodis
-- branded_variable: clw_tavg-l-hxy-u
+- branded_variable: clw_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1666,7 +1666,7 @@
   - alevel
   - time
   variable_name: clw
-- branded_variable: clw_tavg-l-hxy-u
+- branded_variable: clw_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1675,7 +1675,7 @@
   - alevel
   - time
   variable_name: clw
-- branded_variable: clw_tpt-l-hxys-u
+- branded_variable: clw_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -1683,7 +1683,7 @@
   - site
   - time1
   variable_name: clw
-- branded_variable: clwc_tavg-l-hxy-u
+- branded_variable: clwc_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1692,7 +1692,7 @@
   - alevel
   - time
   variable_name: clwc
-- branded_variable: clwc_tpt-l-hxy-u
+- branded_variable: clwc_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -1709,7 +1709,7 @@
   - latitude
   - time
   variable_name: clwmodis
-- branded_variable: clws_tavg-l-hxy-u
+- branded_variable: clws_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1718,7 +1718,7 @@
   - alevel
   - time
   variable_name: clws
-- branded_variable: clws_tpt-l-hxy-u
+- branded_variable: clws_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -1798,7 +1798,7 @@
   - latitude
   - time
   variable_name: cnc
-- branded_variable: co23D_tavg-l-hxy-u
+- branded_variable: co23D_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1807,7 +1807,7 @@
   - alevel
   - time
   variable_name: co23D
-- branded_variable: co2_tavg-l-hxy-u
+- branded_variable: co2_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1889,7 +1889,7 @@
   - latitude
   - time
   variable_name: co3sataragos
-- branded_variable: co_tavg-l-hxy-u
+- branded_variable: co_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -1922,7 +1922,7 @@
   - latitude
   - time
   variable_name: cod
-- branded_variable: conccn_tavg-l-hxy-u
+- branded_variable: conccn_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -2012,7 +2012,7 @@
   - longitude
   - latitude
   variable_name: depthsl
-- branded_variable: detoc_tavg-l-hxy-u
+- branded_variable: detoc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2021,7 +2021,7 @@
   - olevel
   - time
   variable_name: detoc
-- branded_variable: detoc_tavg-l-hxy-u
+- branded_variable: detoc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2030,7 +2030,7 @@
   - olevel
   - time
   variable_name: detoc
-- branded_variable: dfe_tavg-l-hxy-u
+- branded_variable: dfe_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2055,7 +2055,7 @@
   - latitude
   - time
   variable_name: dgw
-- branded_variable: difmxybo_tavg-l-hxy-u
+- branded_variable: difmxybo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2064,7 +2064,7 @@
   - olevel
   - time
   variable_name: difmxybo
-- branded_variable: difmxylo_tavg-l-hxy-u
+- branded_variable: difmxylo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2073,7 +2073,7 @@
   - olevel
   - time
   variable_name: difmxylo
-- branded_variable: diftrblo_tavg-l-hxy-u
+- branded_variable: diftrblo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2082,7 +2082,7 @@
   - olevel
   - time
   variable_name: diftrblo
-- branded_variable: diftrelo_tavg-l-hxy-u
+- branded_variable: diftrelo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2091,7 +2091,7 @@
   - olevel
   - time
   variable_name: diftrelo
-- branded_variable: difvho_tavg-l-hxy-u
+- branded_variable: difvho_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2100,7 +2100,7 @@
   - olevel
   - time
   variable_name: difvho
-- branded_variable: difvso_tavg-l-hxy-u
+- branded_variable: difvso_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2117,7 +2117,7 @@
   - latitude
   - time
   variable_name: dispkexyfo
-- branded_variable: dissi13c_tavg-l-hxy-u
+- branded_variable: dissi13c_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2134,7 +2134,7 @@
   - latitude
   - time
   variable_name: dissi13cos
-- branded_variable: dissi14c_tavg-l-hxy-u
+- branded_variable: dissi14c_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2143,7 +2143,7 @@
   - olevel
   - time
   variable_name: dissi14c
-- branded_variable: dissi14cabio_tavg-l-hxy-u
+- branded_variable: dissi14cabio_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2160,7 +2160,7 @@
   - latitude
   - time
   variable_name: dissi14cabioos
-- branded_variable: dissic_tavg-l-hxy-u
+- branded_variable: dissic_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2177,7 +2177,7 @@
   - latitude
   - time
   variable_name: dissicos
-- branded_variable: dissoc_tavg-l-hxy-u
+- branded_variable: dissoc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2186,7 +2186,7 @@
   - olevel
   - time
   variable_name: dissoc
-- branded_variable: dissoc_tavg-l-hxy-u
+- branded_variable: dissoc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2195,7 +2195,7 @@
   - olevel
   - time
   variable_name: dissoc
-- branded_variable: dmc_tavg-l-hxy-u
+- branded_variable: dmc_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -2204,7 +2204,7 @@
   - alevhalf
   - time
   variable_name: dmc
-- branded_variable: dms_tavg-l-hxy-u
+- branded_variable: dms_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -2213,7 +2213,7 @@
   - alevel
   - time
   variable_name: dms
-- branded_variable: dmso_tavg-l-hxy-u
+- branded_variable: dmso_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -2230,7 +2230,7 @@
   - latitude
   - time
   variable_name: dmsos
-- branded_variable: do3chm_tavg-l-hxy-u
+- branded_variable: do3chm_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -2417,7 +2417,7 @@
   - latitude
   - time
   variable_name: dsw
-- branded_variable: dtauc_tpt-l-hxy-u
+- branded_variable: dtauc_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -2426,7 +2426,7 @@
   - alevel
   - time1
   variable_name: dtauc
-- branded_variable: dtaus_tpt-l-hxy-u
+- branded_variable: dtaus_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -2477,7 +2477,7 @@
   - longitude
   - latitude
   variable_name: dyvo
-- branded_variable: e90inst_tpt-l-hxy-u
+- branded_variable: e90inst_tpt-al-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -2486,7 +2486,7 @@
   - alevel
   - time1
   variable_name: e90inst
-- branded_variable: ec550aer_tavg-l-hxy-u
+- branded_variable: ec550aer_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -2505,7 +2505,7 @@
   - time1
   - lambda550nm
   variable_name: ec550aer
-- branded_variable: edt_tavg-l-hxy-u
+- branded_variable: edt_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -2514,7 +2514,7 @@
   - alevel
   - time
   variable_name: edt
-- branded_variable: edt_tpt-l-hxys-u
+- branded_variable: edt_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -2554,7 +2554,7 @@
   - latitude
   - time
   variable_name: emiaoa
-- branded_variable: emiavnox_tavg-l-hxy-u
+- branded_variable: emiavnox_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -2763,7 +2763,7 @@
   - latitude
   - time
   variable_name: emilkch4
-- branded_variable: emilnox_tavg-l-hxy-u
+- branded_variable: emilnox_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3026,7 +3026,7 @@
   - latitude
   - time
   variable_name: evspsblveg
-- branded_variable: evu_tavg-l-hxy-u
+- branded_variable: evu_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3035,7 +3035,7 @@
   - alevel
   - time
   variable_name: evu
-- branded_variable: evu_tpt-l-hxys-u
+- branded_variable: evu_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -3052,7 +3052,7 @@
   - depthseafloor
   - time
   variable_name: exparagob
-- branded_variable: expc_tavg-l-hxy-u
+- branded_variable: expc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -3061,7 +3061,7 @@
   - olevel
   - time
   variable_name: expc
-- branded_variable: expcalc_tavg-l-hxy-u
+- branded_variable: expcalc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -3543,7 +3543,7 @@
   - time
   - depth0m
   variable_name: fgdms
-- branded_variable: ficeberg_tavg-l-hxy-u
+- branded_variable: ficeberg_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -3552,7 +3552,7 @@
   - olevel
   - time
   variable_name: ficeberg
-- branded_variable: ficeberg_tavg-l-hxy-u
+- branded_variable: ficeberg_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -3815,7 +3815,7 @@
   - time
   - typenatgr
   variable_name: grassFrac
-- branded_variable: graz_tavg-l-hxy-u
+- branded_variable: graz_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -3824,7 +3824,7 @@
   - olevel
   - time
   variable_name: graz
-- branded_variable: h2_tavg-l-hxy-u
+- branded_variable: h2_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3833,7 +3833,7 @@
   - alevel
   - time
   variable_name: h2
-- branded_variable: h2loss_tavg-l-hxy-u
+- branded_variable: h2loss_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3842,7 +3842,7 @@
   - alevel
   - time
   variable_name: h2loss
-- branded_variable: h2o_tavg-l-hxy-u
+- branded_variable: h2o_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3859,7 +3859,7 @@
   - plev39
   - time
   variable_name: h2o
-- branded_variable: h2prod_tavg-l-hxy-u
+- branded_variable: h2prod_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3868,7 +3868,7 @@
   - alevel
   - time
   variable_name: h2prod
-- branded_variable: hcfc22_tavg-l-hxy-u
+- branded_variable: hcfc22_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3883,7 +3883,7 @@
   dimensions:
   - time
   variable_name: hcfc22global
-- branded_variable: hcho_tavg-l-hxy-u
+- branded_variable: hcho_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3892,7 +3892,7 @@
   - alevel
   - time
   variable_name: hcho
-- branded_variable: hcl_tavg-l-hxy-u
+- branded_variable: hcl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3961,7 +3961,7 @@
   - basin
   - time
   variable_name: hfbasinpsmadv
-- branded_variable: hfc125_tavg-l-hxy-u
+- branded_variable: hfc125_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -3970,7 +3970,7 @@
   - alevel
   - time
   variable_name: hfc125
-- branded_variable: hfc134a_tavg-l-hxy-u
+- branded_variable: hfc134a_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -4082,7 +4082,7 @@
   - xgre
   - ygre
   variable_name: hfgeoubed
-- branded_variable: hfibthermds_tavg-l-hxy-u
+- branded_variable: hfibthermds_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -4179,7 +4179,7 @@
   - latitude
   - time
   variable_name: hfrainds
-- branded_variable: hfrunoffds_tavg-l-hxy-u
+- branded_variable: hfrunoffds_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -4188,7 +4188,7 @@
   - olevel
   - time
   variable_name: hfrunoffds
-- branded_variable: hfrunoffds_tavg-l-hxy-u
+- branded_variable: hfrunoffds_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -4205,7 +4205,7 @@
   - latitude
   - time
   variable_name: hfrunoffds
-- branded_variable: hfsnthermds_tavg-l-hxy-u
+- branded_variable: hfsnthermds_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -4294,7 +4294,7 @@
   - site
   - time1
   variable_name: hfss
-- branded_variable: hfx_tavg-l-hxy-u
+- branded_variable: hfx_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -4319,7 +4319,7 @@
   - latitude
   - time
   variable_name: hfx
-- branded_variable: hfy_tavg-l-hxy-u
+- branded_variable: hfy_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -4344,7 +4344,7 @@
   - latitude
   - time
   variable_name: hfy
-- branded_variable: hno3_tavg-l-hxy-u
+- branded_variable: hno3_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -4423,7 +4423,7 @@
   - time1
   - p850
   variable_name: hur850
-- branded_variable: hur_tavg-l-hxy-u
+- branded_variable: hur_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -4432,7 +4432,7 @@
   - alevel
   - time
   variable_name: hur
-- branded_variable: hur_tavg-l-hxy-u
+- branded_variable: hur_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -4459,7 +4459,7 @@
   - plev19
   - time
   variable_name: hur
-- branded_variable: hur_tpt-l-hxys-u
+- branded_variable: hur_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -4556,7 +4556,7 @@
   - plev6
   - time1
   variable_name: hus6
-- branded_variable: hus_tavg-l-hxy-u
+- branded_variable: hus_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -4565,7 +4565,7 @@
   - alevel
   - time
   variable_name: hus
-- branded_variable: hus_tavg-l-hxy-u
+- branded_variable: hus_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -4601,7 +4601,7 @@
   - plev19
   - time
   variable_name: hus
-- branded_variable: hus_tpt-l-hxy-u
+- branded_variable: hus_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -4610,7 +4610,7 @@
   - alevel
   - time1
   variable_name: hus
-- branded_variable: hus_tpt-l-hxy-u
+- branded_variable: hus_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -4619,7 +4619,7 @@
   - alevel
   - time1
   variable_name: hus
-- branded_variable: hus_tpt-l-hxys-u
+- branded_variable: hus_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -5027,7 +5027,7 @@
   - latitude
   - time4
   variable_name: irrSurf
-- branded_variable: isop_tavg-l-hxy-u
+- branded_variable: isop_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5036,7 +5036,7 @@
   - alevel
   - time
   variable_name: isop
-- branded_variable: jno2_tavg-l-hxy-u
+- branded_variable: jno2_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5633,7 +5633,7 @@
   dimensions:
   - site
   variable_name: lon
-- branded_variable: lossch4_tavg-l-hxy-u
+- branded_variable: lossch4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5642,7 +5642,7 @@
   - alevel
   - time
   variable_name: lossch4
-- branded_variable: lossco_tavg-l-hxy-u
+- branded_variable: lossco_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5651,7 +5651,7 @@
   - alevel
   - time
   variable_name: lossco
-- branded_variable: lossn2o_tavg-l-hxy-u
+- branded_variable: lossn2o_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5684,7 +5684,7 @@
   - latitude
   - time
   variable_name: lwsnl
-- branded_variable: masscello_tavg-l-hxy-u
+- branded_variable: masscello_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -5693,7 +5693,7 @@
   - olevel
   - time
   variable_name: masscello
-- branded_variable: masscello_tavg-l-hxy-u
+- branded_variable: masscello_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -5702,7 +5702,7 @@
   - olevel
   - time
   variable_name: masscello
-- branded_variable: masscello_ti-l-hxy-u
+- branded_variable: masscello_ti-ol-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -5730,7 +5730,7 @@
   - latitude
   - time
   variable_name: maxpblz
-- branded_variable: mc_tavg-l-hxy-u
+- branded_variable: mc_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5739,7 +5739,7 @@
   - alevhalf
   - time
   variable_name: mc
-- branded_variable: mc_tavg-l-hxy-u
+- branded_variable: mc_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5748,7 +5748,7 @@
   - alevhalf
   - time
   variable_name: mc
-- branded_variable: mc_tpt-l-hxys-u
+- branded_variable: mc_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -5756,7 +5756,7 @@
   - site
   - time1
   variable_name: mc
-- branded_variable: mcd_tavg-l-hxy-u
+- branded_variable: mcd_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5765,7 +5765,7 @@
   - alevhalf
   - time
   variable_name: mcd
-- branded_variable: mcu_tavg-l-hxy-u
+- branded_variable: mcu_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5774,7 +5774,7 @@
   - alevhalf
   - time
   variable_name: mcu
-- branded_variable: meanage_tavg-l-hxy-u
+- branded_variable: meanage_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5860,7 +5860,7 @@
   - time
   - deltasigt
   variable_name: mlotstsq
-- branded_variable: mmraerh2o_tavg-l-hxy-u
+- branded_variable: mmraerh2o_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5884,7 +5884,7 @@
   - site
   - time1
   variable_name: mmraerh2o
-- branded_variable: mmrbc_tavg-l-hxy-u
+- branded_variable: mmrbc_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5908,7 +5908,7 @@
   - site
   - time1
   variable_name: mmrbc
-- branded_variable: mmrdust_tavg-l-hxy-u
+- branded_variable: mmrdust_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5932,7 +5932,7 @@
   - site
   - time1
   variable_name: mmrdust
-- branded_variable: mmrnh4_tavg-l-hxy-u
+- branded_variable: mmrnh4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5956,7 +5956,7 @@
   - site
   - time1
   variable_name: mmrnh4
-- branded_variable: mmrno3_tavg-l-hxy-u
+- branded_variable: mmrno3_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -5980,7 +5980,7 @@
   - site
   - time1
   variable_name: mmrno3
-- branded_variable: mmroa_tavg-l-hxy-u
+- branded_variable: mmroa_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6004,7 +6004,7 @@
   - site
   - time1
   variable_name: mmroa
-- branded_variable: mmrpm10_tavg-l-hxy-u
+- branded_variable: mmrpm10_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6013,7 +6013,7 @@
   - alevel
   - time
   variable_name: mmrpm10
-- branded_variable: mmrpm1_tavg-l-hxy-u
+- branded_variable: mmrpm1_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6022,7 +6022,7 @@
   - alevel
   - time
   variable_name: mmrpm1
-- branded_variable: mmrpm2p5_tavg-l-hxy-u
+- branded_variable: mmrpm2p5_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6031,7 +6031,7 @@
   - alevel
   - time
   variable_name: mmrpm2p5
-- branded_variable: mmrso4_tavg-l-hxy-u
+- branded_variable: mmrso4_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6055,7 +6055,7 @@
   - site
   - time1
   variable_name: mmrso4
-- branded_variable: mmrsoa_tavg-l-hxy-u
+- branded_variable: mmrsoa_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6072,7 +6072,7 @@
   - latitude
   - time
   variable_name: mmrsoa
-- branded_variable: mmrss_tavg-l-hxy-u
+- branded_variable: mmrss_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6262,7 +6262,7 @@
   - latitude
   - time
   variable_name: mrros
-- branded_variable: mrsfl_tavg-l-hxy-u
+- branded_variable: mrsfl_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6271,7 +6271,7 @@
   - sdepth
   - time
   variable_name: mrsfl
-- branded_variable: mrsfl_tavg-l-hxy-u
+- branded_variable: mrsfl_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6280,7 +6280,7 @@
   - sdepth
   - time
   variable_name: mrsfl
-- branded_variable: mrsll_tavg-l-hxy-u
+- branded_variable: mrsll_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6289,7 +6289,7 @@
   - sdepth
   - time
   variable_name: mrsll
-- branded_variable: mrsll_tavg-l-hxy-u
+- branded_variable: mrsll_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6298,7 +6298,7 @@
   - sdepth
   - time
   variable_name: mrsll
-- branded_variable: mrso10_tavg-d100cm-hxy-u
+- branded_variable: mrso10_tavg-u-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6307,7 +6307,7 @@
   - time
   - sdepth10
   variable_name: mrso10
-- branded_variable: mrso10_tavg-d100cm-hxy-u
+- branded_variable: mrso10_tavg-u-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6339,7 +6339,7 @@
   - longitude
   - latitude
   variable_name: mrsofc
-- branded_variable: mrsol_tavg-l-hxy-u
+- branded_variable: mrsol_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6348,7 +6348,7 @@
   - sdepth
   - time
   variable_name: mrsol
-- branded_variable: mrsol_tavg-l-hxy-u
+- branded_variable: mrsol_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6357,7 +6357,7 @@
   - sdepth
   - time
   variable_name: mrsol
-- branded_variable: mrsosLut_tavg-d10cm-hxy-u
+- branded_variable: mrsosLut_tavg-u-hxy-u
   cell_methods:
   - 'area: time: mean where sector'
   dimensions:
@@ -6367,7 +6367,7 @@
   - time
   - sdepth1
   variable_name: mrsosLut
-- branded_variable: mrsos_tavg-d10cm-hxy-u
+- branded_variable: mrsos_tavg-u-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6376,7 +6376,7 @@
   - time
   - sdepth1
   variable_name: mrsos
-- branded_variable: mrsos_tavg-d10cm-hxy-u
+- branded_variable: mrsos_tavg-u-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -6385,7 +6385,7 @@
   - time
   - sdepth1
   variable_name: mrsos
-- branded_variable: mrsos_tpt-d10cm-hxy-u
+- branded_variable: mrsos_tpt-u-hxy-u
   cell_methods:
   - 'area: mean where land time: point'
   dimensions:
@@ -6446,7 +6446,7 @@
   - basin
   - time
   variable_name: msftmrhompa
-- branded_variable: msftmz_tavg-l-hys-u
+- branded_variable: msftmz_tavg-ol-hys-u
   cell_methods:
   - 'longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time:
     mean'
@@ -6456,7 +6456,7 @@
   - basin
   - time
   variable_name: msftmz
-- branded_variable: msftmzmpa_tavg-l-hys-u
+- branded_variable: msftmzmpa_tavg-ol-hys-u
   cell_methods:
   - 'longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time:
     mean'
@@ -6466,7 +6466,7 @@
   - basin
   - time
   variable_name: msftmzmpa
-- branded_variable: msftmzsmpa_tavg-l-hys-u
+- branded_variable: msftmzsmpa_tavg-ol-hys-u
   cell_methods:
   - 'longitude: sum (comment: basin sum [along zig-zag grid path]) depth: sum time:
     mean'
@@ -6494,7 +6494,7 @@
   - basin
   - time
   variable_name: msftyrhompa
-- branded_variable: msftyz_tavg-l-ht-u
+- branded_variable: msftyz_tavg-ol-ht-u
   cell_methods:
   - 'time: mean grid_longitude: mean'
   dimensions:
@@ -6503,7 +6503,7 @@
   - basin
   - time
   variable_name: msftyz
-- branded_variable: msftyzmpa_tavg-l-ht-u
+- branded_variable: msftyzmpa_tavg-ol-ht-u
   cell_methods:
   - 'time: mean grid_longitude: mean'
   dimensions:
@@ -6512,7 +6512,7 @@
   - basin
   - time
   variable_name: msftyzmpa
-- branded_variable: n2o_tavg-l-hxy-u
+- branded_variable: n2o_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6729,7 +6729,7 @@
   - latitude
   - time
   variable_name: netAtmosLandCO2Flux
-- branded_variable: nh4_tavg-l-hxy-u
+- branded_variable: nh4_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -6746,7 +6746,7 @@
   - latitude
   - time
   variable_name: nh4os
-- branded_variable: nh50_tavg-l-hxy-u
+- branded_variable: nh50_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6755,7 +6755,7 @@
   - alevel
   - time
   variable_name: nh50
-- branded_variable: no2_tavg-l-hxy-u
+- branded_variable: no2_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6764,7 +6764,7 @@
   - alevel
   - time
   variable_name: no2
-- branded_variable: no3_tavg-l-hxy-u
+- branded_variable: no3_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -6781,7 +6781,7 @@
   - latitude
   - time
   variable_name: no3os
-- branded_variable: no_tavg-l-hxy-u
+- branded_variable: no_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6898,7 +6898,7 @@
   - latitude
   - time
   variable_name: npp
-- branded_variable: o2_tavg-l-hxy-u
+- branded_variable: o2_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -6940,7 +6940,7 @@
   - latitude
   - time
   variable_name: o2os
-- branded_variable: o2sat_tavg-l-hxy-u
+- branded_variable: o2sat_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -6949,7 +6949,7 @@
   - olevel
   - time
   variable_name: o2sat
-- branded_variable: o3_tavg-l-hxy-u
+- branded_variable: o3_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -6984,7 +6984,7 @@
   - plev19
   - time2
   variable_name: o3
-- branded_variable: o3inst_tpt-l-hxy-u
+- branded_variable: o3inst_tpt-al-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -6993,7 +6993,7 @@
   - alevel
   - time1
   variable_name: o3inst
-- branded_variable: o3loss_tavg-l-hxy-u
+- branded_variable: o3loss_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7002,7 +7002,7 @@
   - alevel
   - time
   variable_name: o3loss
-- branded_variable: o3prod_tavg-l-hxy-u
+- branded_variable: o3prod_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7011,7 +7011,7 @@
   - alevel
   - time
   variable_name: o3prod
-- branded_variable: o3ref_ti-l-hxy-u
+- branded_variable: o3ref_ti-al-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -7019,7 +7019,7 @@
   - latitude
   - alevel
   variable_name: o3ref
-- branded_variable: o3ref_ti-l-hxy-u
+- branded_variable: o3ref_ti-al-hxy-u
   cell_methods:
   - 'area: time: mean (monthly mean fixed annual cycle)'
   dimensions:
@@ -7028,7 +7028,7 @@
   - alevel
   - timefxc
   variable_name: o3ref
-- branded_variable: o3ste_tavg-l-hxy-u
+- branded_variable: o3ste_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7037,7 +7037,7 @@
   - alevel
   - time
   variable_name: o3ste
-- branded_variable: obvfsq_tavg-l-hxy-u
+- branded_variable: obvfsq_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7055,7 +7055,7 @@
   - time
   - depth0m
   variable_name: ocfriver
-- branded_variable: ocontempdiff_tavg-l-hxy-u
+- branded_variable: ocontempdiff_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7072,7 +7072,7 @@
   - latitude
   - time
   variable_name: ocontempmint
-- branded_variable: ocontemppadvect_tavg-l-hxy-u
+- branded_variable: ocontemppadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7081,7 +7081,7 @@
   - olevel
   - time
   variable_name: ocontemppadvect
-- branded_variable: ocontemppmdiff_tavg-l-hxy-u
+- branded_variable: ocontemppmdiff_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7090,7 +7090,7 @@
   - olevel
   - time
   variable_name: ocontemppmdiff
-- branded_variable: ocontemppsmadvect_tavg-l-hxy-u
+- branded_variable: ocontemppsmadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7099,7 +7099,7 @@
   - olevel
   - time
   variable_name: ocontemppsmadvect
-- branded_variable: ocontemprmadvect_tavg-l-hxy-u
+- branded_variable: ocontemprmadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7108,7 +7108,7 @@
   - olevel
   - time
   variable_name: ocontemprmadvect
-- branded_variable: ocontemptend_tavg-l-hxy-u
+- branded_variable: ocontemptend_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7252,7 +7252,7 @@
   - time
   - lambda865nm
   variable_name: od865aer
-- branded_variable: oh_tavg-l-hxy-u
+- branded_variable: oh_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7269,7 +7269,7 @@
   - plev39
   - time
   variable_name: oh
-- branded_variable: opottempdiff_tavg-l-hxy-u
+- branded_variable: opottempdiff_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7286,7 +7286,7 @@
   - latitude
   - time
   variable_name: opottempmint
-- branded_variable: opottemppadvect_tavg-l-hxy-u
+- branded_variable: opottemppadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7295,7 +7295,7 @@
   - olevel
   - time
   variable_name: opottemppadvect
-- branded_variable: opottemppmdiff_tavg-l-hxy-u
+- branded_variable: opottemppmdiff_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7304,7 +7304,7 @@
   - olevel
   - time
   variable_name: opottemppmdiff
-- branded_variable: opottemppsmadvect_tavg-l-hxy-u
+- branded_variable: opottemppsmadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7313,7 +7313,7 @@
   - olevel
   - time
   variable_name: opottemppsmadvect
-- branded_variable: opottemprmadvect_tavg-l-hxy-u
+- branded_variable: opottemprmadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7322,7 +7322,7 @@
   - olevel
   - time
   variable_name: opottemprmadvect
-- branded_variable: opottemptend_tavg-l-hxy-u
+- branded_variable: opottemptend_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7331,7 +7331,7 @@
   - olevel
   - time
   variable_name: opottemptend
-- branded_variable: opottemptend_tavg-l-hxy-u
+- branded_variable: opottemptend_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7387,7 +7387,7 @@
   - longitude
   - latitude
   variable_name: orog
-- branded_variable: osaltdiff_tavg-l-hxy-u
+- branded_variable: osaltdiff_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7396,7 +7396,7 @@
   - olevel
   - time
   variable_name: osaltdiff
-- branded_variable: osaltpadvect_tavg-l-hxy-u
+- branded_variable: osaltpadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7405,7 +7405,7 @@
   - olevel
   - time
   variable_name: osaltpadvect
-- branded_variable: osaltpmdiff_tavg-l-hxy-u
+- branded_variable: osaltpmdiff_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7414,7 +7414,7 @@
   - olevel
   - time
   variable_name: osaltpmdiff
-- branded_variable: osaltpsmadvect_tavg-l-hxy-u
+- branded_variable: osaltpsmadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7423,7 +7423,7 @@
   - olevel
   - time
   variable_name: osaltpsmadvect
-- branded_variable: osaltpsmadvect_tavg-l-hxy-u
+- branded_variable: osaltpsmadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7432,7 +7432,7 @@
   - olevel
   - time
   variable_name: osaltpsmadvect
-- branded_variable: osaltrmadvect_tavg-l-hxy-u
+- branded_variable: osaltrmadvect_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7441,7 +7441,7 @@
   - olevel
   - time
   variable_name: osaltrmadvect
-- branded_variable: osalttend_tavg-l-hxy-u
+- branded_variable: osalttend_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7450,7 +7450,7 @@
   - olevel
   - time
   variable_name: osalttend
-- branded_variable: pan_tavg-l-hxy-u
+- branded_variable: pan_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7545,7 +7545,7 @@
   - latitude
   - time
   variable_name: pflw
-- branded_variable: pfscint_tavg-d2000m-hxy-u
+- branded_variable: pfscint_tavg-d0m-hxy-u
   cell_methods:
   - 'area: mean where sea'
   dimensions:
@@ -7559,7 +7559,7 @@
   - depth700m
   - depth2000m
   variable_name: pfscint
-- branded_variable: pfull_tavg-l-hxy-u
+- branded_variable: pfull_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7568,7 +7568,7 @@
   - alevel
   - time
   variable_name: pfull
-- branded_variable: pfull_tavg-l-hxy-u
+- branded_variable: pfull_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7577,7 +7577,7 @@
   - alevel
   - time
   variable_name: pfull
-- branded_variable: pfull_tclm-l-hxy-u
+- branded_variable: pfull_tclm-al-hxy-u
   cell_methods:
   - 'area: mean time: mean within years time: mean over years'
   dimensions:
@@ -7586,7 +7586,7 @@
   - alevel
   - time2
   variable_name: pfull
-- branded_variable: pfull_tpt-l-hxy-u
+- branded_variable: pfull_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -7595,7 +7595,7 @@
   - alevel
   - time1
   variable_name: pfull
-- branded_variable: pfull_tpt-l-hxys-u
+- branded_variable: pfull_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -7603,7 +7603,7 @@
   - site
   - time1
   variable_name: pfull
-- branded_variable: ph_tavg-l-hxy-u
+- branded_variable: ph_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7621,7 +7621,7 @@
   - time
   - swp20bar
   variable_name: ph
-- branded_variable: phalf_tavg-l-hxy-u
+- branded_variable: phalf_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7630,7 +7630,7 @@
   - alevhalf
   - time
   variable_name: phalf
-- branded_variable: phalf_tavg-l-hxy-u
+- branded_variable: phalf_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7639,7 +7639,7 @@
   - alevhalf
   - time
   variable_name: phalf
-- branded_variable: phalf_tclm-l-hxy-u
+- branded_variable: phalf_tclm-alh-hxy-u
   cell_methods:
   - 'area: mean time: mean within years time: mean over years'
   dimensions:
@@ -7648,7 +7648,7 @@
   - alevhalf
   - time2
   variable_name: phalf
-- branded_variable: phalf_tpt-l-hxys-u
+- branded_variable: phalf_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -7656,7 +7656,7 @@
   - site
   - time1
   variable_name: phalf
-- branded_variable: phcint_tavg-d2000m-hxy-u
+- branded_variable: phcint_tavg-d0m-hxy-u
   cell_methods:
   - 'area: mean where sea'
   dimensions:
@@ -7686,7 +7686,7 @@
   - latitude
   - time
   variable_name: phos
-- branded_variable: photo1d_tavg-l-hxy-u
+- branded_variable: photo1d_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -7695,7 +7695,7 @@
   - alevel
   - time
   variable_name: photo1d
-- branded_variable: phyc_tavg-l-hxy-u
+- branded_variable: phyc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7713,7 +7713,7 @@
   - time
   - swp20bar
   variable_name: phyc
-- branded_variable: phycalc_tavg-l-hxy-u
+- branded_variable: phycalc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7722,7 +7722,7 @@
   - olevel
   - time
   variable_name: phycalc
-- branded_variable: phycalc_tavg-l-hxy-u
+- branded_variable: phycalc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7795,7 +7795,7 @@
   - latitude
   - time
   variable_name: phycpico
-- branded_variable: phydiat_tavg-l-hxy-u
+- branded_variable: phydiat_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7812,7 +7812,7 @@
   - latitude
   - time
   variable_name: phydiatos
-- branded_variable: phydiaz_tavg-l-hxy-u
+- branded_variable: phydiaz_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7829,7 +7829,7 @@
   - latitude
   - time
   variable_name: phydiazos
-- branded_variable: phymisc_tavg-l-hxy-u
+- branded_variable: phymisc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7846,7 +7846,7 @@
   - latitude
   - time
   variable_name: phymiscos
-- branded_variable: phypico_tavg-l-hxy-u
+- branded_variable: phypico_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7863,7 +7863,7 @@
   - latitude
   - time
   variable_name: phypicoos
-- branded_variable: po4_tavg-l-hxy-u
+- branded_variable: po4_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -7880,7 +7880,7 @@
   - latitude
   - time
   variable_name: pod0
-- branded_variable: pp_tavg-l-hxy-u
+- branded_variable: pp_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -8526,7 +8526,7 @@
   - latitude
   - time
   variable_name: reffccwctop
-- branded_variable: reffclic_tavg-l-hxy-u
+- branded_variable: reffclic_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean where convective_cloud (weighted by total convective cloud area)'
   dimensions:
@@ -8535,7 +8535,7 @@
   - alevel
   - time
   variable_name: reffclic
-- branded_variable: reffclic_tpt-l-hxy-u
+- branded_variable: reffclic_tpt-al-hxy-u
   cell_methods:
   - 'area: mean where convective_cloud time: point'
   dimensions:
@@ -8544,7 +8544,7 @@
   - alevel
   - time1
   variable_name: reffclic
-- branded_variable: reffclic_tpt-l-hxys-u
+- branded_variable: reffclic_tpt-al-hxys-u
   cell_methods:
   - 'area: mean where convective_cloud time: point'
   dimensions:
@@ -8552,7 +8552,7 @@
   - site
   - time1
   variable_name: reffclic
-- branded_variable: reffclis_tavg-l-hxy-u
+- branded_variable: reffclis_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)'
   dimensions:
@@ -8561,7 +8561,7 @@
   - alevel
   - time
   variable_name: reffclis
-- branded_variable: reffclis_tpt-l-hxy-u
+- branded_variable: reffclis_tpt-al-hxy-u
   cell_methods:
   - 'area: mean where stratiform_cloud time: point'
   dimensions:
@@ -8570,7 +8570,7 @@
   - alevel
   - time1
   variable_name: reffclis
-- branded_variable: reffclis_tpt-l-hxys-u
+- branded_variable: reffclis_tpt-al-hxys-u
   cell_methods:
   - 'area: mean where stratiform_cloud time: point'
   dimensions:
@@ -8578,7 +8578,7 @@
   - site
   - time1
   variable_name: reffclis
-- branded_variable: reffclwc_tavg-l-hxy-u
+- branded_variable: reffclwc_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean where convective_cloud (weighted by total convective cloud area)'
   dimensions:
@@ -8587,7 +8587,7 @@
   - alevel
   - time
   variable_name: reffclwc
-- branded_variable: reffclwc_tpt-l-hxy-u
+- branded_variable: reffclwc_tpt-al-hxy-u
   cell_methods:
   - 'area: mean where convective_cloud time: point'
   dimensions:
@@ -8596,7 +8596,7 @@
   - alevel
   - time1
   variable_name: reffclwc
-- branded_variable: reffclwc_tpt-l-hxys-u
+- branded_variable: reffclwc_tpt-al-hxys-u
   cell_methods:
   - 'area: mean where convective_cloud time: point'
   dimensions:
@@ -8604,7 +8604,7 @@
   - site
   - time1
   variable_name: reffclwc
-- branded_variable: reffclws_tavg-l-hxy-u
+- branded_variable: reffclws_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean where stratiform_cloud (weighted by total stratiform cloud area)'
   dimensions:
@@ -8613,7 +8613,7 @@
   - alevel
   - time
   variable_name: reffclws
-- branded_variable: reffclws_tpt-l-hxy-u
+- branded_variable: reffclws_tpt-al-hxy-u
   cell_methods:
   - 'area: mean where stratiform_cloud time: point'
   dimensions:
@@ -8622,7 +8622,7 @@
   - alevel
   - time1
   variable_name: reffclws
-- branded_variable: reffclws_tpt-l-hxys-u
+- branded_variable: reffclws_tpt-al-hxys-u
   cell_methods:
   - 'area: mean where stratiform_cloud time: point'
   dimensions:
@@ -8770,7 +8770,7 @@
   - latitude
   - time
   variable_name: rivo
-- branded_variable: rld4co2_tavg-l-hxy-u
+- branded_variable: rld4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8779,7 +8779,7 @@
   - alevhalf
   - time
   variable_name: rld4co2
-- branded_variable: rld_tavg-l-hxy-u
+- branded_variable: rld_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8788,7 +8788,7 @@
   - alevhalf
   - time
   variable_name: rld
-- branded_variable: rld_tpt-l-hxys-u
+- branded_variable: rld_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -8796,7 +8796,7 @@
   - site
   - time1
   variable_name: rld
-- branded_variable: rldcs4co2_tavg-l-hxy-u
+- branded_variable: rldcs4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8805,7 +8805,7 @@
   - alevhalf
   - time
   variable_name: rldcs4co2
-- branded_variable: rldcs_tavg-l-hxy-u
+- branded_variable: rldcs_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8814,7 +8814,7 @@
   - alevhalf
   - time
   variable_name: rldcs
-- branded_variable: rldcs_tpt-l-hxys-u
+- branded_variable: rldcs_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -8948,7 +8948,7 @@
   - latitude
   - time
   variable_name: rls
-- branded_variable: rlu4co2_tavg-l-hxy-u
+- branded_variable: rlu4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8957,7 +8957,7 @@
   - alevhalf
   - time
   variable_name: rlu4co2
-- branded_variable: rlu_tavg-l-hxy-u
+- branded_variable: rlu_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8966,7 +8966,7 @@
   - alevhalf
   - time
   variable_name: rlu
-- branded_variable: rlu_tpt-l-hxys-u
+- branded_variable: rlu_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -8974,7 +8974,7 @@
   - site
   - time1
   variable_name: rlu
-- branded_variable: rlucs4co2_tavg-l-hxy-u
+- branded_variable: rlucs4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8983,7 +8983,7 @@
   - alevhalf
   - time
   variable_name: rlucs4co2
-- branded_variable: rlucs_tavg-l-hxy-u
+- branded_variable: rlucs_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -8992,7 +8992,7 @@
   - alevhalf
   - time
   variable_name: rlucs
-- branded_variable: rlucs_tpt-l-hxys-u
+- branded_variable: rlucs_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -9252,7 +9252,7 @@
   - longitude
   - latitude
   variable_name: rootd
-- branded_variable: rsd4co2_tavg-l-hxy-u
+- branded_variable: rsd4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9261,7 +9261,7 @@
   - alevhalf
   - time
   variable_name: rsd4co2
-- branded_variable: rsd_tavg-l-hxy-u
+- branded_variable: rsd_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9270,7 +9270,7 @@
   - alevhalf
   - time
   variable_name: rsd
-- branded_variable: rsd_tpt-l-hxys-u
+- branded_variable: rsd_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -9278,7 +9278,7 @@
   - site
   - time1
   variable_name: rsd
-- branded_variable: rsdcs4co2_tavg-l-hxy-u
+- branded_variable: rsdcs4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9287,7 +9287,7 @@
   - alevhalf
   - time
   variable_name: rsdcs4co2
-- branded_variable: rsdcs_tavg-l-hxy-u
+- branded_variable: rsdcs_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9296,7 +9296,7 @@
   - alevhalf
   - time
   variable_name: rsdcs
-- branded_variable: rsdcs_tpt-l-hxys-u
+- branded_variable: rsdcs_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -9304,7 +9304,7 @@
   - site
   - time1
   variable_name: rsdcs
-- branded_variable: rsdo_tavg-l-hxy-u
+- branded_variable: rsdo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -9313,7 +9313,7 @@
   - olevel
   - time
   variable_name: rsdo
-- branded_variable: rsdoabsorb_tavg-l-hxy-u
+- branded_variable: rsdoabsorb_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -9561,7 +9561,7 @@
   - latitude
   - time
   variable_name: rss
-- branded_variable: rsu4co2_tavg-l-hxy-u
+- branded_variable: rsu4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9570,7 +9570,7 @@
   - alevhalf
   - time
   variable_name: rsu4co2
-- branded_variable: rsu_tavg-l-hxy-u
+- branded_variable: rsu_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9579,7 +9579,7 @@
   - alevhalf
   - time
   variable_name: rsu
-- branded_variable: rsu_tpt-l-hxys-u
+- branded_variable: rsu_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -9587,7 +9587,7 @@
   - site
   - time1
   variable_name: rsu
-- branded_variable: rsucs4co2_tavg-l-hxy-u
+- branded_variable: rsucs4co2_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9596,7 +9596,7 @@
   - alevhalf
   - time
   variable_name: rsucs4co2
-- branded_variable: rsucs_tavg-l-hxy-u
+- branded_variable: rsucs_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -9605,7 +9605,7 @@
   - alevhalf
   - time
   variable_name: rsucs
-- branded_variable: rsucs_tpt-l-hxys-u
+- branded_variable: rsucs_tpt-alh-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -10017,7 +10017,7 @@
   - site
   - time1
   variable_name: sci
-- branded_variable: scint_tavg-d2000m-hxy-u
+- branded_variable: scint_tavg-d0m-hxy-u
   cell_methods:
   - 'area: mean where sea'
   dimensions:
@@ -10082,7 +10082,7 @@
   - time
   - depth0m
   variable_name: sdvo
-- branded_variable: sf6_tavg-l-hxy-u
+- branded_variable: sf6_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -10373,7 +10373,7 @@
   - longitude
   - latitude
   variable_name: sftof
-- branded_variable: sfx_tavg-l-hxy-u
+- branded_variable: sfx_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -10390,7 +10390,7 @@
   - latitude
   - time
   variable_name: sfx
-- branded_variable: sfy_tavg-l-hxy-u
+- branded_variable: sfy_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -10425,7 +10425,7 @@
   - time
   - typeshrub
   variable_name: shrubFrac
-- branded_variable: si_tavg-l-hxy-u
+- branded_variable: si_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -11564,7 +11564,7 @@
   - basin
   - time
   variable_name: sltbasin
-- branded_variable: slthick_ti-l-hxy-u
+- branded_variable: slthick_ti-sl-hxy-u
   cell_methods:
   - 'area: mean where land'
   dimensions:
@@ -11590,7 +11590,7 @@
   - basin
   - time
   variable_name: sltovovrt
-- branded_variable: smc_tavg-l-hxy-u
+- branded_variable: smc_tavg-alh-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -11799,7 +11799,7 @@
   - latitude
   - time
   variable_name: snwc
-- branded_variable: so2_tavg-l-hxy-u
+- branded_variable: so2_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -11823,7 +11823,7 @@
   - site
   - time1
   variable_name: so2
-- branded_variable: so_tavg-l-hxy-u
+- branded_variable: so_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -11832,7 +11832,7 @@
   - olevel
   - time
   variable_name: so
-- branded_variable: so_tavg-l-hxy-u
+- branded_variable: so_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -11841,7 +11841,7 @@
   - olevel
   - time
   variable_name: so
-- branded_variable: so_tavg-l-hxy-u
+- branded_variable: so_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -11859,7 +11859,7 @@
   - depthseafloor
   - time
   variable_name: sob
-- branded_variable: soga_tavg-l-hm-u
+- branded_variable: soga_tavg-ol-hm-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -11929,7 +11929,7 @@
   - latitude
   - time
   variable_name: srfrad
-- branded_variable: stratch4loss_tavg-l-hxy-u
+- branded_variable: stratch4loss_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -11954,7 +11954,7 @@
   - ygre
   - time
   variable_name: strbasemag
-- branded_variable: sw17O_tavg-l-hxy-u
+- branded_variable: sw17O_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -11963,7 +11963,7 @@
   - olevel
   - time
   variable_name: sw17O
-- branded_variable: sw18O_tavg-l-hxy-u
+- branded_variable: sw18O_tavg-ol-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -11972,7 +11972,7 @@
   - olevel
   - time
   variable_name: sw18O
-- branded_variable: sw2H_tavg-l-hxy-u
+- branded_variable: sw2H_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12148,7 +12148,7 @@
   - plev5u
   - time1
   variable_name: taUTLSadd
-- branded_variable: ta_tavg-l-hxy-u
+- branded_variable: ta_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12157,7 +12157,7 @@
   - alevel
   - time
   variable_name: ta
-- branded_variable: ta_tavg-l-hxy-u
+- branded_variable: ta_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12209,7 +12209,7 @@
   - plev39
   - time
   variable_name: ta
-- branded_variable: ta_tpt-l-hxy-u
+- branded_variable: ta_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -12218,7 +12218,7 @@
   - alevel
   - time1
   variable_name: ta
-- branded_variable: ta_tpt-l-hxy-u
+- branded_variable: ta_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -12227,7 +12227,7 @@
   - alevel
   - time1
   variable_name: ta
-- branded_variable: ta_tpt-l-hxys-u
+- branded_variable: ta_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12253,7 +12253,7 @@
   - plev7h
   - time1
   variable_name: ta
-- branded_variable: talk_tavg-l-hxy-u
+- branded_variable: talk_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12664,7 +12664,7 @@
   dimensions:
   - time
   variable_name: tendlicalvf
-- branded_variable: thetao_tavg-l-hxy-u
+- branded_variable: thetao_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12673,7 +12673,7 @@
   - olevel
   - time
   variable_name: thetao
-- branded_variable: thetao_tavg-l-hxy-u
+- branded_variable: thetao_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12691,7 +12691,7 @@
   - time
   - swp20bar
   variable_name: thetao
-- branded_variable: thetaoga_tavg-l-hm-u
+- branded_variable: thetaoga_tavg-ol-hm-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12733,7 +12733,7 @@
   - latitude
   - time
   variable_name: thetaot
-- branded_variable: thkcello_tavg-l-hxy-u
+- branded_variable: thkcello_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12742,7 +12742,7 @@
   - olevel
   - time
   variable_name: thkcello
-- branded_variable: thkcello_tavg-l-hxy-u
+- branded_variable: thkcello_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12751,7 +12751,7 @@
   - olevel
   - time
   variable_name: thkcello
-- branded_variable: thkcello_ti-l-hxy-u
+- branded_variable: thkcello_ti-ol-hxy-u
   cell_methods:
   - 'area: mean where sea'
   dimensions:
@@ -12759,7 +12759,7 @@
   - latitude
   - olevel
   variable_name: thkcello
-- branded_variable: thkcelluo_tavg-l-hxy-u
+- branded_variable: thkcelluo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12768,7 +12768,7 @@
   - olevel
   - time
   variable_name: thkcelluo
-- branded_variable: thkcellvo_tavg-l-hxy-u
+- branded_variable: thkcellvo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -12777,7 +12777,7 @@
   - olevel
   - time
   variable_name: thkcellvo
-- branded_variable: tnhus_tavg-l-hxy-u
+- branded_variable: tnhus_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12786,7 +12786,7 @@
   - alevel
   - time
   variable_name: tnhus
-- branded_variable: tnhus_tpt-l-hxys-u
+- branded_variable: tnhus_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12794,7 +12794,7 @@
   - site
   - time1
   variable_name: tnhus
-- branded_variable: tnhusa_tavg-l-hxy-u
+- branded_variable: tnhusa_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12803,7 +12803,7 @@
   - alevel
   - time
   variable_name: tnhusa
-- branded_variable: tnhusa_tpt-l-hxys-u
+- branded_variable: tnhusa_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12811,7 +12811,7 @@
   - site
   - time1
   variable_name: tnhusa
-- branded_variable: tnhusc_tavg-l-hxy-u
+- branded_variable: tnhusc_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12820,7 +12820,7 @@
   - alevel
   - time
   variable_name: tnhusc
-- branded_variable: tnhusc_tpt-l-hxys-u
+- branded_variable: tnhusc_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12828,7 +12828,7 @@
   - site
   - time1
   variable_name: tnhusc
-- branded_variable: tnhusd_tavg-l-hxy-u
+- branded_variable: tnhusd_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12837,7 +12837,7 @@
   - alevel
   - time
   variable_name: tnhusd
-- branded_variable: tnhusd_tpt-l-hxys-u
+- branded_variable: tnhusd_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12845,7 +12845,7 @@
   - site
   - time1
   variable_name: tnhusd
-- branded_variable: tnhusmp_tavg-l-hxy-u
+- branded_variable: tnhusmp_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12854,7 +12854,7 @@
   - alevel
   - time
   variable_name: tnhusmp
-- branded_variable: tnhusmp_tpt-l-hxys-u
+- branded_variable: tnhusmp_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12862,7 +12862,7 @@
   - site
   - time1
   variable_name: tnhusmp
-- branded_variable: tnhuspbl_tavg-l-hxy-u
+- branded_variable: tnhuspbl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12871,7 +12871,7 @@
   - alevel
   - time
   variable_name: tnhuspbl
-- branded_variable: tnhuspbl_tpt-l-hxys-u
+- branded_variable: tnhuspbl_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12879,7 +12879,7 @@
   - site
   - time1
   variable_name: tnhuspbl
-- branded_variable: tnhusscp_tavg-l-hxy-u
+- branded_variable: tnhusscp_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12888,7 +12888,7 @@
   - alevel
   - time
   variable_name: tnhusscp
-- branded_variable: tnhusscp_tpt-l-hxys-u
+- branded_variable: tnhusscp_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12896,7 +12896,7 @@
   - site
   - time1
   variable_name: tnhusscp
-- branded_variable: tnhusscpbl_tavg-l-hxy-u
+- branded_variable: tnhusscpbl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12905,7 +12905,7 @@
   - alevel
   - time
   variable_name: tnhusscpbl
-- branded_variable: tnhusscpbl_tpt-l-hxys-u
+- branded_variable: tnhusscpbl_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12929,7 +12929,7 @@
   - latitude
   - time
   variable_name: tnpeo
-- branded_variable: tnt_tavg-l-hxy-u
+- branded_variable: tnt_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12938,7 +12938,7 @@
   - alevel
   - time
   variable_name: tnt
-- branded_variable: tnt_tpt-l-hxys-u
+- branded_variable: tnt_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12946,7 +12946,7 @@
   - site
   - time1
   variable_name: tnt
-- branded_variable: tnta_tavg-l-hxy-u
+- branded_variable: tnta_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12955,7 +12955,7 @@
   - alevel
   - time
   variable_name: tnta
-- branded_variable: tnta_tpt-l-hxys-u
+- branded_variable: tnta_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12963,7 +12963,7 @@
   - site
   - time1
   variable_name: tnta
-- branded_variable: tntc_tavg-l-hxy-u
+- branded_variable: tntc_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12980,7 +12980,7 @@
   - plev39
   - time
   variable_name: tntc
-- branded_variable: tntc_tpt-l-hxys-u
+- branded_variable: tntc_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -12988,7 +12988,7 @@
   - site
   - time1
   variable_name: tntc
-- branded_variable: tntd_tavg-l-hxy-u
+- branded_variable: tntd_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -12997,7 +12997,7 @@
   - alevel
   - time
   variable_name: tntd
-- branded_variable: tntd_tpt-l-hxys-u
+- branded_variable: tntd_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13005,7 +13005,7 @@
   - site
   - time1
   variable_name: tntd
-- branded_variable: tntmp_tavg-l-hxy-u
+- branded_variable: tntmp_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13030,7 +13030,7 @@
   - plev39
   - time
   variable_name: tntmp
-- branded_variable: tntmp_tpt-l-hxys-u
+- branded_variable: tntmp_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13054,7 +13054,7 @@
   - plev39
   - time
   variable_name: tntogw
-- branded_variable: tntpbl_tavg-l-hxy-u
+- branded_variable: tntpbl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13063,7 +13063,7 @@
   - alevel
   - time
   variable_name: tntpbl
-- branded_variable: tntpbl_tpt-l-hxys-u
+- branded_variable: tntpbl_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13071,7 +13071,7 @@
   - site
   - time1
   variable_name: tntpbl
-- branded_variable: tntr_tavg-l-hxy-u
+- branded_variable: tntr_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13080,7 +13080,7 @@
   - alevel
   - time
   variable_name: tntr
-- branded_variable: tntr_tpt-l-hxys-u
+- branded_variable: tntr_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13088,7 +13088,7 @@
   - site
   - time1
   variable_name: tntr
-- branded_variable: tntrl_tavg-l-hxy-u
+- branded_variable: tntrl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13113,7 +13113,7 @@
   - plev39
   - time
   variable_name: tntrl
-- branded_variable: tntrl_tpt-l-hxys-u
+- branded_variable: tntrl_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13121,7 +13121,7 @@
   - site
   - time1
   variable_name: tntrl
-- branded_variable: tntrlcs_tavg-l-hxy-u
+- branded_variable: tntrlcs_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13138,7 +13138,7 @@
   - plev39
   - time
   variable_name: tntrlcs
-- branded_variable: tntrlcs_tpt-l-hxys-u
+- branded_variable: tntrlcs_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13146,7 +13146,7 @@
   - site
   - time1
   variable_name: tntrlcs
-- branded_variable: tntrs_tavg-l-hxy-u
+- branded_variable: tntrs_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13171,7 +13171,7 @@
   - plev39
   - time
   variable_name: tntrs
-- branded_variable: tntrs_tpt-l-hxys-u
+- branded_variable: tntrs_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13179,7 +13179,7 @@
   - site
   - time1
   variable_name: tntrs
-- branded_variable: tntrscs_tavg-l-hxy-u
+- branded_variable: tntrscs_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13196,7 +13196,7 @@
   - plev39
   - time
   variable_name: tntrscs
-- branded_variable: tntrscs_tpt-l-hxys-u
+- branded_variable: tntrscs_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13204,7 +13204,7 @@
   - site
   - time1
   variable_name: tntrscs
-- branded_variable: tntscp_tavg-l-hxy-u
+- branded_variable: tntscp_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13221,7 +13221,7 @@
   - plev39
   - time
   variable_name: tntscp
-- branded_variable: tntscp_tpt-l-hxys-u
+- branded_variable: tntscp_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13229,7 +13229,7 @@
   - site
   - time1
   variable_name: tntscp
-- branded_variable: tntscpbl_tavg-l-hxy-u
+- branded_variable: tntscpbl_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13238,7 +13238,7 @@
   - alevel
   - time
   variable_name: tntscpbl
-- branded_variable: tntscpbl_tpt-l-hxys-u
+- branded_variable: tntscpbl_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13433,7 +13433,7 @@
   - time
   - typetree
   variable_name: treeFrac
-- branded_variable: tropch4loss_tavg-l-hxy-u
+- branded_variable: tropch4loss_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13442,7 +13442,7 @@
   - alevel
   - time
   variable_name: tropch4loss
-- branded_variable: tropch4lossoh_tavg-l-hxy-u
+- branded_variable: tropch4lossoh_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13451,7 +13451,7 @@
   - alevel
   - time
   variable_name: tropch4lossoh
-- branded_variable: tropdo3chm_tavg-l-hxy-u
+- branded_variable: tropdo3chm_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13460,7 +13460,7 @@
   - alevel
   - time
   variable_name: tropdo3chm
-- branded_variable: tropo3ste_tavg-l-hxy-u
+- branded_variable: tropo3ste_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13556,7 +13556,7 @@
   - site
   - time1
   variable_name: ts
-- branded_variable: tsl_tavg-l-hxy-u
+- branded_variable: tsl_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -13565,7 +13565,7 @@
   - sdepth
   - time
   variable_name: tsl
-- branded_variable: tsl_tavg-l-hxy-u
+- branded_variable: tsl_tavg-sl-hxy-u
   cell_methods:
   - 'area: mean where land time: mean'
   dimensions:
@@ -13718,7 +13718,7 @@
   - plev5u
   - time1
   variable_name: uaUTLSadd
-- branded_variable: ua_tavg-l-hxy-u
+- branded_variable: ua_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13727,7 +13727,7 @@
   - alevel
   - time
   variable_name: ua
-- branded_variable: ua_tavg-l-hxy-u
+- branded_variable: ua_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -13788,7 +13788,7 @@
   - plev39
   - time
   variable_name: ua
-- branded_variable: ua_tpt-l-hxy-u
+- branded_variable: ua_tpt-al-hxy-u
   cell_methods:
   - 'time: point'
   dimensions:
@@ -13797,7 +13797,7 @@
   - alevel
   - time1
   variable_name: ua
-- branded_variable: ua_tpt-l-hxys-u
+- branded_variable: ua_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -13885,7 +13885,7 @@
   - time1
   - height10m
   variable_name: uas
-- branded_variable: umo_tavg-l-hxy-u
+- branded_variable: umo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -13894,7 +13894,7 @@
   - olevel
   - time
   variable_name: umo
-- branded_variable: uo_tavg-l-hxy-u
+- branded_variable: uo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -14066,7 +14066,7 @@
   - plev5u
   - time1
   variable_name: vaUTLSadd
-- branded_variable: va_tavg-l-hxy-u
+- branded_variable: va_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -14075,7 +14075,7 @@
   - alevel
   - time
   variable_name: va
-- branded_variable: va_tavg-l-hxy-u
+- branded_variable: va_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -14128,7 +14128,7 @@
   - plev39
   - time
   variable_name: va
-- branded_variable: va_tpt-l-hxy-u
+- branded_variable: va_tpt-al-hxy-u
   cell_methods:
   - 'time: point'
   dimensions:
@@ -14137,7 +14137,7 @@
   - alevel
   - time1
   variable_name: va
-- branded_variable: va_tpt-l-hxys-u
+- branded_variable: va_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -14275,7 +14275,7 @@
   - latitude
   - time
   variable_name: vegHeight
-- branded_variable: vmo_tavg-l-hxy-u
+- branded_variable: vmo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -14284,7 +14284,7 @@
   - olevel
   - time
   variable_name: vmo
-- branded_variable: vo_tavg-l-hxy-u
+- branded_variable: vo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -14293,7 +14293,7 @@
   - olevel
   - time
   variable_name: vo
-- branded_variable: volcello_tavg-l-hxy-u
+- branded_variable: volcello_tavg-ol-hxy-u
   cell_methods:
   - 'area: sum where sea time: mean'
   dimensions:
@@ -14302,7 +14302,7 @@
   - olevel
   - time
   variable_name: volcello
-- branded_variable: volcello_tavg-l-hxy-u
+- branded_variable: volcello_tavg-ol-hxy-u
   cell_methods:
   - 'area: sum where sea time: mean'
   dimensions:
@@ -14311,7 +14311,7 @@
   - olevel
   - time
   variable_name: volcello
-- branded_variable: volcello_tavg-l-hxy-u
+- branded_variable: volcello_tavg-ol-hxy-u
   cell_methods:
   - 'area: sum where sea time: mean'
   dimensions:
@@ -14320,7 +14320,7 @@
   - olevel
   - time
   variable_name: volcello
-- branded_variable: volcello_ti-l-hxy-u
+- branded_variable: volcello_ti-ol-hxy-u
   cell_methods:
   - 'area: sum'
   dimensions:
@@ -14457,7 +14457,7 @@
   - plev19
   - time
   variable_name: vtendogw
-- branded_variable: wa_tavg-l-hxy-u
+- branded_variable: wa_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -14484,7 +14484,7 @@
   - plev6
   - time1
   variable_name: wap6
-- branded_variable: wap_tavg-l-hxy-u
+- branded_variable: wap_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -14520,7 +14520,7 @@
   - plev19
   - time
   variable_name: wap
-- branded_variable: wap_tpt-l-hxys-u
+- branded_variable: wap_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -14625,7 +14625,7 @@
   - latitude
   - time
   variable_name: wetdust
-- branded_variable: wethno3_tavg-l-hxy-u
+- branded_variable: wethno3_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -14699,7 +14699,7 @@
   - latitude
   - time
   variable_name: wetnh4
-- branded_variable: wetno3_tavg-l-hxy-u
+- branded_variable: wetno3_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -14780,7 +14780,7 @@
   - latitude
   - time
   variable_name: wfo
-- branded_variable: wmo_tavg-l-hxy-u
+- branded_variable: wmo_tavg-ol-hxy-u
   cell_methods:
   - 'area: sum where sea time: mean'
   dimensions:
@@ -14789,7 +14789,7 @@
   - olevel
   - time
   variable_name: wmo
-- branded_variable: wo_tavg-l-hxy-u
+- branded_variable: wo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -14798,7 +14798,7 @@
   - olevel
   - time
   variable_name: wo
-- branded_variable: wo_tavg-l-hxy-u
+- branded_variable: wo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15089,7 +15089,7 @@
   - ygre
   - time
   variable_name: yvelsurf
-- branded_variable: zfull_ti-l-hxy-u
+- branded_variable: zfull_ti-al-hxy-u
   cell_methods:
   - 'area: mean'
   dimensions:
@@ -15097,7 +15097,7 @@
   - latitude
   - alevel
   variable_name: zfull
-- branded_variable: zfullo_tavg-l-hxy-u
+- branded_variable: zfullo_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15169,7 +15169,7 @@
   - time1
   - p925
   variable_name: zg925
-- branded_variable: zg_tavg-l-hxy-u
+- branded_variable: zg_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -15178,7 +15178,7 @@
   - alevel
   - time
   variable_name: zg
-- branded_variable: zg_tavg-l-hxy-u
+- branded_variable: zg_tavg-al-hxy-u
   cell_methods:
   - 'area: time: mean'
   dimensions:
@@ -15230,7 +15230,7 @@
   - plev39
   - time
   variable_name: zg
-- branded_variable: zg_tpt-l-hxy-u
+- branded_variable: zg_tpt-al-hxy-u
   cell_methods:
   - 'area: mean time: point'
   dimensions:
@@ -15239,7 +15239,7 @@
   - alevel
   - time1
   variable_name: zg
-- branded_variable: zg_tpt-l-hxys-u
+- branded_variable: zg_tpt-al-hxys-u
   cell_methods:
   - 'area: point time: point'
   dimensions:
@@ -15265,7 +15265,7 @@
   - plev7h
   - time1
   variable_name: zg
-- branded_variable: zmeso_tavg-l-hxy-u
+- branded_variable: zmeso_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15274,7 +15274,7 @@
   - olevel
   - time
   variable_name: zmeso
-- branded_variable: zmeso_tavg-l-hxy-u
+- branded_variable: zmeso_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15291,7 +15291,7 @@
   - latitude
   - time
   variable_name: zmesoos
-- branded_variable: zmicro_tavg-l-hxy-u
+- branded_variable: zmicro_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15300,7 +15300,7 @@
   - olevel
   - time
   variable_name: zmicro
-- branded_variable: zmicro_tavg-l-hxy-u
+- branded_variable: zmicro_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15317,7 +15317,7 @@
   - latitude
   - time
   variable_name: zmicroos
-- branded_variable: zmisc_tavg-l-hxy-u
+- branded_variable: zmisc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15334,7 +15334,7 @@
   - latitude
   - time
   variable_name: zmiscos
-- branded_variable: zooc_tavg-l-hxy-u
+- branded_variable: zooc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
@@ -15343,7 +15343,7 @@
   - olevel
   - time
   variable_name: zooc
-- branded_variable: zooc_tavg-l-hxy-u
+- branded_variable: zooc_tavg-ol-hxy-u
   cell_methods:
   - 'area: mean where sea time: mean'
   dimensions:
