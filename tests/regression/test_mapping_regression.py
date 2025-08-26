@@ -12,6 +12,8 @@ HERE = Path(__file__).parent
 
 
 def test_map_to_cmip_branded_variable_mapper(data_regression):
+    # TODO: switch to using variable registry
+    # https://github.com/WCRP-CMIP/Variable-Registry
     TEST_CASES_FILE = HERE.parent / "test-data" / "CMIP7-variables-for-branding.csv"
 
     raw_test_cases = pd.read_csv(TEST_CASES_FILE)
@@ -36,5 +38,6 @@ def test_map_to_cmip_branded_variable_mapper(data_regression):
         }
 
         res_l.append(reg_check)
+
     res_l.sort(key=lambda x: x["branded_variable"])
     data_regression.check(res_l)
