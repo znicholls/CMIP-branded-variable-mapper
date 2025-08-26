@@ -10,6 +10,7 @@ from cmip_branded_variable_mapper.mapper_classes import (
 
 AREA_LABEL_CELL_METHODS_MAPPER = CellMethodsSubStringMapperOrdered.from_unordered(
     {
+        "area: mean (over land and sea ice)": "lsi",
         "where air": "air",
         "where cloud": "cl",
         "where convective_cloud": "ccl",
