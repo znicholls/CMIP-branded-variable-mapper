@@ -21,6 +21,13 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.10.0 (2025-08-27)
+
+### :tada: Improvements
+
+- Added support for variables that are unmasked over both land and sea ice (see [WCRP-CMIP/Variable-Registry#34](https://github.com/WCRP-CMIP/Variable-Registry/issues/34)) ([#32](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/32))
+
+
 ## CMIP Branded Variable Mapper v0.9.0 (2025-07-28)
 
 ### :warning: Breaking Changes
