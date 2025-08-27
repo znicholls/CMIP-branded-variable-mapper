@@ -68,7 +68,7 @@ plugins:
       handlers:
         python_xref:
           paths: [src]
-          import:
+          inventories:
             # Cross-ref helpers (lots included here, remove what you don't want)
             - https://www.attrs.org/en/stable/objects.inv
             - https://unidata.github.io/cftime/objects.inv
@@ -91,8 +91,19 @@ plugins:
             - https://validators.readthedocs.io/en/stable/objects.inv
             - http://xarray.pydata.org/en/stable/objects.inv
           options:
+            # It turns out that xref does this check without considering config.
+            # As a result, every docstring is parsed as a google-style docstring.
+            # As docstrings are only parsed once, this results in rendering failures.
+            # Hence, turn off the checks here.
+            # mkdocs_autorefs catches anything which doesn't end up being a correct reference.
+            # The fix might be as simple as changing
+            # `self.collect(ref, PythonOptions())`
+            # to `self.collect(ref, self.get_options({}))`
+            # in the python-xref source, but it's hard to predict the side effects
+            # so we haven't bothered with that route.
+            check_crossrefs: false
             docstring_style: numpy
-            relative_crossrefs: yes
+            relative_crossrefs: true
             separate_signature: true
             show_root_heading: false
             show_signature_annotations: true
