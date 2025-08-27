@@ -155,6 +155,24 @@ def test_horizontal_labels(dimensions, exp_horizontal_label):
     assert res == exp
 
 
+@pytest.mark.parametrize(
+    "cell_methods, exp_area_label",
+    (
+        ("area: mean (over land and sea ice) time: point", "lsi"),
+        ("area: mean where cloud time: point", "cl"),
+    ),
+)
+def test_area_labels(cell_methods, exp_area_label):
+    res = map_to_cmip_branded_variable(
+        variable_name="vname",
+        cell_methods=cell_methods,
+        dimensions=("latitude", "longitude", "time1"),
+    )
+    exp = f"vname_tpt-u-hxy-{exp_area_label}"
+
+    assert res == exp
+
+
 def test_where_sector():
     res = map_to_cmip_branded_variable(
         variable_name="vname",
