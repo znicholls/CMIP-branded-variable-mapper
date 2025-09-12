@@ -137,7 +137,7 @@ jobs:
         id: setup-uv
         uses: astral-sh/setup-uv@v4
         with:
-          version: "0.5.21"
+          version: "0.8.8"
           python-version: ${{ matrix.python-version }}
       - name: Create venv
         run: |
@@ -181,7 +181,8 @@ jobs:
       - name: Install
         run: |
           pip install --upgrade pip wheel
-          pip install .
+          pip install --no-deps .
+          pip install -r requirements-locked.txt
           pip install -r requirements-only-tests-min-locked.txt
       - name: Run tests
         run: |
@@ -223,21 +224,15 @@ jobs:
         id: setup-uv
         uses: astral-sh/setup-uv@v4
         with:
-          version: "0.5.21"
+          version: "0.8.8"
           python-version: ${{ matrix.python-version }}
-      - name: Setup PDM
-        uses: pdm-project/setup-pdm@v4.1
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Generate pdm.lock
-        # Required for building the locked version of the package
-        # with pdm-build-locked (see pyproject.toml)
-        run: |
-          pdm lock --group :all --strategy inherit_metadata --python="<3.13"
-          pdm lock --group :all  --python=">=3.13" --append
       - name: Build package
         run: |
+          uv run python scripts/add-locked-targets-to-pyproject-toml.py
+          cat pyproject.toml
           uv build
+          # Just in case, undo the changes to `pyproject.toml`
+          git restore --staged . && git restore .
       - name: Check build
         run: |
           tar -tvf dist/cmip_branded_variable_mapper-*.tar.gz --wildcards '*cmip_branded_variable_mapper/py.typed'
