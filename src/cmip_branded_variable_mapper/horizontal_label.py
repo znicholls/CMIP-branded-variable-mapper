@@ -5,7 +5,7 @@ Determination of the horizontal label
 from __future__ import annotations
 
 
-def get_horizontal_label(  # noqa: PLR0911
+def get_horizontal_label(
     dimensions: tuple[str, ...],
     fallback: str = "hm",
 ) -> str:
@@ -48,23 +48,16 @@ def get_horizontal_label(  # noqa: PLR0911
         return "hy"
 
     if "site" in dimensions:
-        return "hxys"
-        # # TODO: update to new logic
-        # return "hs"
+        return "hs"
 
     if latitude_present and basin_present:
-        return "hys"
-    # # TODO: update to new logic
-    # if (latitude_present and basin_present) or (
-    #     "gridlatitude" in dimensions and basin_present
-    # ):
-    # return "hyb"
+        return "hyb"
 
-    # # TODO: delete this when update to new logic (maybe, if it hasn't changed again)
-    if "gridlatitude" in dimensions and basin_present:
-        return "ht"
-
-    if "oline" in dimensions or "siline" in dimensions:
+    if (
+        "oline" in dimensions
+        or "siline" in dimensions
+        or ("gridlatitude" in dimensions and basin_present)
+    ):
         return "ht"
 
     return fallback
