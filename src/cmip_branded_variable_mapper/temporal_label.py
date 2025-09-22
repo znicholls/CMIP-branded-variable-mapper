@@ -123,7 +123,7 @@ def get_temporal_label(  # noqa: PLR0913
     if (match := dimensions_mapper.get_value(dimensions)) is not None:
         return match
 
-    if "time4" in dimensions:
+    if cell_methods is not None and "time4" in dimensions:
         if (match := cell_methods_time4_mapper.get_value(cell_methods)) is not None:
             return match
 
