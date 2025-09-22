@@ -22,7 +22,7 @@ Mapper from sub-strings of cell methods to the temporal label
 These are for the 'initial tests'
 i.e. the cell methods which are checked first.
 There is a coupling with dimensions in the logic in
-[get_temporal_label][], be careful!
+[get_temporal_label][(m).], be careful!
 """
 
 TEMPORAL_LABEL_DIMENSIONS_MAPPER = DimensionMapper(
