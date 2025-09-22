@@ -64,6 +64,19 @@ from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
             id="ti",
         ),
         pytest.param(
+            "area: mean where land time: max",
+            ("time4", "lat", "lon"),
+            "ti",
+            id="tmaxavg",
+        ),
+        pytest.param(
+            "area: mean where land time: min",
+            ("time4", "lat", "lon"),
+            "ti",
+            id="tminavg",
+        ),
+        pytest.param(
+            # Nothing in cell methods therefore ti
             "area: mean where land",
             ("time4", "lat", "lon"),
             "ti",
