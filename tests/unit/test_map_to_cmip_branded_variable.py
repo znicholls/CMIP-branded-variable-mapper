@@ -15,23 +15,38 @@ from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
         pytest.param(
             "area: mean where land time: max",
             ("time", "lat", "lon"),
-            # cell methods wins out over dimension
             "tmax",
             id="tmax",
         ),
         pytest.param(
+            "area: mean where land time: max",
+            ("lat", "lon"),
+            "ti",
+            id="tmax-missing-dim",
+        ),
+        pytest.param(
             "area: mean where land time: min",
             ("time", "lat", "lon"),
-            # cell methods wins out over dimension
             "tmin",
             id="tmin",
         ),
         pytest.param(
+            "area: mean where land time: min",
+            ("lat", "lon"),
+            "ti",
+            id="tmin-missing-dim",
+        ),
+        pytest.param(
             "area: mean where land time: sum",
             ("time", "lat", "lon"),
-            # cell methods wins out over dimension
             "tsum",
             id="tsum",
+        ),
+        pytest.param(
+            "area: mean where land time: sum",
+            ("lat", "lon"),
+            "ti",
+            id="tsum-missing-dim",
         ),
         pytest.param(
             "area: mean where land",
@@ -66,13 +81,13 @@ from cmip_branded_variable_mapper.mapper import map_to_cmip_branded_variable
         pytest.param(
             "area: mean where land time: max",
             ("time4", "lat", "lon"),
-            "ti",
+            "tmaxavg",
             id="tmaxavg",
         ),
         pytest.param(
             "area: mean where land time: min",
             ("time4", "lat", "lon"),
-            "ti",
+            "tminavg",
             id="tminavg",
         ),
         pytest.param(
