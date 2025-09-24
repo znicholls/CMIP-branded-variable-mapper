@@ -14,7 +14,7 @@ def get_horizontal_label(
 
     The logic this should follow is defined in Table F3 of
     [Taylor et al.](https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0).
-    This was last checked on September 12 2025.
+    This was last checked on September 24 2025.
     If updates have been made since,
     this code may be out of date with the underlying specification.
 
