@@ -21,6 +21,23 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.11.0 (2025-09-24)
+
+### :warning: Breaking Changes
+
+- Added support for "tminavg" and "tmaxavg" in line with updates to Table F1 of [Taylor et al.](https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0) as at 22 September 2025
+
+  If you have a variable with "time4" as a dimension and "time: max" ("time: min") in the cell methods, the temporal label is now "tmaxavg" ("tminavg") rather than "ti" as it was previously.
+
+  In addition, if you have "time: max", "time: min" or "time: sum" in your cell methods
+  but do not have a "time" dimension, your temporal label will now be "ti"
+  rather than its previously value. ([#35](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/35))
+
+### :wrench: Trivial/Internal Changes
+
+- [#33](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/33)
+
+
 ## CMIP Branded Variable Mapper v0.10.0 (2025-08-27)
 
 ### :tada: Improvements
