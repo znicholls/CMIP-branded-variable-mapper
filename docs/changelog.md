@@ -21,6 +21,15 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.12.0 (2025-09-25)
+
+### :warning: Breaking Changes
+
+- Update horizontal label generation to be in line with Table F3 of [the specification document](https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0) as at September 24 2025.
+
+  The horizontal label "hxys" is now just "hs", "hys" is now "hyb". ([#34](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/34))
+
+
 ## CMIP Branded Variable Mapper v0.11.0 (2025-09-24)
 
 ### :warning: Breaking Changes
