@@ -336,7 +336,7 @@ wheels = [
 
 [[package]]
 name = "cmip-branded-variable-mapper"
-version = "0.12.0"
+version = "0.12.0.post1"
 source = { editable = "." }
 dependencies = [
     { name = "attrs" },
