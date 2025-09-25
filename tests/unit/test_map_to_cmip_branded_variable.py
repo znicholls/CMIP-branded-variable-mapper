@@ -160,14 +160,16 @@ def test_vertical_labels(dimensions, exp_vertical_label):
         )
         for dimensions, exp_horizontal_label in (
             (("longitude", "latitude"), "hxy"),
-            (("gridlatitude", "basin"), "ht"),
-            (("latitude", "basin"), "hys"),
-            (("latitude",), "hy"),
             (("xant", "yant"), "hxy"),
             (("xgre", "ygre"), "hxy"),
+            (("latitude",), "hy"),
+            (("site",), "hs"),
+            (("latitude", "basin"), "hyb"),
             (("oline",), "ht"),
             (("siline",), "ht"),
-            (("site",), "hxys"),
+            (("gridlatitude", "basin"), "ht"),
+            (("gridlatitude",), "hm"),
+            (("junk",), "hm"),
         )
     ),
 )
