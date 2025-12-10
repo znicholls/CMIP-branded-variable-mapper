@@ -21,6 +21,14 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.13.0 (2025-12-10)
+
+### :warning: Breaking Changes
+
+- Updated generation of area labels. The labels are now set based on keywords only, all searching for `where` or `area: mean` has been removed.
+  Most notably, this means the cell methods `area: time: mean (over land and sea ice)` will now get the area label `lsi` whereas previously it was assigned `u`. ([#36](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/36))
+
+
 ## CMIP Branded Variable Mapper v0.12.0 (2025-09-25)
 
 ### :warning: Breaking Changes

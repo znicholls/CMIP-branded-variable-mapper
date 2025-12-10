@@ -1,6 +1,6 @@
 [project]
 name = "cmip-branded-variable-mapper"
-version = "0.12.0.post1"
+version = "0.13.0"
 description = "Mapping from CMIP variable and other information to branded variable names."
 authors = [
     { name = "Zebedee Nicholls", email = "zebedee.nicholls@climate-energy-college.org" },
