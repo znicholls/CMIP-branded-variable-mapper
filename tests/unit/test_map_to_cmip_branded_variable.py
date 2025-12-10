@@ -189,6 +189,7 @@ def test_horizontal_labels(dimensions, exp_horizontal_label):
     "cell_methods, exp_area_label",
     (
         ("area: mean (over land and sea ice) time: point", "lsi"),
+        ("area: time: mean (over land and sea ice)", "lsi"),
         ("area: mean where cloud time: point", "cl"),
     ),
 )
