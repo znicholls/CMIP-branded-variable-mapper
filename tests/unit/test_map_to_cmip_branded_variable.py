@@ -115,6 +115,7 @@ def test_temporal_labels(cell_methods, dimensions, exp_temporal_label):
     "dimensions, exp_vertical_label",
     (
         (("latitude", "longitude", "olevel"), "ol"),
+        (("latitude", "longitude", "osurf"), "ols"),
         (("latitude", "longitude", "olevhalf"), "olh"),
         (("latitude", "longitude", "alevel"), "al"),
         (("latitude", "longitude", "alevhalf"), "alh"),

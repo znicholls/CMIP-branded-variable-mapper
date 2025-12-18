@@ -30,6 +30,7 @@ VERTICAL_LABEL_DIMENSIONS_MAPPER = DimensionMapper(
         "olayer700m": "d700m",
         "olayer2000m": "d2000m",
         "op20bar": "op20bar",
+        "osurf": "ols",
         "p10": "10hPa",
         "p100": "100hPa",
         "p200": "200hPa",
