@@ -21,6 +21,13 @@ from the examples given in that link.
 
 <!-- towncrier release notes start -->
 
+## CMIP Branded Variable Mapper v0.13.1 (2025-12-18)
+
+### :new: Features
+
+- Added support for the vertical label `ols` ([#38](https://github.com/znicholls/CMIP-branded-variables-mapper/pull/38))
+
+
 ## CMIP Branded Variable Mapper v0.13.0 (2025-12-10)
 
 ### :warning: Breaking Changes
